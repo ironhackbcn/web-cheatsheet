@@ -1,0 +1,20 @@
+{
+  "name": "web-cheatsheet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "hugo server -b /"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironhackbcn/web-cheatsheet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ironhackbcn/web-cheatsheet/issues"
+  },
+  "homepage": "https://github.com/ironhackbcn/web-cheatsheet#readme"
+}
