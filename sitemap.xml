@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/client-server-architecture/</loc>
+    <lastmod>2018-11-26T16:14:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-intro/</loc>
+    <lastmod>2018-11-26T16:27:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-jsx/</loc>
+    <lastmod>2018-11-26T16:33:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-card/</loc>
+    <lastmod>2018-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-components-props/</loc>
+    <lastmod>2018-11-26T16:41:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/</loc>
+    <lastmod>2018-11-26T16:14:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-hello-ironhack/</loc>
+    <lastmod>2018-12-27T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-profile-app/</loc>
+    <lastmod>2018-12-27T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-state-lifecycle/</loc>
+    <lastmod>2018-11-26T16:43:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-list-keys/</loc>
+    <lastmod>2018-11-26T16:56:31+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-conditional-render/</loc>
+    <lastmod>2018-11-26T16:59:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-bulma-components/</loc>
+    <lastmod>2018-12-27T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-controlled-uncontrolled-components/</loc>
+    <lastmod>2018-11-26T17:00:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-forms/</loc>
+    <lastmod>2018-11-26T17:01:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-iron-contact/</loc>
+    <lastmod>2018-12-27T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-lifting-state-up/</loc>
+    <lastmod>2018-11-26T17:02:31+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-iron-nutrition/</loc>
+    <lastmod>2018-12-27T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-router-intro/</loc>
+    <lastmod>2018-11-26T17:07:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/express-api/</loc>
+    <lastmod>2018-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-frontend-backend-communication/</loc>
+    <lastmod>2018-11-26T17:11:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-authentication/</loc>
+    <lastmod>2018-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-deploy/</loc>
+    <lastmod>2018-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-thinking-in-react/</loc>
+    <lastmod>2018-12-27T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-ironbeers/</loc>
+    <lastmod>2018-12-27T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-wiki-countries/</loc>
+    <lastmod>2018-12-27T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/</loc>
+    <lastmod>2018-11-12T11:40:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/setup/</loc>
+    <lastmod>2018-11-12T11:40:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/</loc>
+    <lastmod>2018-11-26T16:14:32+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

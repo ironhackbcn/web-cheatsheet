@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LABS on </title>
+    <link>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/</link>
+    <description>Recent content in LABS on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Nov 2018 11:40:30 +0100</lastBuildDate>
+    
+	<atom:link href="https://ironhackbcn.github.io/web-cheatsheet/module3/lab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lab Cards</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-card/</link>
+      <pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-card/</guid>
+      <description>Lab  Create a new project Delete content in app.css Create a folder /component inside src Create files Card.js and Card.css inside folder components.  Card.css
+.card { width: 170px; display: flex; flex-direction: column; justify-content: center; margin: 15px; border-radius: 12px; box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05); transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1); transform: translateY(0px); } .card-gradient { height: 160px; width: 170px; border-radius: 12px 12px 0px 0px; background-image: linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%); } .</description>
+    </item>
+    
+    <item>
+      <title>Lab Hello Ironhack</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-hello-ironhack/</link>
+      <pubDate>Thu, 27 Dec 2018 23:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-hello-ironhack/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-hello-ironhack  Purpose:  First approach with react library.  What they do in the exercise:  Iteration 1: Prepare the exercise. Iteration 2: Advance Queries to MongoDB  Good practices:  The use of Mongo CLI.  Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Lab Profile App</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-profile-app/</link>
+      <pubDate>Thu, 27 Dec 2018 23:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-profile-app/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-profile-app  Purpose:    What they do in the exercise:  Iteration 1:  Good practices: -
+Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Lab Bulma Components</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-bulma-components/</link>
+      <pubDate>Thu, 27 Dec 2018 23:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-bulma-components/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-bulma-components  Purpose:    What they do in the exercise:  Iteration 1:  Good practices:  The use of Mongo CLI.  Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Lab Iron Contacts</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-iron-contact/</link>
+      <pubDate>Thu, 27 Dec 2018 23:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-iron-contact/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-react-ironcontacts  Purpose:    What they do in the exercise:  Iteration 1:  Good practices:  The use of Mongo CLI.  Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Lab Iron Nutrition</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-iron-nutrition/</link>
+      <pubDate>Thu, 27 Dec 2018 23:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-iron-nutrition/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-react-ironnutrition  Purpose:    What they do in the exercise:  Iteration 1:  Good practices:  The use of Mongo CLI.  Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Lab Thinking in React</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-thinking-in-react/</link>
+      <pubDate>Thu, 27 Dec 2018 23:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-thinking-in-react/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-thinking-in-react  Purpose:    What they do in the exercise:  Iteration 1:  Good practices: -
+Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Lab IronBeers</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-ironbeers/</link>
+      <pubDate>Thu, 27 Dec 2018 23:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-ironbeers/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-react-ironbeers  Purpose:    What they do in the exercise:  Iteration 1:  Good practices: -
+Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Lab Wiki Countries</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-wiki-countries/</link>
+      <pubDate>Thu, 27 Dec 2018 23:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-wiki-countries/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-wiki-countries  Purpose:    What they do in the exercise:  Iteration 1:  Good practices: -
+Issues: Suggestion: Typos: </description>
+    </item>
+    
+  </channel>
+</rss>
