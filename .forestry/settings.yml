@@ -5,6 +5,14 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/folder
+  label: Folder
+  create: all
+  match: "**/*"
+  new_doc_ext: _index
+  templates:
+  - chapter
+- type: directory
   path: content/Setup
   label: Setup
   create: all
