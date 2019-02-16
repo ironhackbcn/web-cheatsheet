@@ -4,13 +4,18 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: test/_index.md
+  label: test
+  match: "**/*"
 - type: directory
   path: content/folder
   label: Folder
   create: all
   match: "**/*"
-  new_doc_ext: ''
+  new_doc_ext: '20190215165049'
   templates:
+  - chapter
   - default
 - type: directory
   path: content/Setup
