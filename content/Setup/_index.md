@@ -3,8 +3,9 @@ title: Setup
 weight: 1
 pre: ''
 chapter: true
+
 ---
-## Setting up the environment
+## Setting up the environment 
 
 ## Terminal environment
 
