@@ -29,8 +29,8 @@ sections:
   label: Module3
   create: all
   match: "**/*"
-upload_dir: static
-public_path: ''
+upload_dir: static/upload
+public_path: "/web-cheatsheet/upload"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
