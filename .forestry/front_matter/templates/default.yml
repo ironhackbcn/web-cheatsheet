@@ -17,3 +17,5 @@ fields:
   label: weight
   name: weight
   description: order
+pages:
+- content/Shortcuts/entry.md
