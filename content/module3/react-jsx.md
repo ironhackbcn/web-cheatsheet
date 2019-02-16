@@ -152,8 +152,6 @@ document.getElementById('root')
 );
 ```
 
-![](/assets/Screen Shot 2017-09-28 at 16.05.51.png)
-
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number, index) =>

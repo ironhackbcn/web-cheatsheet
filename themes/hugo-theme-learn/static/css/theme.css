@@ -39,11 +39,11 @@ body {
     color: #777;
 }
 body #chapter h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 @media only all and (min-width: 48em) and (max-width: 59.938em) {
     body #chapter h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 @media only all and (max-width: 47.938em) {
@@ -420,19 +420,19 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 #chapter #body-inner {
     padding-bottom: 3rem;
-    max-width: 80%;
+    /* max-width: 80%; */
 }
 #chapter h3 {
-    font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Monserrat", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     font-weight: 300;
-    text-align: center;
+    /* text-align: center; */
 }
 #chapter h1 {
-    font-size: 5rem;
-    border-bottom: 4px solid #F0F2F4;
+    font-size: 2.5rem;
+    border-bottom: 1px solid #F0F2F4;
 }
 #chapter p {
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.2rem;
 }
 #footer {
@@ -450,15 +450,16 @@ body {
     font-size: 18px !important;
 }
 h2, h3, h4, h5, h6 {
-    font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Montserrat";
     text-rendering: optimizeLegibility;
-    color: #5e5e5e;
-    font-weight: 400;
+    /* color: #5e5e5e; */
+    font-weight: 200;
     letter-spacing: -1px;
 }
 h1 {
-    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    text-align: center;
+    font-family: "Montserrat";
+    /* font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; */
+    /* text-align: center; */
     text-transform: uppercase;
     color: #222;
     font-weight: 200;
@@ -481,55 +482,33 @@ div.notices {
     position: relative;
 }
 div.notices p {
-    padding: 15px;
+    padding: 1rem;
     display: block;
     font-size: 1rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
     color: #666;
 }
-div.notices p:first-child:before {
-    position: absolute;
-    top: 2px;
-    color: #fff;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f06a";
-    left: 10px;
-}
-div.notices p:first-child:after {
-    position: absolute;
-    top: 2px;
-    color: #fff;
-    left: 2rem;
-}
 div.notices.info p {
-    border-top: 30px solid #F0B37E;
-    background: #FFF2DB;
-}
-div.notices.info p:first-child:after {
-    content: 'Info';
+    border: 1px solid #F0B37E;
+    border-left: 6px solid #F0B37E;
+    border-radius: 5px;
 }
 div.notices.warning p {
-    border-top: 30px solid rgba(217, 83, 79, 0.8);
-    background: #FAE2E2;
-}
-div.notices.warning p:first-child:after {
-    content: 'Warning';
+    border: 1px solid rgba(217, 83, 79, 0.8);
+    border-left: 6px solid rgba(217, 83, 79, 0.8);
+    border-radius: 5px;
 }
 div.notices.note p {
-    border-top: 30px solid #6AB0DE;
-    background: #E7F2FA;
-}
-div.notices.note p:first-child:after {
-    content: 'Note';
+    border: 1px solid #6AB0DE;
+    border-left: 6px solid #6AB0DE;
+    border-radius: 5px;
+    /* background: #E7F2FA; */
 }
 div.notices.tip p {
-    border-top: 30px solid rgba(92, 184, 92, 0.8);
-    background: #E6F9E6;
-}
-div.notices.tip p:first-child:after {
-    content: 'Tip';
+    border: 1px solid rgba(92, 184, 92, 0.8);
+    border-left: 6px solid rgba(92, 184, 92, 0.8);
+    border-radius: 5px;
 }
 
 /* attachments shortcode */
@@ -642,8 +621,8 @@ code + .copy-to-clipboard {
 pre {
     padding: 1rem;
     margin: 2rem 0;
-    background: #1d1f21;
-    border: 0;
+    /* background: #1d1f21; */
+    border: 1px solid #666;
     border-radius: 2px;
     line-height: 1.15;
 }
@@ -1061,7 +1040,7 @@ td {
     vertical-align: middle;
     position: relative;
     color: #5e5e5e;
-    background-color: #FFF7DD;
+    /* background-color: #FFF7DD; */
     margin-left: -.2rem;
     cursor: pointer;
     border-radius: 0 2px 2px 0;
@@ -1074,12 +1053,12 @@ pre .copy-to-clipboard {
     position: absolute;
     right: 4px;
     top: 4px;
-    background-color: #4d5257;
+    /* background-color: #4d5257; */
     color: #ccc;
     border-radius: 2px;
 }
 pre .copy-to-clipboard:hover {
-    background-color: #656c72;
+    /* background-color: #656c72; */
     color: #fff;
 }
 .parent-element {

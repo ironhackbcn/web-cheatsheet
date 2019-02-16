@@ -1,3 +1,6 @@
 baseURL = "https://ironhackbcn.github.io/web-cheatsheet/"
 languageCode = "en-us"
 theme = "hugo-theme-learn"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
