@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 1 on </title>
+    <link>https://ironhackbcn.github.io/web-cheatsheet/module1/</link>
+    <description>Recent content in Module 1 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Nov 2018 12:25:51 +0100</lastBuildDate>
+    
+	<atom:link href="https://ironhackbcn.github.io/web-cheatsheet/module1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction &amp; Welcome</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/1-introduction/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/1-introduction/</guid>
+      <description>Course Overview
+Class Guidelines
+Mantras
+Module 1 Kick-off
+Module 1 Project Kick-off
+Module 2 Kick-off
+Module 2 Project Kick-off
+Module 3 Kick-off
+Module 3 Project Kick-off</description>
+    </item>
+    
+    <item>
+      <title>HTML Intro</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/2-html-intro/</link>
+      <pubDate>Mon, 12 Nov 2018 11:57:46 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/2-html-intro/</guid>
+      <description>Learning Objectives  What is HTML? DOM tree DOM nodes: root, ancestor, descendent, parent, child, sibling, elements html, head &amp;amp; body attributes and values self-closing tags semantic tags block vs inline elements How to structure web  Resources  element types
+ MDN HTML guide
+ MDN HTML reference
+ Planning_a_simple_website
+ html 5 best practices
+ Chrome Dev Tools
+ Screen Reader
+ HTML Validator
+  Ironhack Learning Platform Introduction to HTML</description>
+    </item>
+    
+    <item>
+      <title>JS Intro</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/3-js-intro/</link>
+      <pubDate>Mon, 12 Nov 2018 12:12:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/3-js-intro/</guid>
+      <description>Learning Objectives  Programming is the process of creating a set of instructions that tell a computer how to perform a task.  declarations  var x; var y = true;  types  number: 1 1.3 Infinity NaN boolean: true false string: &amp;ldquo;hello world&amp;rdquo; undefined object function  operators  comparison: == === != !== &amp;gt; &amp;lt; &amp;gt;= &amp;lt;= string + arithmetic: + - * / % ** ++ -- bitwise: &amp;amp; | ^ ~ &amp;lt;&amp;lt; &amp;gt;&amp;gt; &amp;gt;&amp;gt;&amp;gt; assignment: = += -= *= /= %= **= trenary: var a = (condition) ?</description>
+    </item>
+    
+    <item>
+      <title>JS Conditionals and Loops</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/4-js-conditionals-loops/</link>
+      <pubDate>Mon, 12 Nov 2018 12:12:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/4-js-conditionals-loops/</guid>
+      <description> Learning Objectives  Booleans Booleans Operators  || &amp;amp;&amp;amp; !  logical and short-circuit:  0 &amp;amp;&amp;amp; notExecuted evaluates to 0 1 || notExecuted evaluates to 1  Conditions  if if else if else if switch  Loops  while do while for   Resources  logical: &amp;amp;&amp;amp; || !  Ironhack Learning Platform  LU - Conditionals and Loops  </description>
+    </item>
+    
+    <item>
+      <title>Concepts</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/concepts/</link>
+      <pubDate>Mon, 12 Nov 2018 11:25:51 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/concepts/</guid>
+      <description> git test  git is not github commands docs it&amp;rsquo;s a version control system to  backup share track revisions   git concepts  status staging (add) commit remote (pull, push) branch merge  tools  linting beautifying  </description>
+    </item>
+    
+    <item>
+      <title>CSS Intro</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/5-css-intro/</link>
+      <pubDate>Mon, 12 Nov 2018 12:23:35 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/5-css-intro/</guid>
+      <description>Learning Objectives  reset rule selectors simple selectors declaration: property, value shorthand property specifity pseudo-selector user agent styles box model float, clear and overflow css positions width, padding, margin when not floated or position:absolute or position:fixed every block element is naturally 100% wide 100% of what!?  Resources  cssreference cssreset Best Practices MDN CSS guide MDN CSS reference W3C CSS Validator  Ironhack Learning Platform   Related files   reset.</description>
+    </item>
+    
+    <item>
+      <title>CSS Positioning</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/6-css-positioning/</link>
+      <pubDate>Mon, 12 Nov 2018 12:23:35 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/6-css-positioning/</guid>
+      <description> Learning Objectives  position:
+ static relative absolute fixed  used with top/left displaces the element (but the original space is still occupied)
+ establishes an anchor for absoulte descendent
+ element complete leaves the flow
+ and looses its natural block ability of being width 100%
+ used with top/left, always relative to first absolute OR relative ancestor
+  Resources  demo  Ironhack Learning Platform </description>
+    </item>
+    
+    <item>
+      <title>CSS Responsive</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/7-css-responsive/</link>
+      <pubDate>Mon, 12 Nov 2018 12:28:37 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/7-css-responsive/</guid>
+      <description>Learning Objectives  .container class mobile first tablet next desktop next media query syntax  @media (min-width: 768px) { ... more rules ...}  advanced
+ responsive images responsive typography responsive tables  how the paradigm shifted from desktop first to mobile first
+ right after it changed from graceful degradation to progressive enhancement  small/big apartment metaphor
+ content is like water mantra
+ explain the use of max-width</description>
+    </item>
+    
+    <item>
+      <title>CSS Flexbox</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/8-css-flexbox/</link>
+      <pubDate>Mon, 12 Nov 2018 12:30:01 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/8-css-flexbox/</guid>
+      <description>Learning Objectives  set display:flex on parent parent manages direct children properties of the flex parent  justify-content - across the main axis align-items - across the cross axis flex-direction - row/column/column-reverse/row-reverse flex-wrap - wrap/nowrap  properties of the flex children  width: 50% - percentage of the flex parent width: 200px - static, not managed by the flex parent flex: 1 - 1 out X - where X is total of all the children flex: &amp;lt;can grow&amp;gt; &amp;lt;can shrink&amp;gt; &amp;lt;base width&amp;gt; - advanced (see layout example 1)    Flexbox Grid  Strategy 1:</description>
+    </item>
+    
+    <item>
+      <title>JS Functions Scope</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/9-js-functions-scope/</link>
+      <pubDate>Mon, 12 Nov 2018 12:16:56 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/9-js-functions-scope/</guid>
+      <description>Learning Objectives  function statement anonymous function functions are first-class objects function as vairables callbacks  concept function  black box metaphor (algebra function) name is verbSomething convention is camelCase concept abstraction
+ declaration
+function addNumbers(p1, p2) { return p1 + p2; }  function call
+  function addNumbers(p1, p2) { console.log(p1 + p2); } addNumbers(2, 4); addNumbers(1, 2) addNumbers(1, 2, 3) addNumbers(&#39;foo&#39;) function doFoo(a, b) { console.log(a, b) } doFoo(1); doFoo(1, 2, 3);   concept return value  var x = doFoo(); var y = addNumbers(1, 2); console.</description>
+    </item>
+    
+    <item>
+      <title>JS Arrays</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/10-js-arrays/</link>
+      <pubDate>Mon, 12 Nov 2018 12:19:02 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/10-js-arrays/</guid>
+      <description>Learning Objectives  holds a list of values var arr = [&amp;lsquo;1&amp;rsquo;, &amp;lsquo;2&amp;rsquo;, &amp;lsquo;3&amp;rsquo;]; var arr = new Array(); arr.length arr[index] arr[index] = &amp;lsquo;foo&amp;rsquo; arr.pop() arr.push(&amp;lsquo;4&amp;rsquo;, &amp;lsquo;5&amp;rsquo;) arr.unshift(&amp;lsquo;foo&amp;rsquo;) arr.shift() arr.join(&amp;lsquo;,&amp;rsquo;);  var arr = [1332, 1232, 4332, 9873] for ( var ix = 0; ix &amp;lt; arr.length; ix++) { console.log(ix, arr[ix] / 100); }   callback  console.log(&#39;before&#39;); var arr = [1, 2, 3, 4, 5]; arr.forEach(function (item, index) { console.</description>
+    </item>
+    
+    <item>
+      <title>JS Objects</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/11-js-objects/</link>
+      <pubDate>Mon, 12 Nov 2018 11:22:06 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/11-js-objects/</guid>
+      <description> Learning Objectives s  holds key value pairs var obj = { name: &amp;lsquo;foo&amp;rsquo; } obj.name = &amp;lsquo;foo&amp;rsquo; obj[&amp;lsquo;name-with-weird-characters&amp;rsquo;] = &amp;lsquo;foo&amp;rsquo; obj[key] = &amp;lsquo;foo&amp;rsquo; delete obj.name delete obj[&amp;lsquo;name-with-weird-characters&amp;rsquo;] delete obj[key] for (var key in obj) { &amp;hellip; } Object static methods  Object.keys(obj); Object.values(obj);   Resources Ironhack Learning Platform </description>
+    </item>
+    
+    <item>
+      <title>JS Data Structures</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/12-js-data-structures/</link>
+      <pubDate>Mon, 12 Nov 2018 12:22:06 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/12-js-data-structures/</guid>
+      <description>Learning Objectives  data structure
+ examples
+ https://www.nytimes.com/ (mobile) list of articles with title, img (url and label), abstract, date https://glovoapp.com/en/macchina-pasta-bar-2/ (mobile) array of categories (sections) with different produts inside https://api.glovoapp.com/v3/stores/11281/addresses/18796/collections/27278   var cohorts = [{ city: &#39;bcn&#39;, course: &#39;webdev&#39;, date: new Date(&#39;2018-06-11&#39;), name: &#39;2018 Aug&#39;, students: [{name: &#39;Julien&#39;, country: &#39;es&#39;}, {name: &#39;Julio&#39;, country: &#39;us&#39;}] }, { city: &#39;bcn&#39;, course: &#39;webdev&#39;, date: new Date(&#39;2018-08-20&#39;), name: &#39;2018 Aug&#39;, students: [{name: &#39;John&#39;, country: &#39;en&#39;}, {name: &#39;Paquito&#39;, country: &#39;es&#39;}] }];   cohorts[0].</description>
+    </item>
+    
+    <item>
+      <title>JS Object Oriented Programming</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/13-js-oop/</link>
+      <pubDate>Mon, 12 Nov 2018 12:49:11 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/13-js-oop/</guid>
+      <description>Learning Objectives  Combination Abstraction Encapsulation Constructor functions methods introduction to this  When invoking a method on an object, this becomes the object itself.  inheritance concept Prototypal inheritance
+ chain of prototypes  classes in ES6
+ The basic idea of OOP is that we use objects to model real world things that we want to represent inside our programs, and/or provide a simple way to access functionality that would otherwise be hard or impossible to make use of.</description>
+    </item>
+    
+    <item>
+      <title>Js Array Methods</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/14-js-array-methods/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/14-js-array-methods/</guid>
+      <description>Learning Objectives  array methods arr.join() arr.pop() arr.push(&amp;lsquo;4&amp;rsquo;, &amp;lsquo;5&amp;rsquo;) arr.unshift(&amp;lsquo;foo&amp;rsquo;) arr.shift() arr.forEach( callback ) arr.find( callback ) arr.map( callback ) arr.reduce( callback ) arr.filter( callback ) arr.sort( callback ) arr.reverse() arr.splice(1, 2) arr.splice(1, 0, &amp;lsquo;foo&amp;rsquo;) arr.slice(1, 2)  Part 1  array methods
+  arr.find( callback ) arr.map( callback ) arr.reduce( callback ) arr.filter( callback )  Part 2  array methods
+  arr.sort( callback ) arr.reverse() arr.</description>
+    </item>
+    
+    <item>
+      <title>Dom Intro</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/15-dom-intro/</link>
+      <pubDate>Mon, 12 Nov 2018 12:46:45 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/15-dom-intro/</guid>
+      <description>Learning Objectives dom  window.document window.onload = function () { &amp;hellip; } document.body node = document.getElementById(&amp;lsquo;site-header&amp;rsquo;) node = document.getElementsByClassName(&amp;lsquo;feature&amp;rsquo;) node = document.querySelector(&amp;lsquo;.features .feature&amp;rsquo;) nodeList = document.querySelectorAll(&amp;lsquo;.features .feature&amp;rsquo;) node.setAttribute(&amp;lsquo;src&amp;rsquo;, &amp;lsquo;https://fakeimage.com/image.jpg&#39;) node.removeAttribute(&amp;lsquo;srcset&amp;rsquo;); node.classList.add(&amp;lsquo;active&amp;rsquo;) node.classList.remove(&amp;lsquo;active&amp;rsquo;) node.classList.toggle(&amp;lsquo;active&amp;rsquo;) node.appendChild(child) node.children[0]&amp;hellip; node.remove() node = document.createElement(&amp;lsquo;div&amp;rsquo;) node.innerHTML = &#39;&amp;lt;p&amp;gt;some text&amp;lt;/p&amp;gt;&#39; node.innerText = &amp;lsquo;some text&amp;rsquo;  events  node.addEventListener(&amp;lsquo;click&amp;rsquo;, handleClick); node.removeEventListener(&amp;lsquo;click&amp;rsquo;, handleClick); function handleClick(event) { &amp;hellip; } event.stopPropagation(); event.preventDefault(); event.target event.currentTarget  var img = document.querySelector(&#39;.o-hero img&#39;); img.</description>
+    </item>
+    
+    <item>
+      <title>JS Async</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/17-js-async/</link>
+      <pubDate>Mon, 12 Nov 2018 12:50:27 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/17-js-async/</guid>
+      <description>Learning Objectives Async  setInterval setTimeout callback concept
+ clearInterval(intervalId)
+ Show the 4 native functions, and explain that setInterval and setTimeout return a number (an id)
+ setTimeout(function () {}, 1000) setInterval(function () {}, 1000) clearInterval(intervalID)  do small 30 second counter using the setInterval and clearInterval
+ give an example of when you should use a clearTimeout
+  Practice  challenges
+ counter for 30s on the top corner (setTimeout) need to click a hidden work/object on the page to cancel the timer (clearInterval)  JS Timer @Todo, notes and link</description>
+    </item>
+    
+    <item>
+      <title>JS Advanced Javascript</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/18-js-advanced-javascript/</link>
+      <pubDate>Mon, 12 Nov 2018 12:22:06 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/18-js-advanced-javascript/</guid>
+      <description> Learning Objectives  Scope Hoisting Shadowing Closure Context  Resources  https://blog.bitsrc.io/a-beginners-guide-to-closures-in-javascript-97d372284dda  Ironhack Learning Platform </description>
+    </item>
+    
+    <item>
+      <title>JS Error and Debuging</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/19-js-error/</link>
+      <pubDate>Mon, 12 Nov 2018 12:22:06 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/19-js-error/</guid>
+      <description> Learning Objectives  try and catch  Resources Ironhack Learning Platform </description>
+    </item>
+    
+    <item>
+      <title>Canvas</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/20-js-canvas/</link>
+      <pubDate>Mon, 12 Nov 2018 12:22:06 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/20-js-canvas/</guid>
+      <description> Learning Objectives  Canvas  Resources Ironhack Learning Platform </description>
+    </item>
+    
+    <item>
+      <title>Project Game</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/project/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/project/</guid>
+      <description>Attachments   README.md  (0 ko)    Purpose/scope Reference project build  make sure to demo both Canvas and DOM games (Quiz, logic, etc)  Ideate (and validate ideas/scope) Planning  wireframes states and transitions data structures tasks (or simple US) show github readme template and encourage them to do the same  Execution  insist remind students everyday that they could/should review and/or change their previous slidescolumns  Control board  keep daily track use red to signal blocks / warnings (e.</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/resources/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/resources/</guid>
+      <description>Tools  VSCode Chrome Dev Tools  Terminal  iTerm and Terminator Bash  Git  Git Reference Git Cheatsheet GitHub  Accessibility  [Acessibility Checklist][https://a11yproject.com/checklist] Screen Reader Tota11y No Coffee Vision filter  Documentation HTML  MDN HTML guide MDN HTML reference W3C HTML Validator  CSS  MDN CSS guide MDN CSS reference W3C CSS Validator Can I Use  SASS  SASS  Javascript  MDN Javascript guide MDN Javascript reference  Accessibility  [The a11y project][https://a11yproject.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/project.files/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/project.files/readme/</guid>
+      <description>Project&amp;rsquo;s name Description Brief description of the project
+MVP (DOM - CANVAS) MVP definition, deliverables.
+Backlog Data structure Classes and methods definition.
+States y States Transitions Definition of the different states and their transition (transition functions)
+ splashScreen gameScreen gameoverScreen winScreen  Task Task definition in order of priority
+Links Trello Link url
+Git URls for the project repo and deploy Link Repo Link Deploy
+Slides URls for the project presentation (slides) Link Slides.</description>
+    </item>
+    
+  </channel>
+</rss>

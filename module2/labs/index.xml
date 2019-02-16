@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LABS on </title>
+    <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/</link>
+    <description>Recent content in LABS on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ironhackbcn.github.io/web-cheatsheet/module2/labs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LAB es6 javascript koans</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-es6/</link>
+      <pubDate>Mon, 12 Nov 2018 10:57:46 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-es6/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-es6-javascript-koans
+Purpose: First touch with ES6 syntax to get aquainted and confortable
+ Get a bit of insight on test writting
+  What they do in the exercise:  They are given a set of tests and they have to fix them in order for the tests to pass  Good practices: Issues:  Goes into concepts that are difficult to grasp at this time Some of the wording used is confused towards the halfway of the exercice &amp;ldquo;describe(&amp;lsquo;takes a position from where to start searching&amp;rsquo;)&amp;rdquo;  Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>LAB intro node</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-intro-node/</link>
+      <pubDate>Mon, 12 Nov 2018 11:57:46 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-intro-node/</guid>
+      <description>Link:  https://github.com/ironhack-labs/lab-intro-node
+Purpose: First touch with nodeJS
+ Get aquainted with using javascript and seeing be executed without a browser
+ Learn more about testing and Mocha as a tool for testing
+ Last look at ES5 constructors before moving on to ES6
+  What they do in the exercise:  They have a set of tests provided to them and they have to make them all pass The following code is provided  var SortedList = function() {}; SortedList.</description>
+    </item>
+    
+    <item>
+      <title>LAB Advance querying mongo</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-advance-querying-mongo/</link>
+      <pubDate>Thu, 27 Dec 2018 23:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-advance-querying-mongo/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-advance-querying-mongo  Purpose:  Writing queries to mongo. We can use Mongo Compass but we encourage to use Mongo CLI  What they do in the exercise:  Iteration 1: Prepare the exercise. Iteration 2: Advance Queries to MongoDB  Good practices:  The use of Mongo CLI.  Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>LAB Express Basic site</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-basic-site/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-basic-site/</guid>
+      <description>Express Basic site Link:  https://github.com/ironhack-labs/lab-express-basic-site  Purpose:  They have to create a basic site with express. They must choose a topic for that website (could be a celebrity, Tv Show, Futbol Player, etc&amp;hellip;)  What they do in the exercise:  They have to create a 3 pages (at least) website: HOME, ABOUT &amp;amp; PHOTO GALLERY. Start becoming familiar with Node/Express   Good practices:  Pay attention into the project Folder structure, maintain it clean and follow the SOC (Separation Of Concerns )principle &amp;amp; Encapsulation principle.</description>
+    </item>
+    
+    <item>
+      <title>LAB Ironbeers</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-ironbeers/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-ironbeers/</guid>
+      <description>Link:  https://github.com/ironhack-labs/lab-ironbeers  Purpose:  Create a basic web app, where you can Check the beers or get a random beer. Use PunkAPI Database  What they do in the exercise:  In this exercide they have to create their first Web App (Pages: Home, Beers, Random Beer) Using Partials Use of handlebars temlating engine.  Good practices: Issues: Suggestion:  With this amount of routes is not neccesary to split them into a different file, that means that our app.</description>
+    </item>
+    
+    <item>
+      <title>LAB Mongoose Recipes</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongoose-recipes/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongoose-recipes/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-mongoose-recipes  Purpose:  Apply your first schema and understand the role they play when storing data Understand and build CRUD operations using the Mongoose syntax  What they do in the exercise:  I1: Create a recipe schema I2: Create a recipe I3: Insert Many recipes I4: Update a recipe I5: Remove a recipe I6: Close database  Good practices:  Make sure that the file is correctly organized with the require statements above and exports at the end Get used to the promises syntax when retriving stuff with Mongoose  Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>LAB Express Spotify</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-spotify/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-spotify/</guid>
+      <description> Express Spotify Link:  https://github.com/ironhack-labs/lab-express-spotify  Purpose:  Understand how to build and set up GET and POST route in Express Understand and use both query strings and route params  What they do in the exercise:  Connect with an external api using an NPM package (Spotify) I1: Setup of the API I2: Setup Express I3: Search for artist I4: View Albums I5: View Tracks  Good practices:  Use proper indentation when writting up routes as the code will be complex using the api Do not worry about the styling  Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>LAB Express Cinema</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-cinema/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-cinema/</guid>
+      <description> Express Cinema Link:  https://github.com/ironhack-labs/lab-express-cinema  Purpose:  Understand how to build routes in express Understand how to seed a database Understand how to fetch the information of a single move to redirect to a page detail with query params  What they do in the exercise:  I1: Generate the project I2: Seed the database I3: Build the home page I4: List the movies I5: Display movie info  Good practices: Issues:  Mentions Ironhack generator which is no longer used There are 2 Iterations 3  Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>LAB Mongoose Movies</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongoose-movies/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongoose-movies/</guid>
+      <description>Link:  https://github.com/ironhack-labs/lab-mongoose-movies  Purpose:  Build a CRUD app Get comfortable building the routes with the different verbs Practice preparing the data to be displayed in the templates Very extensive exercice  What they do in the exercise:  I1: Add the celebrity model I2: Listing Celebrities I3: Celebrities Details Page I4: Adding new celebrities I5: Deleting celebrities I6(Bonus): Editing Celebrities I7: Add movie model I8: Listing movies I9: Movie Detail page I10: Adding new movies I11: Deleting movies I12(Bonus): Editing Movies  Good practices:  Keep your app.</description>
+    </item>
+    
+    <item>
+      <title>LAB Express Basic Auth</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-basic-auth/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-basic-auth/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-express-basic-auth  Purpose:  Interiorize the concepts and differences between Authentication and Authorization Understand how to configure the session in express Implement Login and signup Use bcrypt to encrypt the passwords Add protected routes Bonus iterations do not add much value at this time  What they do in the exercise:  I1: Sign up I2: Log in I3: Protected Routes Bonus I: Front-end validations Bonus II: Password Strenght Measurement  Good practices: Issues:  Mentions the Ironhack Generator which is no longer used  Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>LAB AJAX Crud characters</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-ajax-crud-characters/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-ajax-crud-characters/</guid>
+      <description> Link: https://github.com/ironhack-labs/lab-ajax-crud-characters
+Purpose:  Create your first ever API that has complete CRUD functionality Understand why we return JSON and not render/redirect/send Get some practice using the Axios Library  What they do in the exercise:  I1: Create fake api in a db.json I2: Create the file that calls the api I3: Create the index.js file that calls the routes of the API and the implement the functionality  Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>LAB Financial data graphing</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-financial-data-graphing/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-financial-data-graphing/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-financial-data-graphing  Purpose:  Practice fetching data from an API Learn how to modify the data and pass it to chartJS to build a graph Learn how to work with both an external API and an library at the same time  What they do in the exercise:  I1: Get Data I2: Create Chart I3: Dates Filter I4(Bonus): Currency I5(Bonus): Max/Min Values  Good practices:  Make sure you load the javascript code on the front end that fetches the data and generates the graphs  Issues:  Templates on the boilerplate are in ejs format I5 asks to use Math Min/Max with apply instead of the newer spread operator(&amp;hellip;)  Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-authentication-with-passport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-authentication-with-passport/</guid>
+      <description> Authentication with Passport Link:  https://github.com/ironhack-labs/lab-authentication-with-passport  Purpose:  Implement authentication with passport Protect route using passport  What they do in the exercise:  I1: Build Sign-up Feature I2: Build Login Feature I3: Add a private page  Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-coffee-and-books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-coffee-and-books/</guid>
+      <description> Coffee and Books Link:  https://github.com/ironhack-labs/lab-coffee-and-books  Purpose:  Understand how to use GeoJSON to store the location Implement the Google Maps API Add markers to the map   What they do in the exercise:  Create a model Create routes to show the listed elements Implement Google maps api  Good practices: Issues:  Mentions the ironhack generator which is no longer used No iterations  Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-file-upload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-file-upload/</guid>
+      <description> File upload Link:  https://github.com/ironhack-labs/lab-file-upload  Purpose:  Practice file upload Continue practicing routes, protect routes Deployment is done during the project week so Iteration 3 is skipable  What they do in the exercise:  I1: User Profile Pictures I2: Posts I3: Comments I4: Deploy  Good practices:  Use cloudinary for the picture upload  Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongo-compass-crud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongo-compass-crud/</guid>
+      <description> Mongo Compass CRUD Link:  https://github.com/ironhack-labs/lab-mongo-compass-crud  Purpose:  First touch with MongoDB Start writing queries to mongo  What they do in the exercise:  They are provided with a mock database They have to write queries to Mongo in order to retrieve the information required  Good practices: Issues: Suggestion:  Write mongoDb queries on the command line, try not to use Compass (graphic interface for managing MongoDb)   Typos: </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-nodemailer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-nodemailer/</guid>
+      <description> Nodemailler Link:  https://github.com/ironhack-labs/lab-nodemailer  Purpose:  Practing sending emails from your express app  What they do in the exercise:  I1: Create the User Model I2: Signup Process I3: Confirmation Route I4: Profile View Bonus: Styling Email  Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-passport-roles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-passport-roles/</guid>
+      <description> Passport Roles Link:  https://github.com/ironhack-labs/lab-passport-roles  Purpose:  Practice bulding auth with passport Create user roles with passport and use it to protect routes  What they do in the exercise:  I1: Create a user schema with different roles I2: Add edit profile feature and see profile I3: Add feature to allow TA role to add courses I4: Allow other users to reach the platform with Facebook login  Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,2927 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="description" content="">
+
+
+    <link rel="shortcut icon" href="/web-cheatsheet/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/web-cheatsheet/images/favicon.png" type="image/x-icon" />
+    <title>CheatSheet :: </title>
+
+    
+    <link href="/web-cheatsheet/css/nucleus.css?1550315345" rel="stylesheet">
+    <link href="/web-cheatsheet/css/fontawesome-all.min.css?1550315345" rel="stylesheet">
+    <link href="/web-cheatsheet/css/hybrid.css?1550315345" rel="stylesheet">
+    <link href="/web-cheatsheet/css/featherlight.min.css?1550315345" rel="stylesheet">
+    <link href="/web-cheatsheet/css/perfect-scrollbar.min.css?1550315345" rel="stylesheet">
+    <link href="/web-cheatsheet/css/auto-complete.css?1550315345" rel="stylesheet">
+    <link href="/web-cheatsheet/css/theme.css?1550315345" rel="stylesheet">
+    <link href="/web-cheatsheet/css/hugo-theme.css?1550315345" rel="stylesheet">
+    
+
+    <script src="/web-cheatsheet/js/jquery-2.x.min.js?1550315345"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/web-cheatsheet/module1/cheatsheet/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://ironhackbcn.github.io/web-cheatsheet/">
+  <svg id="grav-logo" width="100%" height="100%" viewBox="0 0 504 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <path d="M235.832,71.564l-7.98,-0.001c-1.213,0.001 -2.197,0.987 -2.197,2.204l0,15.327l-0.158,0.132c-4.696,3.962 -10.634,6.14 -16.719,6.14c-14.356,0 -26.034,-11.68 -26.034,-26.037c0,-14.358 11.678,-26.035 26.034,-26.035c5.582,0 10.919,1.767 15.437,5.113c0.877,0.649 2.093,0.56 2.866,-0.211l5.69,-5.69c0.444,-0.442 0.675,-1.055 0.639,-1.681c-0.034,-0.627 -0.336,-1.206 -0.828,-1.597c-6.76,-5.363 -15.214,-8.314 -23.805,-8.314c-21.18,0 -38.414,17.233 -38.414,38.415c0,21.183 17.234,38.415 38.414,38.415c10.937,0 21.397,-4.705 28.698,-12.914c0.358,-0.403 0.556,-0.921 0.556,-1.46l0,-19.603c0,-1.217 -0.985,-2.203 -2.2,-2.203"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M502.794,34.445c-0.408,-0.616 -1.1,-0.989 -1.838,-0.989l-8.684,0c-0.879,0 -1.673,0.522 -2.022,1.329l-24.483,56.839l-24.92,-56.852c-0.352,-0.799 -1.142,-1.316 -2.012,-1.316l-8.713,0c-0.744,0 -1.44,0.373 -1.843,0.995c-0.408,0.623 -0.476,1.408 -0.174,2.09l30.186,68.858c0.352,0.799 1.143,1.317 2.017,1.317l10.992,0c0.879,0 1.673,-0.527 2.021,-1.329l29.655,-68.861c0.289,-0.68 0.222,-1.461 -0.182,-2.081"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M388.683,34.772c-0.353,-0.798 -1.142,-1.316 -2.017,-1.316l-10.988,0c-0.879,0 -1.673,0.522 -2.021,1.329l-29.655,68.861c-0.294,0.675 -0.226,1.46 0.182,2.077c0.407,0.619 1.096,0.993 1.838,0.993l8.684,0c0.879,0 1.673,-0.526 2.022,-1.329l24.478,-56.842l24.92,56.854c0.353,0.798 1.143,1.317 2.013,1.317l8.717,0c0.744,0 1.44,-0.374 1.843,-0.993c0.408,-0.624 0.471,-1.41 0.174,-2.094l-30.19,-68.857Z"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M309.196,81.525l0.476,-0.229c8.675,-4.191 14.279,-13.087 14.279,-22.667c0,-13.881 -11.295,-25.174 -25.176,-25.174l-31.863,0c-1.214,0 -2.199,0.988 -2.199,2.202l0,68.855c0,1.219 0.985,2.204 2.199,2.204l7.979,0c1.214,0 2.2,-0.985 2.2,-2.204l0,-58.679l21.684,0c7.059,0 12.799,5.739 12.799,12.796c0,5.885 -3.996,10.989 -9.728,12.408c-1.032,0.261 -2.064,0.393 -3.071,0.393l-7.977,0c-0.829,0 -1.585,0.467 -1.959,1.205c-0.378,0.74 -0.305,1.625 0.187,2.296l22.62,30.884c0.412,0.566 1.07,0.901 1.771,0.901l9.915,0c0.827,0 1.587,-0.467 1.96,-1.207c0.378,-0.742 0.302,-1.629 -0.186,-2.296l-15.91,-21.688Z"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M107.191,80.969c-7.255,-4.794 -11.4,-8.845 -15.011,-16.109c-2.47,4.977 -8.236,12.376 -17.962,18.198c-4.856,15.106 -27.954,44.015 -35.43,39.916c-2.213,-1.212 -2.633,-2.808 -2.133,-4.456c0.536,-4.129 9.078,-13.62 9.078,-13.62c0,0 0.18,1.992 2.913,6.187c-3.609,-11.205 5.965,-25.031 8.5,-29.738c3.985,-1.269 4.274,-6.387 4.274,-6.387c0.255,-7.909 -3.278,-13.635 -6.701,-17.059c2.459,3.002 3.255,7.539 3.372,11.694l0,0.023c0.012,0.469 0.012,0.93 0.011,1.39c-0.117,3.439 -1.157,8.19 -3.383,8.19l0.006,0.03c-2.289,-0.098 -5.115,0.391 -7.639,1.18l-5.582,1.334c0,0 2.977,-0.136 4.584,1.252c-1.79,2.915 -5.769,6.533 -10.206,8.588c-6.457,2.995 -8.312,-2.964 -5.034,-6.838c0.805,-0.946 1.618,-1.745 2.387,-2.399c-0.495,-0.513 -0.807,-1.198 -0.889,-2.068c-0.001,-0.005 -0.004,-0.009 -0.005,-0.013c-0.45,-1.977 -0.202,-4.543 2.596,-8.623c0.551,-0.863 1.214,-1.748 2.007,-2.647c0.025,-0.031 0.046,-0.059 0.072,-0.089c0.034,-0.042 0.072,-0.08 0.108,-0.121c0.02,-0.023 0.039,-0.045 0.059,-0.068c0.2,-0.228 0.413,-0.45 0.639,-0.663c3.334,-3.414 8.599,-6.966 16.897,-10.152c9.675,-14.223 13.219,-16.89 13.219,-16.89c1.071,-1.096 2.943,-2.458 3.632,-2.805c-5.053,-8.781 -6.074,-21.158 -4.75,-24.493c-0.107,0.18 -0.206,0.365 -0.287,0.556c0.49,-1.143 0.819,-1.509 1.328,-2.111c1.381,-1.632 6.058,-2.488 7.737,0.971c0.895,1.844 1.063,4.232 1.034,6.023c-3.704,-0.193 -7.063,4.036 -7.063,4.036c0,0 3.067,-1.448 6.879,-1.473c0,0 1.015,0.883 2.283,2.542c-1.712,3.213 -4.524,10.021 -2.488,17.168c0.338,1.408 0.849,2.619 1.483,3.648c0.024,0.045 0.044,0.089 0.069,0.135c0.051,0.066 0.096,0.122 0.144,0.183c3.368,5.072 9.542,5.665 9.542,5.665c-2.906,-1.45 -5.274,-3.76 -6.816,-6.56c-0.8,-1.498 -1.291,-2.762 -1.592,-3.761c-1.636,-6.313 0.771,-9.999 2.149,-12.471c3.17,-4.917 8.944,-7.893 15.151,-7.185c8.712,0.995 14.968,8.862 13.973,17.571c-0.608,5.321 -3.781,9.723 -8.142,12.117c1.049,2.839 -0.073,6.28 -0.073,6.28c2.642,3.323 2.758,5.238 2.667,7.017c-3.357,-0.565 -6.618,1.701 -6.618,1.701c0,0 6.476,-1.546 10.238,1.81c2.446,2.631 4.078,5.009 5.051,6.766c1.393,2.505 7.859,2.683 7.123,7.188c-0.737,4.499 -5.669,4.542 -13.401,-0.56M69.571,0c-38.424,0 -69.571,31.148 -69.571,69.567c0,38.422 31.147,69.573 69.571,69.573c38.42,0 69.568,-31.151 69.568,-69.573c0,-38.42 -31.148,-69.567 -69.568,-69.567"
+      style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M73.796,51.693c0.813,-0.814 0.813,-2.134 0,-2.947c-0.815,-0.814 -2.133,-0.814 -2.947,0c-0.815,0.813 -0.815,2.133 0,2.947c0.814,0.813 2.132,0.813 2.947,0" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M66.445,53.149c-0.814,0.813 -0.814,2.133 0,2.947c0.813,0.814 2.133,0.814 2.947,0c0.813,-0.814 0.813,-2.134 0,-2.947c-0.814,-0.813 -2.134,-0.813 -2.947,0" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M79.231,54.233c-1.274,-1.274 -3.339,-1.272 -4.611,0l-2.713,2.712c-1.274,1.275 -1.274,3.339 0,4.612l2.978,2.978c1.274,1.275 3.338,1.274 4.611,0l2.712,-2.712c1.274,-1.274 1.274,-3.339 0,-4.612l-2.977,-2.978Z" style="fill:#000;fill-rule:nonzero;"></path>
+    <path d="M95.759,41.445c-2.151,-2.578 1.869,-7.257 4.391,-4.463c4.645,5.148 -2.237,7.041 -4.391,4.463M105.004,44.132c3.442,-6.553 -1.427,-10.381 -4.773,-13.523c-5.36,-5.039 -10.706,-7.217 -16.811,-0.241c-6.102,6.977 -2.226,15.068 3.356,19.061c5.584,3.994 14.782,1.255 18.228,-5.297"
+      style="fill:#000;fill-rule:nonzero;"></path>
+  </svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/web-cheatsheet/js/lunr.min.js?1550315345"></script>
+<script type="text/javascript" src="/web-cheatsheet/js/auto-complete.js?1550315345"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/ironhackbcn.github.io\/web-cheatsheet\/";
+    
+</script>
+<script type="text/javascript" src="/web-cheatsheet/js/search.js?1550315345"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/web-cheatsheet/setup/" title="Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/web-cheatsheet/setup/">
+          Setup
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/web-cheatsheet/shortcuts/" title="Shortcuts" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/web-cheatsheet/shortcuts/">
+          Shortcuts
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/web-cheatsheet/module1/" title="Module 1" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/web-cheatsheet/module1/">
+          Module 1
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/web-cheatsheet/module1/cheatsheet/" title="CheatSheet" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/web-cheatsheet/module1/cheatsheet/">
+          CheatSheet
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/1-introduction/" title="Introduction &amp; Welcome" class="dd-item ">
+        <a href="/web-cheatsheet/module1/1-introduction/">
+        <b>1. </b>Introduction &amp; Welcome
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/2-html-intro/" title="HTML Intro" class="dd-item ">
+        <a href="/web-cheatsheet/module1/2-html-intro/">
+        <b>2. </b>HTML Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/3-js-intro/" title="JS Intro" class="dd-item ">
+        <a href="/web-cheatsheet/module1/3-js-intro/">
+        <b>3. </b>JS Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/4-js-conditionals-loops/" title="JS Conditionals and Loops" class="dd-item ">
+        <a href="/web-cheatsheet/module1/4-js-conditionals-loops/">
+        <b>4. </b>JS Conditionals and Loops
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/concepts/" title="Concepts" class="dd-item ">
+        <a href="/web-cheatsheet/module1/concepts/">
+        Concepts
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/5-css-intro/" title="CSS Intro" class="dd-item ">
+        <a href="/web-cheatsheet/module1/5-css-intro/">
+        <b>5. </b>CSS Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/6-css-positioning/" title="CSS Positioning" class="dd-item ">
+        <a href="/web-cheatsheet/module1/6-css-positioning/">
+        <b>6. </b>CSS Positioning
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/7-css-responsive/" title="CSS Responsive" class="dd-item ">
+        <a href="/web-cheatsheet/module1/7-css-responsive/">
+        <b>7. </b>CSS Responsive
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/8-css-flexbox/" title="CSS Flexbox" class="dd-item ">
+        <a href="/web-cheatsheet/module1/8-css-flexbox/">
+        <b>8. </b>CSS Flexbox
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/9-js-functions-scope/" title="JS Functions Scope" class="dd-item ">
+        <a href="/web-cheatsheet/module1/9-js-functions-scope/">
+        <b>9. </b>JS Functions Scope
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/10-js-arrays/" title="JS Arrays" class="dd-item ">
+        <a href="/web-cheatsheet/module1/10-js-arrays/">
+        <b>10. </b>JS Arrays
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/11-js-objects/" title="JS Objects" class="dd-item ">
+        <a href="/web-cheatsheet/module1/11-js-objects/">
+        <b>11. </b>JS Objects
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/12-js-data-structures/" title="JS Data Structures" class="dd-item ">
+        <a href="/web-cheatsheet/module1/12-js-data-structures/">
+        <b>12. </b>JS Data Structures
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/13-js-oop/" title="JS Object Oriented Programming" class="dd-item ">
+        <a href="/web-cheatsheet/module1/13-js-oop/">
+        <b>13. </b>JS Object Oriented Programming
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/14-js-array-methods/" title="Js Array Methods" class="dd-item ">
+        <a href="/web-cheatsheet/module1/14-js-array-methods/">
+        <b>14. </b>Js Array Methods
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/15-dom-intro/" title="Dom Intro" class="dd-item ">
+        <a href="/web-cheatsheet/module1/15-dom-intro/">
+        <b>15. </b>Dom Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/17-js-async/" title="JS Async" class="dd-item ">
+        <a href="/web-cheatsheet/module1/17-js-async/">
+        <b>16. </b>JS Async
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/18-js-advanced-javascript/" title="JS Advanced Javascript" class="dd-item ">
+        <a href="/web-cheatsheet/module1/18-js-advanced-javascript/">
+        <b>17. </b>JS Advanced Javascript
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/19-js-error/" title="JS Error and Debuging" class="dd-item ">
+        <a href="/web-cheatsheet/module1/19-js-error/">
+        <b>18. </b>JS Error and Debuging
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/20-js-canvas/" title="Canvas" class="dd-item ">
+        <a href="/web-cheatsheet/module1/20-js-canvas/">
+        <b>19. </b>Canvas
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/project/" title="Project Game" class="dd-item ">
+        <a href="/web-cheatsheet/module1/project/">
+        <b>20. </b>Project Game
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/resources/" title="Resources" class="dd-item ">
+        <a href="/web-cheatsheet/module1/resources/">
+        Resources
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+             
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/web-cheatsheet/module1/adaptive/" title="Adaptive" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/web-cheatsheet/module1/adaptive/">
+          Adaptive
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module1/project.files/readme/" title="" class="dd-item ">
+        <a href="/web-cheatsheet/module1/project.files/readme/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/web-cheatsheet/module2/" title="Module 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/web-cheatsheet/module2/">
+          Module 2
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/1-es6/" title="ES 6" class="dd-item ">
+        <a href="/web-cheatsheet/module2/1-es6/">
+        <b>1. </b>ES 6
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/2-node/" title="Node" class="dd-item ">
+        <a href="/web-cheatsheet/module2/2-node/">
+        <b>2. </b>Node
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/3-mongo-introduction/" title="MongoDB Introduction" class="dd-item ">
+        <a href="/web-cheatsheet/module2/3-mongo-introduction/">
+        <b>3. </b>MongoDB Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/4-mongo-data-models/" title="MongoDB Data Models" class="dd-item ">
+        <a href="/web-cheatsheet/module2/4-mongo-data-models/">
+        <b>4. </b>MongoDB Data Models
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/5-mongo-crud/" title="MongoDB CRUD operations" class="dd-item ">
+        <a href="/web-cheatsheet/module2/5-mongo-crud/">
+        <b>5. </b>MongoDB CRUD operations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/6-express-introduction/" title="Express Introduction" class="dd-item ">
+        <a href="/web-cheatsheet/module2/6-express-introduction/">
+        <b>6. </b>Express Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/7-express-dynamic-views/" title="Express Dynamic Views" class="dd-item ">
+        <a href="/web-cheatsheet/module2/7-express-dynamic-views/">
+        <b>7. </b>Express Dynamic Views
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/8-express-layouts-partials/" title="Express Layouts Partials" class="dd-item ">
+        <a href="/web-cheatsheet/module2/8-express-layouts-partials/">
+        <b>8. </b>Express Layouts Partials
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/9-promises/" title="Promises" class="dd-item ">
+        <a href="/web-cheatsheet/module2/9-promises/">
+        <b>9. </b>Promises
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/10-mongoose-introduction/" title="Mongoose Introduction" class="dd-item ">
+        <a href="/web-cheatsheet/module2/10-mongoose-introduction/">
+        <b>10. </b>Mongoose Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/11-mongoose-schemas-models/" title="Mongoose Schemas Models" class="dd-item ">
+        <a href="/web-cheatsheet/module2/11-mongoose-schemas-models/">
+        <b>11. </b>Mongoose Schemas Models
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/12-mongoose-relationships/" title="Mongoose Relationships" class="dd-item ">
+        <a href="/web-cheatsheet/module2/12-mongoose-relationships/">
+        <b>12. </b>Mongoose Relationships
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/13-express-get-post/" title="Express Get - Post Methods" class="dd-item ">
+        <a href="/web-cheatsheet/module2/13-express-get-post/">
+        <b>13. </b>Express Get - Post Methods
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/14-express-generator/" title="Express Generator" class="dd-item ">
+        <a href="/web-cheatsheet/module2/14-express-generator/">
+        <b>14. </b>Express Generator
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/15-express-mongoose-crud/" title="Express Mongoose Crud" class="dd-item ">
+        <a href="/web-cheatsheet/module2/15-express-mongoose-crud/">
+        <b>15. </b>Express Mongoose Crud
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/16-authorization/" title="Authorization" class="dd-item ">
+        <a href="/web-cheatsheet/module2/16-authorization/">
+        <b>16. </b>Authorization
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/17-authentication/" title="Authentication" class="dd-item ">
+        <a href="/web-cheatsheet/module2/17-authentication/">
+        <b>17. </b>Authentication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/18-api/" title="API" class="dd-item ">
+        <a href="/web-cheatsheet/module2/18-api/">
+        <b>18. </b>API
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/19-ajax/" title="AJAX" class="dd-item ">
+        <a href="/web-cheatsheet/module2/19-ajax/">
+        <b>19. </b>AJAX
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/20-deploy/" title="Deploy" class="dd-item ">
+        <a href="/web-cheatsheet/module2/20-deploy/">
+        <b>20. </b>Deploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/flash/" title="Flash Notifications" class="dd-item ">
+        <a href="/web-cheatsheet/module2/flash/">
+        <b></b>Flash Notifications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/project/" title="Project Readme" class="dd-item ">
+        <a href="/web-cheatsheet/module2/project/">
+        <b></b>Project Readme
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+             
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/web-cheatsheet/module3/" title="Module 3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/web-cheatsheet/module3/">
+          Module 3
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/client-server-architecture/" title="Client Server Architecture" class="dd-item ">
+        <a href="/web-cheatsheet/module3/client-server-architecture/">
+        <b>1. </b>Client Server Architecture
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-intro/" title="React Intro" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-intro/">
+        <b>2. </b>React Intro
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-jsx/" title="React JSX" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-jsx/">
+        <b>3. </b>React JSX
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-components-props/" title="React Components and Props" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-components-props/">
+        <b>4. </b>React Components and Props
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-state-lifecycle/" title="React State Lifecycle" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-state-lifecycle/">
+        React State Lifecycle
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-list-keys/" title="React List and Keys" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-list-keys/">
+        <b>6. </b>React List and Keys
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-conditional-render/" title="React Conditional Rendering" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-conditional-render/">
+        <b>7. </b>React Conditional Rendering
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-controlled-uncontrolled-components/" title="React Controlled Uncontrolled Components" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-controlled-uncontrolled-components/">
+        <b>8. </b>React Controlled Uncontrolled Components
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-forms/" title="React Forms" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-forms/">
+        <b>9. </b>React Forms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-lifting-state-up/" title="React Lifting State Up" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-lifting-state-up/">
+        <b>10. </b>React Lifting State Up
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-router-intro/" title="React Router" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-router-intro/">
+        <b>11. </b>React Router
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/express-api/" title="Express Api" class="dd-item ">
+        <a href="/web-cheatsheet/module3/express-api/">
+        <b>12. </b>Express Api
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-frontend-backend-communication/" title="React Frontend Backend Communication" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-frontend-backend-communication/">
+        <b>13. </b>React Frontend Backend Communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-authentication/" title="React Authentication" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-authentication/">
+        <b>14. </b>React Authentication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module3/react-deploy/" title="React Deploy" class="dd-item ">
+        <a href="/web-cheatsheet/module3/react-deploy/">
+        React Deploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+             
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/web-cheatsheet/'></a> > <a href='/web-cheatsheet/module1/'>Module 1</a> > CheatSheet
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#html">HTML</a></li>
+<li><a href="#css">CSS</a></li>
+<li><a href="#css-best-practices">css best practices</a></li>
+</ul></li>
+<li><a href="#html-css-process-best-practices">html+css process best practices</a>
+<ul>
+<li><a href="#js-best-practices">js best practices</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>CheatSheet</h1>
+          
+
+        
+
+
+
+
+<h2 id="html">HTML</h2>
+
+<p>boilerplate for html</p>
+
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Hello, world!&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/....&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2 id="css">CSS</h2>
+
+<p>css example structure</p>
+
+<div class="notices note" ><p>Also you can use <a href="https://cssreset.com/scripts/eric-meyer-reset-css/">reset.css</a> or <a href="https://necolas.github.io/normalize.css/">normalize.css</a></p>
+</div>
+
+
+<pre><code class="language-css">/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ---- typography ---- */
+
+body {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+p {
+  margin: 0;
+}
+
+
+
+/* ---- layout ---- */
+
+#site-header {
+  padding: 30px 0;
+  color: white;
+  background: #111;
+}
+
+#site-footer {
+  color: white;
+  padding: 60px 0;
+  background: #111;
+}
+
+#site-main {
+  margin-bottom: 60px;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/* ---- components ---- */
+
+.button {
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  border: 1px solid #fff
+}
+
+.button-alt {
+  color: blue;
+  background-color: #fff;
+}
+
+/* ---- section ---- */
+
+section.testimonials {
+  // ...
+}
+
+section.testimonials .button {
+  margin-bottom: 10px;
+}
+</code></pre>
+
+<h2 id="css-best-practices">css best practices</h2>
+
+<ul>
+<li>code structure
+
+<ul>
+<li>reset first</li>
+<li>at least reset the <code>box-sizing: border-box;</code> and body&rsquo;s <code>margin: 0;</code></li>
+<li>typography next</li>
+<li>layout</li>
+<li>at least <code>.container</code> class</li>
+<li>components next</li>
+<li>page specifics last</li>
+</ul></li>
+<li>KISS
+
+<ul>
+<li>avoid px widths,</li>
+<li>avoid heights</li>
+<li>margin bottom + padding top</li>
+</ul></li>
+<li>DRY
+
+<ul>
+<li>use hierarchy</li>
+<li><code>&lt;div class=&quot;card&quot;&gt;&lt;div class=&quot;title&quot;&gt;...</code></li>
+<li>target via <code>.card .title {}</code></li>
+<li>use composition</li>
+<li>combine classes</li>
+<li><code>class=&quot;button primary&quot;</code>  targeted via <code>.button.primary {}</code></li>
+<li>use cascading</li>
+<li>specifics augment and override generics</li>
+<li><code>#login-button</code> stronger than<code>.button {}</code> stronger than <code>a {}</code></li>
+<li><code>@media (...) { a {} }</code> stronger than <code>a {}</code></li>
+<li>use inheritance</li>
+<li>type attributes (font-family, font-size, line-height, color, &hellip;) trickle down from parent to children</li>
+</ul></li>
+<li>semantic:
+
+<ul>
+<li>semantic css, classes named after what things ARE not what they LOOK LIKE</li>
+<li>e.g.: <code>.copy</code>, <code>.site-header</code>, <code>.copyright</code>, <code>.email</code> &hellip;</li>
+</ul></li>
+<li>clearing floats
+
+<ul>
+<li><code>overflow: hidden</code> on the parent</li>
+<li>OR <code>clear: both</code> on a sibling after the floats</li>
+</ul></li>
+<li>DO
+
+<ul>
+<li>short selectors</li>
+<li>e.g.: <code>.header li</code></li>
+</ul></li>
+<li>DON&rsquo;t
+
+<ul>
+<li>use <code>!important</code></li>
+<li>name classes after presentation</li>
+<li>e.g.: <code>.green-text {}</code></li>
+</ul></li>
+</ul>
+
+<h1 id="html-css-process-best-practices">html+css process best practices</h1>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#Enter_HTML5_structural_elements#Planning_a_simple_website">planning a simple website</a></li>
+<li>mobile first</li>
+<li>unless desktop only</li>
+<li>sketch first</li>
+<li>identify patterns and components</li>
+<li>html next</li>
+<li>css last</li>
+<li>simplicity</li>
+<li>consistency</li>
+</ul>
+
+<h2 id="js-best-practices">js best practices</h2>
+
+<ul>
+<li>start all files with  <code>'use strict';</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode">docs</a></li>
+<li>write small functions</li>
+<li>start from the return</li>
+<li>tidy code, idented and consistent</li>
+<li>DO
+
+<ul>
+<li>for literal strings, use <code>'single quotes'</code></li>
+<li>one statement per line (don&rsquo;t do <code>if (foo) { something() }</code> all in one line)</li>
+<li>variables and function parameters use <code>camelCase</code> (e.g.: <code>var topScores</code>)</li>
+<li>functions, start with a verb, use <code>verbCamelCase</code> (e.g.: <code>function setPosition (x,y) {}</code>)</li>
+<li>for constructors use <code>PascalCase</code> (e.g.: <code>function MovingObstacle() {}</code>)</li>
+</ul></li>
+<li>DON&rsquo;T
+
+<ul>
+<li>use global variables</li>
+<li>repeat yourself</li>
+</ul></li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/web-cheatsheet/module1/" title="Module 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/web-cheatsheet/module1/1-introduction/" title="Introduction &amp; Welcome" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/web-cheatsheet/js/clipboard.min.js?1550315345"></script>
+    <script src="/web-cheatsheet/js/perfect-scrollbar.min.js?1550315345"></script>
+    <script src="/web-cheatsheet/js/perfect-scrollbar.jquery.min.js?1550315345"></script>
+    <script src="/web-cheatsheet/js/jquery.sticky.js?1550315345"></script>
+    <script src="/web-cheatsheet/js/featherlight.min.js?1550315345"></script>
+    <script src="/web-cheatsheet/js/html5shiv-printshiv.min.js?1550315345"></script>
+    <script src="/web-cheatsheet/js/highlight.pack.js?1550315345"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/web-cheatsheet/js/modernizr.custom.71422.js?1550315345"></script>
+    <script src="/web-cheatsheet/js/learn.js?1550315345"></script>
+    <script src="/web-cheatsheet/js/hugo-learn.js?1550315345"></script>
+
+    <link href="/web-cheatsheet/mermaid/mermaid.css?1550315345" type="text/css" rel="stylesheet" />
+    <script src="/web-cheatsheet/mermaid/mermaid.js?1550315345"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

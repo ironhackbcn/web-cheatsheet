@@ -3,8 +3,90 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/cheatsheet/</loc>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/client-server-architecture/</loc>
     <lastmod>2018-11-26T16:14:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/1-es6/</loc>
+    <lastmod>2018-11-12T14:57:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-flexbox-slack.md/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-instagram-clone/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-recipes-clone/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-spotify-clone/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-flappybirds/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-hangman/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-race-car/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-bootstrap-cloning-revera/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/1-introduction/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-koans/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-memory-game/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-jquery-pizza-builder/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-es6/</loc>
+    <lastmod>2018-11-12T10:57:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/shortcuts/</loc>
   </url>
   
   <url>
@@ -13,8 +95,33 @@
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/2-node/</loc>
+    <lastmod>2018-11-12T16:06:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/2-html-intro/</loc>
+    <lastmod>2018-11-12T11:57:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone/</loc>
+    <lastmod>2018-11-12T11:57:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-intro-node/</loc>
+    <lastmod>2018-11-12T11:57:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-jsx/</loc>
-    <lastmod>2018-11-26T16:33:14+01:00</lastmod>
+    <lastmod>2018-11-26T15:33:14+00:00</lastmod>
   </url>
   
   <url>
@@ -23,13 +130,48 @@
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/3-mongo-introduction/</loc>
+    <lastmod>2018-11-12T16:08:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/3-js-intro/</loc>
+    <lastmod>2018-11-12T12:12:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/</loc>
+    <lastmod>2018-11-12T14:57:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/4-mongo-data-models/</loc>
+    <lastmod>2018-12-28T16:20:29+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-components-props/</loc>
     <lastmod>2018-11-26T16:41:01+01:00</lastmod>
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/4-js-conditionals-loops/</loc>
+    <lastmod>2018-11-12T12:12:51+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/</loc>
     <lastmod>2018-11-26T16:14:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/5-mongo-crud/</loc>
+    <lastmod>2018-12-28T16:18:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-advance-querying-mongo/</loc>
+    <lastmod>2018-12-27T23:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -48,13 +190,63 @@
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/concepts/</loc>
+    <lastmod>2018-11-12T11:25:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-basic-algorithms/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/5-css-intro/</loc>
+    <lastmod>2018-11-12T12:23:35+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-list-keys/</loc>
     <lastmod>2018-11-26T16:56:31+01:00</lastmod>
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/6-express-introduction/</loc>
+    <lastmod>2018-11-12T16:07:20+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/6-css-positioning/</loc>
+    <lastmod>2018-11-12T12:23:35+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/7-express-dynamic-views/</loc>
+    <lastmod>2018-12-28T16:23:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-basic-site/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-conditional-render/</loc>
     <lastmod>2018-11-26T16:59:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/7-css-responsive/</loc>
+    <lastmod>2018-11-12T12:28:37+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/8-express-layouts-partials/</loc>
+    <lastmod>2018-12-28T16:24:48+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-ironbeers/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -68,8 +260,33 @@
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/8-css-flexbox/</loc>
+    <lastmod>2018-11-12T12:30:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone-responsive/</loc>
+    <lastmod>2018-11-12T11:57:46+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-forms/</loc>
     <lastmod>2018-11-26T17:01:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/9-promises/</loc>
+    <lastmod>2018-11-12T16:09:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/9-js-functions-scope/</loc>
+    <lastmod>2018-11-12T12:16:56+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/10-mongoose-introduction/</loc>
+    <lastmod>2018-12-28T16:30:59+01:00</lastmod>
   </url>
   
   <url>
@@ -83,6 +300,26 @@
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/10-js-arrays/</loc>
+    <lastmod>2018-11-12T12:19:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-card/</loc>
+    <lastmod>2018-11-12T11:57:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/11-mongoose-schemas-models/</loc>
+    <lastmod>2018-12-28T16:31:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongoose-recipes/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-iron-nutrition/</loc>
     <lastmod>2018-12-27T23:00:00+00:00</lastmod>
   </url>
@@ -93,8 +330,43 @@
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-functions-and-arrays/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/11-js-objects/</loc>
+    <lastmod>2018-11-12T11:22:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone-css/</loc>
+    <lastmod>2018-11-12T11:57:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/12-mongoose-relationships/</loc>
+    <lastmod>2018-12-28T16:35:19+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/express-api/</loc>
     <lastmod>2018-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/12-js-data-structures/</loc>
+    <lastmod>2018-11-12T12:22:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/13-express-get-post/</loc>
+    <lastmod>2018-12-28T16:33:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-spotify/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -103,8 +375,43 @@
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/13-js-oop/</loc>
+    <lastmod>2018-11-12T12:49:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-clue/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/14-express-generator/</loc>
+    <lastmod>2018-12-28T16:38:14+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-authentication/</loc>
     <lastmod>2018-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/14-js-array-methods/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-vikings/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/15-express-mongoose-crud/</loc>
+    <lastmod>2018-12-28T16:40:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-cinema/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -113,8 +420,98 @@
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/15-dom-intro/</loc>
+    <lastmod>2018-11-12T12:46:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-all-times-movies/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/16-authorization/</loc>
+    <lastmod>2018-12-28T16:42:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongoose-movies/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-dom-ironhack-cart/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/17-authentication/</loc>
+    <lastmod>2018-12-28T16:42:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-basic-auth/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/17-js-async/</loc>
+    <lastmod>2018-11-12T12:50:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/18-api/</loc>
+    <lastmod>2018-12-28T16:48:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-chronometer/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/18-js-advanced-javascript/</loc>
+    <lastmod>2018-11-12T12:22:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/19-ajax/</loc>
+    <lastmod>2018-12-28T16:48:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-ajax-crud-characters/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-financial-data-graphing/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-advanced-algorithms/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/19-js-error/</loc>
+    <lastmod>2018-11-12T12:22:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/20-deploy/</loc>
+    <lastmod>2018-12-28T16:48:45+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-thinking-in-react/</loc>
     <lastmod>2018-12-27T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/20-js-canvas/</loc>
+    <lastmod>2018-11-12T12:22:06+01:00</lastmod>
   </url>
   
   <url>
@@ -128,19 +525,77 @@
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/project/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/flash/</loc>
+    <lastmod>2018-12-28T16:48:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/project/</loc>
+    <lastmod>2018-12-28T16:48:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/resources/</loc>
+    <lastmod>2018-11-12T12:25:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/</loc>
+    <lastmod>2018-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/</loc>
+    <lastmod>2018-11-12T11:40:30+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/</loc>
     <lastmod>2018-11-12T11:40:30+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/setup/</loc>
-    <lastmod>2018-11-12T11:40:30+01:00</lastmod>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/adaptive/</loc>
+    <lastmod>2018-11-12T11:36:07+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/</loc>
     <lastmod>2018-11-26T16:14:32+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/project.files/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-authentication-with-passport/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-coffee-and-books/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-file-upload/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongo-compass-crud/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-nodemailer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-passport-roles/</loc>
   </url>
   
   <url>

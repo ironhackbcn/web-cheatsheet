@@ -35,7 +35,7 @@ npm run build =&amp;gt; Builds the app for production and optimizes the build fo
     <item>
       <title>React JSX</title>
       <link>https://ironhackbcn.github.io/web-cheatsheet/module3/react-jsx/</link>
-      <pubDate>Mon, 26 Nov 2018 16:33:14 +0100</pubDate>
+      <pubDate>Mon, 26 Nov 2018 15:33:14 +0000</pubDate>
       
       <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/react-jsx/</guid>
       <description>Learning Objectives  Understand what JSX is and why we use it in React. Create JSX elements and use them in your React App. Embed expressions in JSX.  What is JSX?  This funny tag syntax is neither a string nor HTML. JSX may remind you of a template language, but it comes with the full power of JavaScript. JSX produces React &amp;ldquo;elements&amp;rdquo;.  Embedding Expressions const element = (&amp;lt;p&amp;gt; 2+2 = {2 + 2}&amp;lt;/p&amp;gt;); ReactDOM.</description>

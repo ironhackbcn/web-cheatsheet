@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 2 on </title>
+    <link>https://ironhackbcn.github.io/web-cheatsheet/module2/</link>
+    <description>Recent content in Module 2 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Nov 2018 14:57:52 +0000</lastBuildDate>
+    
+	<atom:link href="https://ironhackbcn.github.io/web-cheatsheet/module2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ES 6</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/1-es6/</link>
+      <pubDate>Mon, 12 Nov 2018 14:57:52 +0000</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/1-es6/</guid>
+      <description>Lecture Notes let const vs var  Temporal Dead Zone
+Arrow functions  const doSomething = (param1, param2) =&amp;gt; { return param1 + param2; }; const arr = [1, 2, 3, 4]; const newArr = arr.map((item) =&amp;gt; item + 1);  ⚠️ -&amp;gt; 🤯
+const makeAddNumFunction = (num1) =&amp;gt; (num2) =&amp;gt; addNumbers(num1, num2) const add2 = makeAddNumFunction(2)  Classes and inheritance class Foo { constructor(param1) { this.prop1 = param1; } method1() { console.</description>
+    </item>
+    
+    <item>
+      <title>Node</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/2-node/</link>
+      <pubDate>Mon, 12 Nov 2018 16:06:07 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/2-node/</guid>
+      <description>Lecture Notes  What is Node.js?
+ IT&amp;rsquo;S NOT A FRAMEWORK! runtime environment for running javascript in the backend (v8 engine) app can be an http server (runs &amp;ldquo;forever&amp;rdquo;) runs javascript, same as browser (but no window, no DOM) node callbacks convention (err, result) =&amp;gt; { &amp;hellip; } has some built-in modules like fs, process, path and http  Modules
+ every js file is a module every file has it&amp;rsquo;s own scope (no global scope) npm packages are also modules for our files: in folder/mymodule.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB Introduction</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/3-mongo-introduction/</link>
+      <pubDate>Mon, 12 Nov 2018 16:08:18 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/3-mongo-introduction/</guid>
+      <description>Lecture Notes  database rdbms vs object     id (Employee Code) name Language     3212 John Spanish   4324 Willy English   6542 James French     collections documents relations data modeling/domains crud query atomic operations(update operators)  databases - collections - documents - what is schemaless, mongo does not care how the data looks like - we will add schemas on the nodejs, it will run on our express app - the difference with sql and how it stores data in tables - examples being: mysql, postgres, mssql - when adding an incomplete row to sql it will not accept it - adding a new row can be done but is cumbersome - very restrictive, e.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB Data Models</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/4-mongo-data-models/</link>
+      <pubDate>Fri, 28 Dec 2018 16:20:29 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/4-mongo-data-models/</guid>
+      <description> Lecture Notes  Documents Structure Kind Relations Documents  Embedded Documents Refering Documents  Relations  1:1 1:N 1:few 1:N 1:many N:M   Resources  6-rules-of-thumb-for-mongodb-schema-design-part-1 6-rules-of-thumb-for-mongodb-schema-design-part-2 thinking-documents-part-1 thinking-documents-part-2 Data modelling e-commerce  Ironhack Learning Unit  MongoDB Data Models MongoDB Indexes and Aggregation Framework  </description>
+    </item>
+    
+    <item>
+      <title>MongoDB CRUD operations</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/5-mongo-crud/</link>
+      <pubDate>Fri, 28 Dec 2018 16:18:07 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/5-mongo-crud/</guid>
+      <description>Lecture Notes mongo shell    Database Command Explanation     show dbs List all the databases inside our mongo server   use &amp;lt;dbName&amp;gt; This will switch to the database dbName or create it if it doesn&amp;rsquo;t exist   db Show the name of the current database   show collections List all the collections inside the current database    importing data from json $ mongoimport \ --db users \ --collection contacts \ --type csv \ --headerline \ --file contacts.</description>
+    </item>
+    
+    <item>
+      <title>Express Introduction</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/6-express-introduction/</link>
+      <pubDate>Mon, 12 Nov 2018 16:07:20 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/6-express-introduction/</guid>
+      <description> Lecture Notes  Static Files
+ Installations
+ nodemon eslint express-generator debugger  Code explanation
+ HTTP Verbs
+ Get Post   Resources  Expressjs Official Docs  Ironhack Learning Unit  Express Basic site @todo notes and links  </description>
+    </item>
+    
+    <item>
+      <title>Express Dynamic Views</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/7-express-dynamic-views/</link>
+      <pubDate>Fri, 28 Dec 2018 16:23:42 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/7-express-dynamic-views/</guid>
+      <description> Lecture notes  Explain concept dinamic views Engine Templating  handlebars ejs  Working with templates (helpers)  if each   setting up ejs $ npm install --save ejs  app.js
+const app = express(); ... app.set(&#39;view engine&#39;, &#39;ejs&#39;); app.set(&#39;views&#39;, path.join(__dirname, &#39;/views&#39;)); ...  don&amp;rsquo;t forget to create folders views and file index.ejs inside
+How to use it
+app.get(&#39;/&#39;, (req, res, next) =&amp;gt; { res.render(&#39;index&#39;); })  Resources  handlebars JS EJS  Ironhack Learning Unit  Express Dynamic Views  </description>
+    </item>
+    
+    <item>
+      <title>Express Layouts Partials</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/8-express-layouts-partials/</link>
+      <pubDate>Fri, 28 Dec 2018 16:24:48 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/8-express-layouts-partials/</guid>
+      <description>Lecture notes  What is a Layout? What is a Partial? Partial Set-up Passing Parameters  setting up layouts * *app.js**
+const expressLayouts = require(&#39;express-ejs-layouts&#39;); ... app.set(&#39;view engine&#39;, &#39;ejs&#39;); app.set(&#39;layout extractScripts&#39;, true) // see Documentation app.set(&#39;layout extractStyles&#39;, true) // see Documentation app.set(&#39;layout extractMetas&#39;, true) // see Documentation app.set(&#39;layout&#39;, &#39;layouts/main&#39;); // custom layout app.use(expressLayouts); ...  create the layout view main.ejs in views/layouts/ folder
+create the following structure
+views ├── .</description>
+    </item>
+    
+    <item>
+      <title>Promises</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/9-promises/</link>
+      <pubDate>Mon, 12 Nov 2018 16:09:30 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/9-promises/</guid>
+      <description>Lecture Notes  What is a Promise? syntax
+ instead of do((err, result) =&amp;gt; {}); do().then(result =&amp;gt; { ... handle result ... }).catch(err =&amp;gt; { ... handle error ... })  promise as a variable
+ const promiseToDoSomething = doSomething() can be passed around can be stored, useful for accessing unresolved/cached results with only one (async) syntax  Create Promises
+ Promise.All
+Promise.all(promises).then(results =&amp;gt; { /* results is array with resolves values of all promises, in same order */ }  Promise.</description>
+    </item>
+    
+    <item>
+      <title>Mongoose Introduction</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/10-mongoose-introduction/</link>
+      <pubDate>Fri, 28 Dec 2018 16:30:59 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/10-mongoose-introduction/</guid>
+      <description> Lecture Notes  What is mongoosejs Design Pattern Model-View-Controller aka MVC Mongoose Setup  Basic introduction   Resources Ironhack Learning Unit </description>
+    </item>
+    
+    <item>
+      <title>Mongoose Schemas Models</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/11-mongoose-schemas-models/</link>
+      <pubDate>Fri, 28 Dec 2018 16:31:27 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/11-mongoose-schemas-models/</guid>
+      <description> Lecture Notes  Schemas Link  Types Link Validations Link  Model Link  Methods (CRUD) Reference  Documents Link  Subdocument Link Methods Reference   Resources Ironhack Learning Unit </description>
+    </item>
+    
+    <item>
+      <title>Mongoose Relationships</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/12-mongoose-relationships/</link>
+      <pubDate>Fri, 28 Dec 2018 16:35:19 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/12-mongoose-relationships/</guid>
+      <description>Lecture Notes Relations 1:1 user
+const mongoose = require(&amp;quot;mongoose&amp;quot;); const Schema = mongoose.Schema; const userSchema = new Schema({ username: { type: String, required: true }, password: { type: String, required: true }, }, { timestamps: true }); const User = mongoose.model(&#39;User&#39;, userSchema); module.exports = User;  event
+const mongoose = require(&#39;mongoose&#39;); const Schema = mongoose.Schema; const ObjectId = Schema.Types.ObjectId; const homeSchema = new Schema({ name: String, owner: { type: ObjectId, ref: &#39;User&#39; } }); const Home = mongoose.</description>
+    </item>
+    
+    <item>
+      <title>Express Get - Post Methods</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/13-express-get-post/</link>
+      <pubDate>Fri, 28 Dec 2018 16:33:52 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/13-express-get-post/</guid>
+      <description> Lecture Notes  HTTP Verbs
+ Get Post  Route Params
+ Query Strings
+ Request Body
+  Resources Ironhack Learning Unit </description>
+    </item>
+    
+    <item>
+      <title>Express Generator</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/14-express-generator/</link>
+      <pubDate>Fri, 28 Dec 2018 16:38:14 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/14-express-generator/</guid>
+      <description> Lecture Notes  Express Generator Middleware Pattern  Resources Ironhack Learning Unit </description>
+    </item>
+    
+    <item>
+      <title>Express Mongoose Crud</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/15-express-mongoose-crud/</link>
+      <pubDate>Fri, 28 Dec 2018 16:40:18 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/15-express-mongoose-crud/</guid>
+      <description> Lecture Notes  Put all things toguether CRUD  Resources Ironhack Learning Unit </description>
+    </item>
+    
+    <item>
+      <title>Authorization</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/16-authorization/</link>
+      <pubDate>Fri, 28 Dec 2018 16:42:11 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/16-authorization/</guid>
+      <description>Lecture Notes User Model
+// models/user.js const mongoose = require(&amp;quot;mongoose&amp;quot;); const Schema = mongoose.Schema; const userSchema = new Schema({ username: String, password: String }, { timestamps: true }); const User = mongoose.model(&amp;quot;User&amp;quot;, userSchema); module.exports = User;  signup form view
+&amp;lt;!-- views/auth/signup.ejs --&amp;gt; &amp;lt;form id=&amp;quot;form&amp;quot; action=&amp;quot;/signup&amp;quot; method=&amp;quot;POST&amp;quot;&amp;gt; &amp;lt;label for=&amp;quot;username&amp;quot;&amp;gt;Username&amp;lt;/label&amp;gt;&amp;lt;br&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;username&amp;quot; placeholder=&amp;quot;Your username&amp;quot;&amp;gt; &amp;lt;label for=&amp;quot;password&amp;quot;&amp;gt;Password&amp;lt;/label&amp;gt;&amp;lt;br&amp;gt; &amp;lt;input type=&amp;quot;password&amp;quot; name=&amp;quot;password&amp;quot; placeholder=&amp;quot;********&amp;quot;&amp;gt; &amp;lt;% if (errorMessage) { %&amp;gt; &amp;lt;div class=&amp;quot;error-message&amp;quot;&amp;gt; &amp;lt;%= errorMessage %&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;% } %&amp;gt; &amp;lt;button type=&amp;quot;submit&amp;quot;&amp;gt;Create account&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt;  Signup Controller</description>
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/17-authentication/</link>
+      <pubDate>Fri, 28 Dec 2018 16:42:25 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/17-authentication/</guid>
+      <description>Lecture Notes setting up Session $ npm install --save express-session connect-mongo  app.js
+const session = require(&#39;express-session&#39;); const MongoStore = require(&#39;connect-mongo&#39;)(session); ... app.use(session({ store: new MongoStore({ mongooseConnection: mongoose.connection, ttl: 24 * 60 * 60 // 1 day }), secret: &#39;some-string&#39;, resave: true, saveUninitialized: true, cookie: { maxAge: 24 * 60 * 60 * 1000 } })); ...  currentUser middleware
+// Makes the currentUser available in every page // note1: currentUser needs to match whatever you use in login/signup/logout routes // note2: if using passport, req.</description>
+    </item>
+    
+    <item>
+      <title>API</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/18-api/</link>
+      <pubDate>Fri, 28 Dec 2018 16:48:24 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/18-api/</guid>
+      <description> Lecture Notes Resources Ironhack Learning Unit </description>
+    </item>
+    
+    <item>
+      <title>AJAX</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/19-ajax/</link>
+      <pubDate>Fri, 28 Dec 2018 16:48:30 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/19-ajax/</guid>
+      <description> Lecture Notes Resources Ironhack Learning Unit </description>
+    </item>
+    
+    <item>
+      <title>Deploy</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/20-deploy/</link>
+      <pubDate>Fri, 28 Dec 2018 16:48:45 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/20-deploy/</guid>
+      <description> Lecture Notes Resources Ironhack Learning Unit </description>
+    </item>
+    
+    <item>
+      <title>Flash Notifications</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/flash/</link>
+      <pubDate>Fri, 28 Dec 2018 16:48:45 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/flash/</guid>
+      <description>link connect-flash
+$ npm install --save connect-flash  connect-flash use session in order to work.
+app.js
+const flash = require(&#39;connect-flash&#39;); ... // session configuration middleware app.use(flash()); ...  Examples in routes
+router.get(&#39;/flash&#39;, function(req, res){ // Set a flash message by passing the key, followed by the value, to req.flash(). req.flash(&#39;info&#39;, &#39;Flash is back!&#39;) res.redirect(&#39;/&#39;); }); router.get(&#39;/&#39;, function(req, res){ // Get an array of flash messages by passing the key to req.</description>
+    </item>
+    
+    <item>
+      <title>Project Readme</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/project/</link>
+      <pubDate>Fri, 28 Dec 2018 16:48:45 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/project/</guid>
+      <description># Project Name ## Description Describe your project in one/two lines. ## User Stories - **404** - As a user I want to see a nice 404 page when I go to a page that doesn’t exist so that I know it was my fault - **500** - As a user I want to see a nice error page when the super team screws it up so that I know that is not my fault - **homepage** - As a user I want to be able to access the homepage so that I see what the app is about and login and signup - **sign up** - As a user I want to sign up on the webpage so that I can see all the events that I could attend - **login** - As a user I want to be able to log in on the webpage so that I can get back to my account - **logout** - As a user I want to be able to log out from the webpage so that I can make sure no one will access my account - **events list** - As a user I want to see all the events available so that I can choose which ones I want to attend - **events create** - As a user I want to create an event so that I can invite others to attend - **events detail** - As a user I want to see the event details and attendee list of one event so that I can decide if I want to attend - **event attend** - As a user I want to be able to attend to event so that the organizers can count me in ## Backlog List of other features outside of the MVPs scope User profile: - see my profile - upload my profile picture - see other users profile - list of events created by the user - list events the user is attending Geo Location: - add geolocation to events when creating - show event in a map in event detail page - show all events in a map in the event list page Homepage - .</description>
+    </item>
+    
+  </channel>
+</rss>

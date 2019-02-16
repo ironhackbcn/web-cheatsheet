@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LABS on </title>
+    <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/</link>
+    <description>Recent content in LABS on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Nov 2018 11:40:30 +0100</lastBuildDate>
+    
+	<atom:link href="https://ironhackbcn.github.io/web-cheatsheet/module1/labs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSS Flexbox Slack</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-flexbox-slack.md/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-flexbox-slack.md/</guid>
+      <description>Link:  https://github.com/ironhack-labs/lab-css-flexbox-slack
+Purpose: Practise css flex-box
+ Practise css responsive design with media queries
+What they do in the exercise: Clone the given page
+ I1: mobile first with menu burger
+ I2: small screen
+ I3: medium screen
+ I4: Large screen
+Good practices: Mobile first
+ Flex-box instead of float
+ Use element tags like &amp;lt;header&amp;gt;, &amp;lt;section&amp;gt;, etc instead of &amp;lt;div&amp;gt;
+ Navbar menu should be a &amp;lt;ul&amp;gt;; perfect case to apply a descendant selector</description>
+    </item>
+    
+    <item>
+      <title>CSS Instagram Clone</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-instagram-clone/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-instagram-clone/</guid>
+      <description>Link:  https://github.com/ironhack-labs/lab-css-instagram-clone
+Purpose: Practise css positioning (with float).
+ Play with css box-model.
+What they do in the exercise: Clone the given page.
+  Good practices:  Use element tags like &amp;lt;header&amp;gt;, &amp;lt;section&amp;gt;, etc. instead of &amp;lt;div&amp;gt;. Use relative paths for the images. Use css reset. Make the classes reusable. Name classes with kebab-case instead of camelCase. IDs are just for targeting single elements that won&amp;rsquo;t be repeated.</description>
+    </item>
+    
+    <item>
+      <title>CSS Recipes Clone</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-recipes-clone/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-recipes-clone/</guid>
+      <description>Link:  https://github.com/ironhack-labs/lab-css-recipes-clone
+Purpose: Practise with the HTML fundamentals: block / inline elements
+ Practise with the CSS fundamentals: selectors, colors &amp;amp; backgrounds.
+What they do in the exercise: Clone the given pages.
+Good practices: Use semantic tags like , , etc. instead of .
+ Make the classes reusable.
+ Name classes with kebab-case instead of camelCase.
+ Don&amp;rsquo;t style tags like .
+ Use relative paths for the images.</description>
+    </item>
+    
+    <item>
+      <title>CSS Spotify Clone</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-spotify-clone/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-spotify-clone/</guid>
+      <description>Link:  https://github.com/ironhack-labs/lab-css-spotify-clone
+Purpose: Practise css selectors
+ Practise css transitions and animations
+What they do in the exercise: Clone the given page
+ Use at least one descendant selector and one multiple selector
+ Animate the logo when hover
+Good practices: Use element tags like &amp;lt;header&amp;gt;, &amp;lt;section&amp;gt;, etc instead of &amp;lt;div&amp;gt;
+ Navbar menu should be a &amp;lt;ul&amp;gt;; perfect case to apply a descendant selector
+ Use relative paths for the images</description>
+    </item>
+    
+    <item>
+      <title>Canvas Flappy Birds</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-flappybirds/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-flappybirds/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-canvas-flappybirds  Purpose:  Understand how to create a minimal game  What they do in the exercise:  I1: Create canvas element, and it&amp;rsquo;s background I2: Create the Player constructor with the methods indicated I3: Create obstacles and store them in an array I4: Create the draw function to update the canvas I5: Colision detection Bonus: Add points counter  Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Canvas Hangman</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-hangman/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-hangman/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-canvas-hangman  Purpose:  Understand how to use basic canvas methods  What they do in the exercise: Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Canvas Race Car</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-race-car/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-race-car/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-canvas-race-car  Purpose:  Understand how basic animations works in canvas  What they do in the exercise: Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Cloning with Bootstrap</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-bootstrap-cloning-revera/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-bootstrap-cloning-revera/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-bootstrap-cloning-revera
+Purpose:  How to use a style framework like bootscrap/boobsgrab Understand how to integrate components Use the 12 column grid   What they do in the exercise: Good practices:  Warning: Don&amp;rsquo;t go straight on to the carousel. Do the layout and leave it for last  Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Koans Lab</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-koans/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-koans/</guid>
+      <description> JS | Koans Lab Link:  https://github.com/ironhack-labs/lab-javascript-koans
+Purpose: Understand how a test work.
+ Understand how the javascript types react with another ones by different kind of comparations
+What they do in the exercise:  Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Memory Game</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-memory-game/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-memory-game/</guid>
+      <description> JS | Memory Game Link:  https://github.com/ironhack-labs/lab-javascript-memory-game
+Purpose: Deal with DOM manipulation
+What they do in the exercise:  Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>Pizza Builder</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-jquery-pizza-builder/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-jquery-pizza-builder/</guid>
+      <description> JS | Pizza Builder Link:  https://github.com/ironhack-labs/lab-jquery-pizza-builder
+Purpose: Understand how to use a library like jquery and find resource on the official documentation
+What they do in the exercise:  Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+    <item>
+      <title>LAB Slack clone</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone/</link>
+      <pubDate>Mon, 12 Nov 2018 11:57:46 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone/</guid>
+      <description>Slack Clone Clone the mobile version of Slack</description>
+    </item>
+    
+    <item>
+      <title>Javascript Basic Algorithms</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-basic-algorithms/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-basic-algorithms/</guid>
+      <description>Javascript Basic Algorithms Link:  https://github.com/ironhack-labs/lab-javascript-basic-algorithms
+Purpose: Practise with the Javascript fundamentals: variables, conditionals and loops. Play with string properties
+What they do in the exercise: I1: Create and call variables
+ I2: Conditionals
+ I3: Loops
+ BONUS: Play with strings and concepts learnt
+Good practices: Pay attention to the syntax, naming and indentation.
+ Start investigating some methods like .toUpperCase()
+  Issues:  They have to work in repl.</description>
+    </item>
+    
+    <item>
+      <title>LAB Slack clone responsive</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone-responsive/</link>
+      <pubDate>Mon, 12 Nov 2018 11:57:46 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone-responsive/</guid>
+      <description> Slack Clone </description>
+    </item>
+    
+    <item>
+      <title>LAB Card</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-card/</link>
+      <pubDate>Mon, 12 Nov 2018 11:57:46 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-card/</guid>
+      <description> Lab Card </description>
+    </item>
+    
+    <item>
+      <title>Functions and Arrays</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-functions-and-arrays/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-functions-and-arrays/</guid>
+      <description>JS | Functions &amp;amp; Arrays Link:  https://github.com/ironhack-labs/lab-javascript-functions-and-arrays
+Purpose: Get used to functions syntax
+ Start to idealize the function as pseudo-code and write down on paper the steps. Break it down
+ Practise with functions arguments and return, and with the scope
+ Play with arrays and their basic methods: push, pop, unshift, shift, splice, forEach
+What they do in the exercise: first contact with Jasmine testing
+ function that returns the largest number between 2</description>
+    </item>
+    
+    <item>
+      <title>LAB Slack CSS</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone-css/</link>
+      <pubDate>Mon, 12 Nov 2018 11:57:46 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone-css/</guid>
+      <description> Slack Clone </description>
+    </item>
+    
+    <item>
+      <title>Javascript Clue</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-clue/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-clue/</guid>
+      <description>Javascript Clue Link:  https://github.com/ironhack-labs/lab-javascript-clue
+Purpose: Play with arrays and objects
+ Oportunity or practice with shortcuts on VSCode
+What they do in the exercise: I1: store the given data into objects and put them into diferent arrays depending on each type
+ I2: pick one object of each array randomly
+ I3: display the result
+Good practices: keep the structure organised
+ don&amp;rsquo;t put comma after the last property of the object</description>
+    </item>
+    
+    <item>
+      <title>Vikings</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-vikings/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-vikings/</guid>
+      <description>Javascript Vikings @TODO Link:  https://github.com/ironhack-labs/lab-javascript-vikings
+Purpose: Practise with object oriented (constructors, inheritance and methods).
+What they do in the exercise: I1: create Soldier constructor.
+ I2: create Viking constructor implementing Soldier constructor.
+ I3: create Saxon constructor implementing Soldier constructor.
+ I4: create War constructor, where you can add vikings and saxons, make them attack and see the status.
+Good practices: Keep the structure: first constructor, then prototype methods.</description>
+    </item>
+    
+    <item>
+      <title>Javascript All Time Movies</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-all-times-movies/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-all-times-movies/</guid>
+      <description>@TODO
+Link:  https://github.com/ironhack-labs/lab-javascript-all-times-movies
+Purpose: Practise arrays advanced methods: map, reduce, filter, sort
+What they do in the exercise: I1: change duration of all movies (map)
+ I2: get all rates average (reduce)
+ I3: average rate of just drama movies (filter + reduce)
+ I4: order movies by duration (sort)
+ I5: get drama when SS is the director
+ I6: sort all movies alphabetically and return a list of first 20</description>
+    </item>
+    
+    <item>
+      <title>DOM Ironhack Cart</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-dom-ironhack-cart/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-dom-ironhack-cart/</guid>
+      <description>@TODO
+Link:  https://github.com/ironhack-labs/lab-dom-ironhack-cart  Purpose:  Learn how to select DOM elements and manipulate them
+What they do in the exercise: I1: create a product in the cart and create a button that calculates total prize
+ I2: create another product
+ I3: calculate the total prize of the cart
+ I4: deleting the products
+ I5: create a field to add new products
+Good practices: names have to be self-explaining</description>
+    </item>
+    
+    <item>
+      <title>Chronometer</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-chronometer/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-chronometer/</guid>
+      <description>Chronometer Link:  https://github.com/ironhack-labs/lab-javascript-chronometer
+Purpose: Understand asynchronus functions and callbacks.
+What they do in the exercise: Iteration 1 create a interval
+ DOM manipulation from interation 2 to the end.
+Good practices: use var var self = this for no lose the context
+ naming
+ indentation
+  Issues:  use globals variables setInterval only is used once without complexity. All the set methods from the chronometer aren&amp;rsquo;t setters.</description>
+    </item>
+    
+    <item>
+      <title>JS | Advanced Algorithms</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-advanced-algorithms/</link>
+      <pubDate>Mon, 12 Nov 2018 12:25:51 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-advanced-algorithms/</guid>
+      <description> Link:  https://github.com/ironhack-labs/lab-javascript-advanced-algorithms
+Purpose: how context works
+ how scope works
+What they do in the exercise:  Good practices: Issues: Suggestion: Typos: </description>
+    </item>
+    
+  </channel>
+</rss>
