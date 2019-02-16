@@ -9,9 +9,9 @@ sections:
   label: Folder
   create: all
   match: "**/*"
-  new_doc_ext: _index
+  new_doc_ext: ''
   templates:
-  - chapter
+  - default
 - type: directory
   path: content/Setup
   label: Setup
