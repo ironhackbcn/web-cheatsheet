@@ -217,9 +217,9 @@ color: rgb(3, 150, 255);
 }
 ```
 
-![](/lab-card.png)
+![](/web-cheatsheet/upload/lab-card.png)
 
-## Resources
+## Resource
 
 ## Tools
 
