@@ -9,7 +9,7 @@ sections:
   label: Folder
   create: all
   match: "**/*"
-  new_doc_ext: '20190215165049'
+  new_doc_ext: ".md"
   templates:
   - chapter
   - default
