@@ -7,7 +7,6 @@ sections:
 - type: document
   path: test/_index.md
   label: test
-  match: "**/*"
 - type: directory
   path: content/folder
   label: Folder
