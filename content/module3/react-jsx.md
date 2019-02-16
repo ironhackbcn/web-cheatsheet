@@ -226,7 +226,7 @@ color: rgb(3, 150, 255);
 }
 ```
 
-![test](/media/test.png?width=300px)
+![test](/lab-card.png?width=300px)
 
 
 ## Resources
