@@ -27,4 +27,4 @@ fields:
   name: chapter
   description: is the chapter
 pages:
-- content/folder/titulo-de-la-seccion.20190215165049
+- content/folder/_index.md.20190215165049
