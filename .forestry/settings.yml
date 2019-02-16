@@ -5,11 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: content/folder
+  path: content/Folder
   label: Folder
   create: all
   match: "**/*"
-  new_doc_ext: '20190215165049'
+  new_doc_ext: ''
   templates:
   - chapter
   - default
