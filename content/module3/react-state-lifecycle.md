@@ -1,13 +1,11 @@
 ---
-title: "React State Lifecycle"
-date: 2018-11-26T16:43:59+01:00
+title: React State Lifecycle
+date: 2018-11-26 15:43:59 +0000
 week: 7
 day: 1
-draft: false
 weight: 5
-# pre: "<b>5. </b>"
----
 
+---
 ## Learning Objectives
 
 ## Resources
@@ -20,4 +18,3 @@ weight: 5
 ## Ironhack Learning Unit
 
 ## Futher Reading
-
