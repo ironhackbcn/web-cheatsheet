@@ -365,7 +365,7 @@ Issues: Suggestion: Typos: </description>
     <item>
       <title>React State Lifecycle</title>
       <link>https://ironhackbcn.github.io/web-cheatsheet/module3/react-state-lifecycle/</link>
-      <pubDate>Mon, 26 Nov 2018 16:43:59 +0100</pubDate>
+      <pubDate>Mon, 26 Nov 2018 15:43:59 +0000</pubDate>
       
       <guid>https://ironhackbcn.github.io/web-cheatsheet/module3/react-state-lifecycle/</guid>
       <description> Learning Objectives Resources  https://reactjs.org/docs/react-component.html#state https://medium.freecodecamp.org/handling-state-in-react-four-immutable-approaches-to-consider-d1f5c00249d5  Tools Ironhack Learning Unit Futher Reading </description>
