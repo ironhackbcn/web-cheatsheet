@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: test/_index.md
-  label: test
 - type: directory
   path: content/folder
   label: Folder
