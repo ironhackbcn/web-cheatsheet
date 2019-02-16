@@ -1,25 +1,23 @@
 ---
-title: "React JSX"
-date: 2018-11-26T16:33:14+01:00
+title: React JSX
+date: 2018-11-26 15:33:14 +0000
 week: 7
 day: 1
-draft: false
 weight: 3
 pre: "<b>3. </b>"
----
 
+---
 ## Learning Objectives
 
-- Understand what JSX is and why we use it in React.
-- Create JSX elements and use them in your React App.
-- Embed expressions in JSX.
+* Understand what JSX is and why we use it in React.
+* Create JSX elements and use them in your React App.
+* Embed expressions in JSX.
 
 ## What is JSX?
 
-- This funny tag syntax is neither a string nor HTML.
-- JSX may remind you of a template language, but it comes with the full power of JavaScript.
-- JSX produces React "elements".
-
+* This funny tag syntax is neither a string nor HTML.
+* JSX may remind you of a template language, but it comes with the full power of JavaScript.
+* JSX produces React "elements".
 
 ## Embedding Expressions
 
@@ -93,12 +91,10 @@ ReactDOM.render(<GetGreeting />, document.getElementById('root'));
 ```
 
 {{% notice warning %}}
-__An Element should return only one node__
+**An Element should return only one node**
 {{% /notice %}}
- 
 
------
-
+***
 
 ```javascript
 // Wrong 💣
@@ -111,9 +107,7 @@ const getGreeting = (user) => {
 }
 ```
 
------------
-
-
+***
 
 ```javascript
 // Correct 👍
@@ -126,7 +120,6 @@ return (
     </div>
   );
 }
-
 ```
 
 ## CSS - ClassName and Style
@@ -173,21 +166,21 @@ document.getElementById('root')
 );
 ```
 
-> **[info]**
+> **\[info\]**
 >
 > The Key could be anything but it should be unique
-
 
 ## Exercises (Card)
 
 [Exercise_01_lab Repo](https://github.com/zapatran/exercise_01_lab)
 
-- Create a new project
-- Delete content in `app.css`
-- Create a folder `/component` inside `src`
-- Create files `Card.js` and `Card.css` inside folder `components`.
+* Create a new project
+* Delete content in `app.css`
+* Create a folder `/component` inside `src`
+* Create files `Card.js` and `Card.css` inside folder `components`.
 
-__Card.css__
+**Card.css**
+
 ```css
 .card {
 width: 170px;
@@ -226,8 +219,7 @@ color: rgb(3, 150, 255);
 }
 ```
 
-![test](/lab-card.png?width=300px)
-
+![](/lab-card.png)
 
 ## Resources
 
