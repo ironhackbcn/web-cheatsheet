@@ -5,10 +5,6 @@ title = "React"
 weight = 1
 
 +++
-Aqui añadimos el temario
+hola
 
-\`\`\`javascript
-
-var hola = 'hola'
-
-\`\`\`
+    var hola = 'hola'
