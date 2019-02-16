@@ -5,4 +5,4 @@ title = "titulo de la seccion"
 weight = 1
 
 +++
-aqui la seccion
+aqui la seccion 
