@@ -91,6 +91,11 @@
   </url>
   
   <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/</loc>
+    <lastmod>2018-11-26T16:14:32+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/react-intro/</loc>
     <lastmod>2018-11-26T16:27:46+01:00</lastmod>
   </url>
@@ -568,12 +573,6 @@
   <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module1/adaptive/</loc>
     <lastmod>2018-11-12T11:36:07+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ironhackbcn.github.io/web-cheatsheet/</loc>
-    <lastmod>2018-11-26T16:14:32+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

@@ -1,0 +1,869 @@
+[
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/cheatsheet/",
+	"title": "CheatSheet",
+	"tags": [],
+	"description": "",
+	"content": " HTML boilerplate for html\n\u0026lt;!doctype html\u0026gt; \u0026lt;html lang=\u0026quot;en\u0026quot;\u0026gt; \u0026lt;head\u0026gt; \u0026lt;title\u0026gt;Hello, world!\u0026lt;/title\u0026gt; \u0026lt;meta charset=\u0026quot;utf-8\u0026quot;\u0026gt; \u0026lt;meta name=\u0026quot;viewport\u0026quot; content=\u0026quot;width=device-width, initial-scale=1, shrink-to-fit=no\u0026quot;\u0026gt; \u0026lt;link rel=\u0026quot;stylesheet\u0026quot; href=\u0026quot;styles/....\u0026quot;\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;h1\u0026gt;Hello World\u0026lt;/h1\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt;  CSS css example structure\nAlso you can use reset.css or normalize.css\n /* ---- reset ---- */ html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; } body { margin: 0; padding: 0; } /* ---- typography ---- */ body { color: #111; font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 147%; } h1 {} h2 {} h3 {} p { margin: 0; } /* ---- layout ---- */ #site-header { padding: 30px 0; color: white; background: #111; } #site-footer { color: white; padding: 60px 0; background: #111; } #site-main { margin-bottom: 60px; } .container { margin: 0 20px; } .section { margin-bottom: 20px; padding-top: 20px; } @media (min-width: 768px) { .container { max-width: 728px; margin: 0 auto; } } /* ---- components ---- */ .button { width: 100%; background-color: blue; color: #fff; border: 1px solid #fff } .button-alt { color: blue; background-color: #fff; } /* ---- section ---- */ section.testimonials { // ... } section.testimonials .button { margin-bottom: 10px; }  css best practices  code structure  reset first at least reset the box-sizing: border-box; and body\u0026rsquo;s margin: 0; typography next layout at least .container class components next page specifics last  KISS  avoid px widths, avoid heights margin bottom + padding top  DRY  use hierarchy \u0026lt;div class=\u0026quot;card\u0026quot;\u0026gt;\u0026lt;div class=\u0026quot;title\u0026quot;\u0026gt;... target via .card .title {} use composition combine classes class=\u0026quot;button primary\u0026quot; targeted via .button.primary {} use cascading specifics augment and override generics #login-button stronger than.button {} stronger than a {} @media (...) { a {} } stronger than a {} use inheritance type attributes (font-family, font-size, line-height, color, \u0026hellip;) trickle down from parent to children  semantic:  semantic css, classes named after what things ARE not what they LOOK LIKE e.g.: .copy, .site-header, .copyright, .email \u0026hellip;  clearing floats  overflow: hidden on the parent OR clear: both on a sibling after the floats  DO  short selectors e.g.: .header li  DON\u0026rsquo;t  use !important name classes after presentation e.g.: .green-text {}   html+css process best practices  planning a simple website mobile first unless desktop only sketch first identify patterns and components html next css last simplicity consistency  js best practices  start all files with 'use strict'; docs write small functions start from the return tidy code, idented and consistent DO  for literal strings, use 'single quotes' one statement per line (don\u0026rsquo;t do if (foo) { something() } all in one line) variables and function parameters use camelCase (e.g.: var topScores) functions, start with a verb, use verbCamelCase (e.g.: function setPosition (x,y) {}) for constructors use PascalCase (e.g.: function MovingObstacle() {})  DON\u0026rsquo;T  use global variables repeat yourself   "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/client-server-architecture/",
+	"title": "Client Server Architecture",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  Understand what JavaScript frameworks (and libraries) are and why we need them. Understand what a Single-Page Application (SPA) is.  Resources Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/1-es6/",
+	"title": "ES 6",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes let const vs var  Temporal Dead Zone\nArrow functions  const doSomething = (param1, param2) =\u0026gt; { return param1 + param2; }; const arr = [1, 2, 3, 4]; const newArr = arr.map((item) =\u0026gt; item + 1);  ⚠️ -\u0026gt; 🤯\nconst makeAddNumFunction = (num1) =\u0026gt; (num2) =\u0026gt; addNumbers(num1, num2) const add2 = makeAddNumFunction(2)  Classes and inheritance class Foo { constructor(param1) { this.prop1 = param1; } method1() { console.log('method 1'); } } class Bar extends Foo { constructor(param1, param2) { super(param1, param2) } method1() { console.log('method 1 redefined by Bar'); } method2() { console.log('method 2 added by Bar'); } }  Spread operator  array object  const parts = ['shoulders', 'knees']; const lyrics = ['head', ...parts, 'and', 'toes']; arr1 = [...arr1, ...arr2]; arr1 = [...arr2]  Template Literals const name = \u0026quot;joe\u0026quot; const text = ` \u0026lt;p\u0026gt;hello ${name}\u0026lt;/p\u0026gt; `;  Destructuring assignment const name = \u0026quot;foo\u0026quot;; const obj = { name }; console.log(obj.name);  const person = { name: \u0026quot;Ironhacker\u0026quot;, age: 25, favoriteMusic: \u0026quot;Metal\u0026quot;, address: { street: \u0026quot;Super Cool St\u0026quot;, number: 123, city: \u0026quot;Miami\u0026quot; } }; let { name, age, favoriteMusic, address: { street: newStreetVariableName } } = person;  Default values for function parameters function increment(number, incrementBy = 1) { return number + incrementBy; } console.log(increment(2, 2)); // 4 console.log(increment(2)); // 3  Best Practices  Always const, then let, never var Normally arrow functions Use template literals  Resources  ES6 Compatibility table ECMAScript MDN let MDN const MDN temporal dead zone MDN Arrow Functions MDN Classes MDN Spread Syntax MDN template strings new-es2018-features-every-javascript-developer-should-know  Practice  http://es6katas.org/ (some are hard)  Ironhack Learning Platform  LU - ES6 | Basics LU - ES6 | Advanced  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-flexbox-slack.md/",
+	"title": "CSS Flexbox Slack",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-css-flexbox-slack\nPurpose: Practise css flex-box\n Practise css responsive design with media queries\nWhat they do in the exercise: Clone the given page\n I1: mobile first with menu burger\n I2: small screen\n I3: medium screen\n I4: Large screen\nGood practices: Mobile first\n Flex-box instead of float\n Use element tags like \u0026lt;header\u0026gt;, \u0026lt;section\u0026gt;, etc instead of \u0026lt;div\u0026gt;\n Navbar menu should be a \u0026lt;ul\u0026gt;; perfect case to apply a descendant selector\n Use relative paths for the images\n Use css reset\n Make the classes reusable\n Name classes with kebab-case instead of camelCase\n IDs are just for targeting single elements that wont be repeated\n Don\u0026rsquo;t style element tags like \u0026lt;div\u0026gt; unless for resetting OR inside a class (e.g. .main h3 {})\n Use relative units like % instead of absolute like px for positioning\n You don\u0026rsquo;t finish to style an element until you\u0026rsquo;ve set its margin bottom / padding top\n  Issues:  Too much images and gifs in the explanation, it\u0026rsquo;s hard to understand\nSuggestion: It should have a PDF like the spotify clone Week1 Day3\nTypos:  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-instagram-clone/",
+	"title": "CSS Instagram Clone",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-css-instagram-clone\nPurpose: Practise css positioning (with float).\n Play with css box-model.\nWhat they do in the exercise: Clone the given page.\n  Good practices:  Use element tags like \u0026lt;header\u0026gt;, \u0026lt;section\u0026gt;, etc. instead of \u0026lt;div\u0026gt;. Use relative paths for the images. Use css reset. Make the classes reusable. Name classes with kebab-case instead of camelCase. IDs are just for targeting single elements that won\u0026rsquo;t be repeated. Don\u0026rsquo;t style element tags like div. Use relative units like vh,vw,% instead of absolute like px for positioning.  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-recipes-clone/",
+	"title": "CSS Recipes Clone",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-css-recipes-clone\nPurpose: Practise with the HTML fundamentals: block / inline elements\n Practise with the CSS fundamentals: selectors, colors \u0026amp; backgrounds.\nWhat they do in the exercise: Clone the given pages.\nGood practices: Use semantic tags like , , etc. instead of .\n Make the classes reusable.\n Name classes with kebab-case instead of camelCase.\n Don\u0026rsquo;t style tags like .\n Use relative paths for the images.\n IDs are just for targeting single elements that wont be repeated.\n Use css reset.\n Commit after each iteration.\n  Issues:  Both exercises are the same. They don\u0026rsquo;t learn anything in the second one.\nSuggestion:  Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-spotify-clone/",
+	"title": "CSS Spotify Clone",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-css-spotify-clone\nPurpose: Practise css selectors\n Practise css transitions and animations\nWhat they do in the exercise: Clone the given page\n Use at least one descendant selector and one multiple selector\n Animate the logo when hover\nGood practices: Use element tags like \u0026lt;header\u0026gt;, \u0026lt;section\u0026gt;, etc instead of \u0026lt;div\u0026gt;\n Navbar menu should be a \u0026lt;ul\u0026gt;; perfect case to apply a descendant selector\n Use relative paths for the images\n Use css reset\n Make the classes reusable\n Name classes with kebab-case instead of camelCase\n IDs are just for targeting single elements that wont be repeated\n Don\u0026rsquo;t style element tags like \u0026lt;div\u0026gt;\n Use relative units like vh,vw,% instead of absolute like px for positioning\n You don\u0026rsquo;t finish to style an element until you\u0026rsquo;ve set its margin bottom / padding top\n  Issues:  Not enough transitions/animations\nSuggestion:  Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-flappybirds/",
+	"title": "Canvas Flappy Birds",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-canvas-flappybirds  Purpose:  Understand how to create a minimal game  What they do in the exercise:  I1: Create canvas element, and it\u0026rsquo;s background I2: Create the Player constructor with the methods indicated I3: Create obstacles and store them in an array I4: Create the draw function to update the canvas I5: Colision detection Bonus: Add points counter  Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-hangman/",
+	"title": "Canvas Hangman",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-canvas-hangman  Purpose:  Understand how to use basic canvas methods  What they do in the exercise: Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-canvas-race-car/",
+	"title": "Canvas Race Car",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-canvas-race-car  Purpose:  Understand how basic animations works in canvas  What they do in the exercise: Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-bootstrap-cloning-revera/",
+	"title": "Cloning with Bootstrap",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-bootstrap-cloning-revera\nPurpose:  How to use a style framework like bootscrap/boobsgrab Understand how to integrate components Use the 12 column grid   What they do in the exercise: Good practices:  Warning: Don\u0026rsquo;t go straight on to the carousel. Do the layout and leave it for last  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/1-introduction/",
+	"title": "Introduction &amp; Welcome",
+	"tags": [],
+	"description": "",
+	"content": "Course Overview\nClass Guidelines\nMantras\nModule 1 Kick-off\nModule 1 Project Kick-off\nModule 2 Kick-off\nModule 2 Project Kick-off\nModule 3 Kick-off\nModule 3 Project Kick-off\n"
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-koans/",
+	"title": "Koans Lab",
+	"tags": [],
+	"description": "",
+	"content": " JS | Koans Lab Link:  https://github.com/ironhack-labs/lab-javascript-koans\nPurpose: Understand how a test work.\n Understand how the javascript types react with another ones by different kind of comparations\nWhat they do in the exercise:  Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-memory-game/",
+	"title": "Memory Game",
+	"tags": [],
+	"description": "",
+	"content": " JS | Memory Game Link:  https://github.com/ironhack-labs/lab-javascript-memory-game\nPurpose: Deal with DOM manipulation\nWhat they do in the exercise:  Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-jquery-pizza-builder/",
+	"title": "Pizza Builder",
+	"tags": [],
+	"description": "",
+	"content": " JS | Pizza Builder Link:  https://github.com/ironhack-labs/lab-jquery-pizza-builder\nPurpose: Understand how to use a library like jquery and find resource on the official documentation\nWhat they do in the exercise:  Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-es6/",
+	"title": "LAB es6 javascript koans",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-es6-javascript-koans\nPurpose: First touch with ES6 syntax to get aquainted and confortable\n Get a bit of insight on test writting\n  What they do in the exercise:  They are given a set of tests and they have to fix them in order for the tests to pass  Good practices: Issues:  Goes into concepts that are difficult to grasp at this time Some of the wording used is confused towards the halfway of the exercice \u0026ldquo;describe(\u0026lsquo;takes a position from where to start searching\u0026rsquo;)\u0026rdquo;  Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/setup/",
+	"title": "Setup",
+	"tags": [],
+	"description": "",
+	"content": " Setting up the environment Terminal environment ZSH HowTo install zsh in many platforms macOS brew install zsh zsh-completions  Assuming you have Homebrew installed. If not, most versions of macOS ship zsh by default, but it\u0026rsquo;s normally an older version.\nTry zsh --version before installing it from Homebrew. If it\u0026rsquo;s newer than 4.3.9 you might be OK. Preferably newer than or equal to 5.0.\nsh -c \u0026quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\u0026quot;  iTerm2 Software that enhance the functionality of the terminal.\nDownload Software\nFont inconsolata for powerline in order to see some git character. Link\nOh My ZSH oh-my-zsh\ninstalation\nsh -c \u0026quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\u0026quot;  Spaceship theme This is a theme for zsh. You can use the link in order to install the theme. Link\nNodeJS Link\n$ node -v v8.6.0 $ npm -v 5.3.0  VSCode Configuration file:\n{ \u0026quot;workbench.colorCustomizations\u0026quot;: { \u0026quot;activityBarBadge.background\u0026quot;: \u0026quot;#C6FF00\u0026quot;, \u0026quot;list.activeSelectionForeground\u0026quot;: \u0026quot;#C6FF00\u0026quot;, \u0026quot;list.inactiveSelectionForeground\u0026quot;: \u0026quot;#C6FF00\u0026quot;, \u0026quot;list.highlightForeground\u0026quot;: \u0026quot;#C6FF00\u0026quot;, \u0026quot;scrollbarSlider.activeBackground\u0026quot;: \u0026quot;#C6FF0050\u0026quot;, \u0026quot;editorSuggestWidget.highlightForeground\u0026quot;: \u0026quot;#C6FF00\u0026quot;, \u0026quot;textLink.foreground\u0026quot;: \u0026quot;#C6FF00\u0026quot;, \u0026quot;progressBar.background\u0026quot;: \u0026quot;#C6FF00\u0026quot;, \u0026quot;pickerGroup.foreground\u0026quot;: \u0026quot;#C6FF00\u0026quot;, \u0026quot;tab.activeBorder\u0026quot;: \u0026quot;#C6FF00\u0026quot; }, \u0026quot;materialTheme.cache.workbench.settings\u0026quot;: { \u0026quot;accent\u0026quot;: \u0026quot;Acid Lime\u0026quot;, \u0026quot;themeColours\u0026quot;: \u0026quot;Default\u0026quot;, \u0026quot;accentPrevious\u0026quot;: \u0026quot;Orange\u0026quot; }, \u0026quot;workbench.colorTheme\u0026quot;: \u0026quot;Material Theme\u0026quot;, \u0026quot;editor.fontFamily\u0026quot;: \u0026quot;Operator Mono\u0026quot;, \u0026quot;editor.fontSize\u0026quot;: 16, \u0026quot;editor.wordWrap\u0026quot;: \u0026quot;off\u0026quot;, \u0026quot;pasteAndIndent.selectAfter\u0026quot;: true, \u0026quot;editor.formatOnPaste\u0026quot;: true, \u0026quot;editor.tabSize\u0026quot;: 2, \u0026quot;editor.insertSpaces\u0026quot;: true, \u0026quot;editor.detectIndentation\u0026quot;: true }  Download the font Operator Mono. [Link]()\nplugins List of plugins.\nES7 React/Redux/React-Native/JS snippets ESLint Markdown Preview Enhanced markdownlint Material Theme Paste and Indent\nanother theme could be citylights;\nJSHint How to install JShint in code Link\nThis plugin needs the jshint package installed globally\nnpm install -g jshint  ESLint Link\nIn order to use eslint we need to install eslint package.\nnpm install -g eslint  And we will need to create the configuration file .eslintrc.json in your project folder. In this file we will set up all the options and rules that we will apply to our project.\nBecause we don\u0026rsquo;t want to review all the rules available we will install some differents packages with differents rules applied.\nAirbnb\nWalmart\nnpm install -g eslint-plugin-import eslint-config-airbnb-base eslint-config-defaults  eslintrc.json { \u0026quot;extends\u0026quot;: [ \u0026quot;airbnb/base\u0026quot;, \u0026quot;defaults/rules/eslint/es6/off\u0026quot;], \u0026quot;rules\u0026quot;: { \u0026quot;no-console\u0026quot;: \u0026quot;off\u0026quot; } }  Emmet Check documentation link\nGit .gitconfig # This is Git's per-user configuration file. [user] name = \u0026lt;your name here\u0026gt; email = \u0026lt;write her your email without \u0026lt;\u0026gt; \u0026gt; [core] excludesfile = /Users/\u0026lt;your user name\u0026gt;/.gitignore_global editor = nano pager = cat [alias] lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all lg = !\u0026quot;git lg1\u0026quot;  .gitignore_global *~ .DS_Store *.orig settings.json xcuserdata xccheckout /node_modules/ .idea/workspace.xml .idea/tasks.xml .idea_modules/ encodings.xml .env    Attachments   materialshell-ocean.itermcolors  (8 ko)   materialshell-ocean.terminal  (9 ko)   operator mono.zip  (269 ko)    "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/shortcuts/",
+	"title": "Shortcuts",
+	"tags": [],
+	"description": "",
+	"content": " Chrome (MAC)    Function Shortcut     change between tabs ⌘ + ⌥ + arrow   open inspector ⌘ + ⇧ + i   reload page ⌘ + r   focus on navigation bar ⌘ + l   open new window ⌘ + n   open new tab ⌘ + t   close current tab ⌘ + w   open closed tab ⌘ + ⇧ + t   close chrome ⌘ + q    Terminal (MAC) Tabs and Windows    Function Shortcut     Fullscreen ⌘+ Enter   Previous Tab ⌘+ Left Arrow   Next Tab ⌘+ Right Arrow   Go to Tab ⌘ + Number   Go to Window ⌘ + Option + Number   Go to Split Pane by Direction ⌘ + Option + Arrow   Go to Split Pane by Order of Use ⌘ + ] , ⌘ + [   Split Window Horizontally (same profile) ⌘ + D   Split Window Vertically (same profile) ⌘ + d   Split Window Horizontally (new profile) Option + ⌘ + H   Split Window Vertically (new profile) Option + ⌘ + V   Set Mark ⌘ + M   Jump to Mark ⌘ + J    Basic Moves    Function Shortcut     Move back one character Ctrl + b   Move forward one character Ctrl + f   Delete current character Ctrl + d   Delete previous character Backspace   Undo Ctrl + -    Moving Faster    Function Shortcut     Move to the start of line Ctrl + a   Move to the end of line Ctrl + e   Move forward a word Option + f   Move backward a word Option + b   Clear the screen ⌘ + k    Copy and Paste    Function Shortcut     Copy from cursor to the end of line Ctrl + k   Copy from cursor to the end of word Option + d   Copy from cursor to the start of word Option + Backspace   Copy from cursor to previous whitespace Ctrl + w   Paste the last copied text Ctrl + w   Loop through and paste previously copy text Option + y   Loop through and paste the last argument of previous commands Option + .    Search the Command History    Function Shortcut     Search as you type Ctrl + r and type the search term; Repeat Ctrl + r to loop through result   Search the last remembered search term Ctrl + r twice   End the search at current history entry Ctrl + y   Cancel the search and restore original line Ctrl + g    VSCode (Sublime Text Keymap - MAC) Text Editing Beginner    Function Shortcut     Move line/selection up ⌃ + ⌘ + Up Arrow   Cut line ⌘ + X   Insert line after ⌘ + ↵   Insert line before ⇧ + ⌘ + ↵   Move line/selection down ⌃ + ⌘ + Down Arrow   Select line - repeat to select next lines ⌘ + L   Select word - repeat select others occurrences ⌘ + D   Go to matching parentheses ⌃ + M   Select all contents of the current parentheses ⇧ + ⌃ + M    Text Editing Intermediate    Function Shortcut     Indent current line(s) ⌘ + ]   Un-indent current line(s) ⌘ + [   Duplicate line(s) ⇧ + ⌘ + D   Comment/un-comment current line ⌘ + /   Block comment current selection ⌥ + ⌘ + /   Redo or repeat last keyboard shortcut command ⌘ + Y    Text Editing Advance    Function Shortcut     Delete from cursor to end of line ⌘ + K + ⌘ + K   Delete from cursor to start of line ⌘ + BACKSPACE   Paste and indent correctly ⇧ + ⌘ + V   Select next auto-complete suggestion ⌃ + SPACE   Soft undo ⌘ + U   Paste from history ⌥ + ⌘ + V    Text Navigation/Goto Anywhere    Function Shortcut     Quick-open files by name ⌘ + P   Goto symbol ⌘ + R   Goto line in current file ⌃ + G   Select current line ⌘ + L   Select between brackets ⇧ + ⌃ + M   Select current indentation ⇧ + ⌘ + J   Use selection for find ⌘ + E   Use selection for replace ⇧ + ⌘ + E   Expand selection to html tag ⇧ + ⌘ + A    Find/Replace    Function Shortcut     Find ⌘ + F   Find in files ⇧ + ⌘ + F   Find next ⌘ + G   Replace\u0026hellip; ⌥ + ⌘ + F   Find previous ⇧ + ⌘ + G   Incremental find ⌘ + I   Replace next ⌥ + ⌘ + E   Quick find ⌥ + ⌘ + G    General    Function Shortcut     Hide sublime text 3 ⌘ + H   Hide all other windows ⌥ + ⌘ + H   Toggle side bar ⌘ + K + ⌘ + B   Command prompt ⇧ + ⌘ + P   Open file ⌘ + O   Zoom in ⌘ + =   User settings ⌘ + ,   Zoom out ⌘ + -   Make a new sticky note ⇧ + ⌘ + Y   Save as\u0026hellip; ⇧ + ⌘ + S   Save all ⌥ + ⌘ + S   Show console ⌃ + Back tick   Enter/exit full screen ⌃ + ⌘ + F   Enter distraction free mode ⇧ + ⌃ + ⌘ + F   Spell check F6    Text manipulation    Function Shortcut     Transform to uppercase ⌘ + K + ⌘ + U   Transform to lowercase ⌘ + K + ⌘ + L   Delete line ⇧ + ⌃ + K   Join lines ⌘ + J   Close html tag ⌥ + ⌘ + .   Sort lines F5   Sort lines (case sensitive) ⌃ + F5    Split Window    Function Shortcut     Split view into two columns ⌥ + ⌘ + 2   Revert view to single column ⌥ + ⌘ + 1   Set view to grid (4 groups) ⌥ + ⌘ + 5   Jump to group 2 ⌃ + 2   Move file to group 2 ⇧ + ⌃ + 2   Split view into 3 columns ⌥ + ⌘ + 3   Split view into 4 columns ⌥ + ⌘ + 4   Split view into 2 rows ⇧ + ⌥ + ⌘ + 2   Split view into 3 rows ⇧ + ⌥ + ⌘ + 3   Jump to group 1 ⌃ + 1    "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/",
+	"title": "index",
+	"tags": [],
+	"description": "",
+	"content": " Header 1 Header 2 Header 3 Header 4 Header 5 Header 6 Paragraphs are separated by a blank line.\n2nd paragraph. Italic, bold, and monospace. Itemized lists look like:\n this one that one the other one  Note that \u0026mdash; not considering the asterisk \u0026mdash; the actual text content starts at 4-columns in.\n Block quotes are written like so.\nThey can span multiple paragraphs, if you like.\n Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., \u0026ldquo;it\u0026rsquo;s all in chapters 12\u0026ndash;14\u0026rdquo;). Three dots \u0026hellip; will be converted to an ellipsis. Unicode is supported. ☺\nA notice disclaimer\n An information disclaimer\n A tip disclaimer\n An warning disclaimer\n  Blockquotes can also be nested\u0026hellip; \u0026gt; \u0026hellip;by using additional greater-than signs right next to each other\u0026hellip; \u0026gt; \u0026gt; \u0026hellip;or with spaces between arrows.\n An h2 header Here\u0026rsquo;s a numbered list:\n first item second item third item  Note again how the actual text starts at 4 columns in (4 characters from the left side). Here\u0026rsquo;s a code sample:\n# Let me re-iterate ... for i in 1 .. 10 { do-something(i) }  As you probably guessed, indented 4 spaces. By the way, instead of indenting the block, you can use delimited blocks, if you like:\ndefine foobar() { print \u0026quot;Welcome to flavor country!\u0026quot;; }  (which makes copying \u0026amp; pasting easier). You can optionally mark the delimited block for Pandoc to syntax highlight it:\nimport time # Quick, count to ten! for i in range(10): # (but not *too* quick) time.sleep(0.5) print(i)  An h3 header Now a nested list:\n First, get these ingredients:\n carrots celery lentils  Boil some water.\n Dump everything in the pot and follow this algorithm:\nfind wooden spoon uncover pot stir cover pot balance wooden spoon precariously on pot handle wait 10 minutes goto first step (or shut off burner when done)  Do not bump wooden spoon or it will fall.\n  Notice again how text always lines up on 4-space indents (including that last line which continues item 3 above).\nHere\u0026rsquo;s a link to a website, to a local doc, and to a section heading in the current doc. Here\u0026rsquo;s a footnote 1.\nTables can look like this:\nName Size Material Color\nAll Business 9 leather brown Roundabout 10 hemp canvas natural Cinderella 11 glass transparent\nTable: Shoes sizes, materials, and colors.\n(The above is the caption for the table.) Pandoc also supports multi-line tables:\nKeyword Text\nred Sunsets, apples, and other red or reddish things.\ngreen Leaves, grass, frogs and other things it\u0026rsquo;s not easy being.\nA horizontal rule follows.\nHere\u0026rsquo;s a definition list:\napples : Good for making applesauce.\noranges : Citrus!\ntomatoes : There\u0026rsquo;s no \u0026ldquo;e\u0026rdquo; in tomatoe.\nAgain, text is indented 4 spaces. (Put a blank line between each term and its definition to spread things out more.)\nHere\u0026rsquo;s a \u0026ldquo;line block\u0026rdquo; (note how whitespace is honored):\n| Line one | Line too | Line tree\nand images can be specified like so:\nInline math equation: $\\omega = d\\phi / dt$. Display math should get its own line like so:\n$$I = \\int \\rho R^{2} dV$$\nAnd note that you can backslash-escape any punctuation characters which you wish to be displayed literally, ex.: `foo`, *bar*, etc.\n Some footnote text. [return]   "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-intro/",
+	"title": "React Intro",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  Understand what JavaScript frameworks (and libraries) are and why we need them. Render our first Hello World using React  Getting Started $ npm install -g create-react-app  Create a new app\n$ create-react-app \u0026lt;appName\u0026gt; $ cd \u0026lt;appName\u0026gt;  Scripts npm start =\u0026gt; Runs the app in development mode\nnpm test =\u0026gt; Execute the test runner\nnpm run build =\u0026gt; Builds the app for production and optimizes the build for the best performance\nnpm run eject =\u0026gt; ONE WAY! You CAN\u0026rsquo;T GO BACK it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project\nWebpack Webpack is a module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into a small number of bundles - often only one - to be loaded by the browser.\nResources  Webpack Concepts Documentation create-react-app  # My First Component\n Create a new project  $ create-react-app helloworld $ cd helloWorld   [danger] 💣\nThe name of application should be in lowercase\n Folder Structure my-app ├── README.md ├── node_modules ├── package.json ├── .gitignore ├── public │ └── favicon.ico │ └── index.html │ └── manifest.json └── src └── App.css └── App.js └── App.test.js └── index.css └── index.js └── logo.svg └── registerServiceWorker.js   [info] Info\nYou may create subdirectories inside src. For faster rebuilds, only files inside src are processed by Webpack. You need to put any JS and CSS files inside src, otherwise Webpack won’t see them.\n RenderDom import React from 'react'; import ReactDOM from 'react-dom'; import './index.css'; import App from './App'; import registerServiceWorker from './registerServiceWorker'; ReactDOM.render(\u0026lt;App /\u0026gt;, document.getElementById('root')); registerServiceWorker();  ReactDOM.render(\u0026lt;h1\u0026gt;hello World\u0026lt;/h1\u0026gt;, document.getElementById('root'));  Our First Component Functional Component ... const HelloWorld = () =\u0026gt; \u0026lt;h1\u0026gt;HelloWorld\u0026lt;/h1\u0026gt;; ReactDOM.render(\u0026lt;HelloWorld /\u0026gt;, document.getElementById('root'));  or\n... const HelloWorld = () =\u0026gt; { return (\u0026lt;h1\u0026gt;HelloWorld\u0026lt;/h1\u0026gt;) }; ReactDOM.render(\u0026lt;HelloWorld /\u0026gt;, document.getElementById('root'));  Class Component import React, { Component } from 'react'; ... class HelloWorld extends Component { render() { return ( \u0026lt;h1\u0026gt;HelloWorld\u0026lt;/h1\u0026gt; ); } } ReactDOM.render(\u0026lt;HelloWorld /\u0026gt;, document.getElementById('root')); registerServiceWorker();  Even we can do things like this.\n... class HelloWorld extends Component { render() { return ( \u0026lt;h1\u0026gt;HelloWorld\u0026lt;/h1\u0026gt; ); } } const element = \u0026lt;HelloWorld /\u0026gt;; ReactDOM.render(element, document.getElementById('root')); registerServiceWorker();  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/2-node/",
+	"title": "Node",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes  What is Node.js?\n IT\u0026rsquo;S NOT A FRAMEWORK! runtime environment for running javascript in the backend (v8 engine) app can be an http server (runs \u0026ldquo;forever\u0026rdquo;) runs javascript, same as browser (but no window, no DOM) node callbacks convention (err, result) =\u0026gt; { \u0026hellip; } has some built-in modules like fs, process, path and http  Modules\n every js file is a module every file has it\u0026rsquo;s own scope (no global scope) npm packages are also modules for our files: in folder/mymodule.js, to define what it exports  module.exports = ...  in another file use relative path to require it  const mymodule = require('./folder/mymodule')  for npm packages: const express = require(\u0026lsquo;express\u0026rsquo;)  Why Node.js\n Installing Node.js  NPM\n Installing Packages the console node command npm init (new projects only) npm install (after cloning existing project) npm install --save package-name development and production npm install --save-dev package-name only development npm install -g package-name (may require sudo) glabal install package.json (every node project needs one) NPM    always add \u0026ldquo;node_modules\u0026rdquo; to .gitignore 💣     main use case: http server\n other Node.js use cases, not only http servers\n node-sass, webpack, gulp, grunt babel   eslint in folder project\n$ eslint --init\n use popular style guide standard json  if you use standard replace .eslintrc.json with\n{ \u0026quot;extends\u0026quot;: \u0026quot;standard\u0026quot;, \u0026quot;env\u0026quot;: { \u0026quot;es6\u0026quot;: true, \u0026quot;node\u0026quot;: true }, \u0026quot;globals\u0026quot;: { \u0026quot;document\u0026quot;: false, \u0026quot;window\u0026quot;: false, \u0026quot;console\u0026quot;: false }, \u0026quot;rules\u0026quot;: { \u0026quot;indent\u0026quot;: [ 2, 2 ], \u0026quot;semi\u0026quot;: [ \u0026quot;error\u0026quot;, \u0026quot;always\u0026quot; ] } }  Resources  NPM image processing webscrapping cherio webscrapping puppeteer testing w/ nightwatch.js flying robots canvas art watering your plants how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code  Ironhack Learning Platform  LU Node Intro Node.js docs  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/2-html-intro/",
+	"title": "HTML Intro",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  What is HTML? DOM tree DOM nodes: root, ancestor, descendent, parent, child, sibling, elements html, head \u0026amp; body attributes and values self-closing tags semantic tags block vs inline elements How to structure web  Resources  element types\n MDN HTML guide\n MDN HTML reference\n Planning_a_simple_website\n html 5 best practices\n Chrome Dev Tools\n Screen Reader\n HTML Validator\n  Ironhack Learning Platform Introduction to HTML\n"
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone/",
+	"title": "LAB Slack clone",
+	"tags": [],
+	"description": "",
+	"content": " Slack Clone Clone the mobile version of Slack\n"
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-intro-node/",
+	"title": "LAB intro node",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-intro-node\nPurpose: First touch with nodeJS\n Get aquainted with using javascript and seeing be executed without a browser\n Learn more about testing and Mocha as a tool for testing\n Last look at ES5 constructors before moving on to ES6\n  What they do in the exercise:  They have a set of tests provided to them and they have to make them all pass The following code is provided  var SortedList = function() {}; SortedList.prototype.add = function(item) {} SortedList.prototype.get = function(pos) {} SortedList.prototype.max = function() {} SortedList.prototype.min = function() {} SortedList.prototype.average = function() {} SortedList.prototype.sum = function() {}   Good practices:  Indentation and constructor review  Issues:  In order to pass the first test #add(x) you need to implement the #get(i) method. In #get(i) method it starts counting position as if 1 were 0.  Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/",
+	"title": "Module 1",
+	"tags": [],
+	"description": "",
+	"content": " First Stand up  names and presentations  First Daily kick off  calendar parking lot (example) feedback on feedback (example) feedback on calendar (example)  Deck: Course Overview  focus on rituals focus on adaptive Deck: Cohorts  Deck: M1  speed run everything going up on the wall next to the calendar just focus on the overview slide  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/shortcuts/entry/",
+	"title": "Entry",
+	"tags": [],
+	"description": "",
+	"content": " New Entry hola\n"
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-jsx/",
+	"title": "React JSX",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  Understand what JSX is and why we use it in React. Create JSX elements and use them in your React App. Embed expressions in JSX.  What is JSX?  This funny tag syntax is neither a string nor HTML. JSX may remind you of a template language, but it comes with the full power of JavaScript. JSX produces React \u0026ldquo;elements\u0026rdquo;.  Embedding Expressions const element = (\u0026lt;p\u0026gt; 2+2 = {2 + 2}\u0026lt;/p\u0026gt;); ReactDOM.render( element, document.getElementById('root') );  const formatName = (user) =\u0026gt; { return `${user.firstName} ${user.lastName}`; } const getGreeting = (user) =\u0026gt; { if (user) { return \u0026lt;h1\u0026gt;Hello, {formatName(user)}!\u0026lt;/h1\u0026gt;; } return \u0026lt;h1\u0026gt;Hello, Stranger.\u0026lt;/h1\u0026gt;; } const user = { firstName: 'Miguel', lastName: 'Cervantes', } ReactDOM.render(getGreeting(user), document.getElementById('root'));  or\nconst formatName = (user) =\u0026gt; { return `${user.firstName} ${user.lastName}`; } const getGreeting = (user) =\u0026gt; { return \u0026lt;h1\u0026gt;Hello, {user ? formatName(user) : 'Stranger.' }!\u0026lt;/h1\u0026gt;; } const user = { firstName: 'Miguel', lastName: 'Cervantes', } ReactDOM.render(getGreeting(user), document.getElementById('root'));  const formatName = (user) =\u0026gt; { return `${user.firstName} ${user.lastName}`; } class GetGreeting extends Component { render() { const user = { firstName: 'Miguel', lastName: 'Cervantes', }; const showUser = user ? formatName(user) : 'Stranger.'; return ( \u0026lt;h1\u0026gt;Hello, {showUser} !\u0026lt;/h1\u0026gt; ); } } ReactDOM.render(\u0026lt;GetGreeting /\u0026gt;, document.getElementById('root'));  An Element should return only one node\n // Wrong 💣 const getGreeting = (user) =\u0026gt; { return ( \u0026lt;h1\u0026gt;Hello, Stranger.\u0026lt;/h1\u0026gt; \u0026lt;p\u0026gt;Lorem ipsum\u0026lt;/p\u0026gt; ); }  // Correct 👍 const getGreeting = (user) =\u0026gt; { return ( \u0026lt;div\u0026gt; \u0026lt;h1\u0026gt;Hello, Stranger.\u0026lt;/h1\u0026gt; \u0026lt;p\u0026gt;Lorem ipsum\u0026lt;/p\u0026gt; \u0026lt;/div\u0026gt; ); }  CSS - ClassName and Style const divStyle = { 'color': 'blue', 'backgroundImage': 'url(' + imgUrl + ')', } const element = ( \u0026lt;div style={divStyle}\u0026gt; \u0026lt;h1 className='Title'\u0026gt;Hello!\u0026lt;/h1\u0026gt; \u0026lt;h2\u0026gt;Good to see you here.\u0026lt;/h2\u0026gt; \u0026lt;/div\u0026gt; )  Loops and “key” prop const numbers = [1, 2, 3, 4, 5]; const listItems = numbers.map((number) =\u0026gt; \u0026lt;li\u0026gt;{number}\u0026lt;/li\u0026gt; ); ReactDOM.render( \u0026lt;ul\u0026gt;{listItems}\u0026lt;/ul\u0026gt;, document.getElementById('root') );  const numbers = [1, 2, 3, 4, 5]; const listItems = numbers.map((number, index) =\u0026gt; \u0026lt;li key={index}\u0026gt;{number}\u0026lt;/li\u0026gt; ); ReactDOM.render( \u0026lt;ul\u0026gt;{listItems}\u0026lt;/ul\u0026gt;, document.getElementById('root') );   [info]\nThe Key could be anything but it should be unique\n Exercises (Card) Exercise_01_lab Repo\n Create a new project Delete content in app.css Create a folder /component inside src Create files Card.js and Card.css inside folder components.  Card.css\n.card { width: 170px; display: flex; flex-direction: column; justify-content: center; margin: 15px; border-radius: 12px; box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05); transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1); transform: translateY(0px); } .card-gradient { height: 160px; width: 170px; border-radius: 12px 12px 0px 0px; background-image: linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%); } .card-description { border-radius: 0px 0px 12px 12px; padding: 12px; text-align: left; text-transform: uppercase; } .card-color-from { color: #929197; display: block; padding: 0px; } .card-color-to { color: rgb(3, 150, 255); }  Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-card/",
+	"title": "Lab Cards",
+	"tags": [],
+	"description": "",
+	"content": " Lab  Create a new project Delete content in app.css Create a folder /component inside src Create files Card.js and Card.css inside folder components.  Card.css\n.card { width: 170px; display: flex; flex-direction: column; justify-content: center; margin: 15px; border-radius: 12px; box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05); transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1); transform: translateY(0px); } .card-gradient { height: 160px; width: 170px; border-radius: 12px 12px 0px 0px; background-image: linear-gradient(135deg, rgb(171, 220, 255) 10%, rgb(3, 150, 255) 100%); } .card-description { border-radius: 0px 0px 12px 12px; padding: 12px; text-align: left; text-transform: uppercase; } .card-color-from { color: #929197; display: block; padding: 0px; } .card-color-to { color: rgb(3, 150, 255); }  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/3-mongo-introduction/",
+	"title": "MongoDB Introduction",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes  database rdbms vs object     id (Employee Code) name Language     3212 John Spanish   4324 Willy English   6542 James French     collections documents relations data modeling/domains crud query atomic operations(update operators)  databases - collections - documents - what is schemaless, mongo does not care how the data looks like - we will add schemas on the nodejs, it will run on our express app - the difference with sql and how it stores data in tables - examples being: mysql, postgres, mssql - when adding an incomplete row to sql it will not accept it - adding a new row can be done but is cumbersome - very restrictive, e.g (add phone number, ok, but if you want to add a second number, it's not easy) - solution is to add a new table for phones - non-relational, relations are added through schemas and nodejs, not on mongo - speed is a plus in mongo - distributed as one of the best features vs sql, the data does not need to be all on the same computer - talk about how it is not possible to do operations depending on each other - sql with 3 steps, will make sure it's able to do the three operations for it to be completed - mongo does not care, 2 might go through and the third not - this would be solved with a distributed database - with 2 operations from different users at the same time, you would need to read, edit and save, there might be an issue that it tries to save and it will overwrite the whole document. Atomic operations can fix this, where you directly give the instruction to edit and save - data modeling is the act of designing how the data looks like in your database --  Installing Mongo  Resources Ironhack Learning Platform  MongoDB Introduction  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/3-js-intro/",
+	"title": "JS Intro",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  Programming is the process of creating a set of instructions that tell a computer how to perform a task.  declarations  var x; var y = true;  types  number: 1 1.3 Infinity NaN boolean: true false string: \u0026ldquo;hello world\u0026rdquo; undefined object function  operators  comparison: == === != !== \u0026gt; \u0026lt; \u0026gt;= \u0026lt;= string + arithmetic: + - * / % ** ++ -- bitwise: \u0026amp; | ^ ~ \u0026lt;\u0026lt; \u0026gt;\u0026gt; \u0026gt;\u0026gt;\u0026gt; assignment: = += -= *= /= %= **= trenary: var a = (condition) ? this : orThat precedence: PEMDAS unary  typeof typeof var delete delete var.property in property in obj instanceof var instanceof Constructor   numbers  Infinity -Infinity NaN === NaN Number constructor  Number(\u0026lsquo;123\u0026rsquo;) Number(\u0026lsquo;12a\u0026rsquo;) Number(\u0026ldquo;)  Number static  Number.MAX_VALUE Number.isNaN(3 / window) Number.isNaN(3 + window) Number.isNaN(Number(\u0026lsquo;x\u0026rsquo;)) Number.isInteger(3.1)  funny thing about numbers  Number.isInteger(3 * (0.1 + 0.2) + 0.1) 0.3 === 0.1 + 0.2   strings  holds a list of characters str.length str[0] String() String static methods  String.fromCharCode(64)  methods  str.split(\u0026ldquo;); str.toLowerCase() str.substring(0,1) str.indexOf(\u0026lsquo;foo\u0026rsquo;) str.charCodeAt(1)   Math  Math.PI Math.max(1, 3) Math.random() Math.abs(-3) Math.sign(-3) Math.round(10 / 3) Math.ceil(10 / 3) Math.floor(10 / 3) 100 * Math.round(7.03) / 100 Math.sqrt(10 / 3) Math.sin(Math.PI / 2) Math.cos(0)  Resources  MDN Javascript guide MDN Javascript reference  Ironhack Learning Platform  LU - Javascript Introduction  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/",
+	"title": "Module 2",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/4-mongo-data-models/",
+	"title": "MongoDB Data Models",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes  Documents Structure Kind Relations Documents  Embedded Documents Refering Documents  Relations  1:1 1:N 1:few 1:N 1:many N:M   Resources  6-rules-of-thumb-for-mongodb-schema-design-part-1 6-rules-of-thumb-for-mongodb-schema-design-part-2 thinking-documents-part-1 thinking-documents-part-2 Data modelling e-commerce  Ironhack Learning Unit  MongoDB Data Models MongoDB Indexes and Aggregation Framework  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-components-props/",
+	"title": "React Components and Props",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  Know how the Component tree works How the DOM is rendered in the browser  Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/4-js-conditionals-loops/",
+	"title": "JS Conditionals and Loops",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  Booleans Booleans Operators  || \u0026amp;\u0026amp; !  logical and short-circuit:  0 \u0026amp;\u0026amp; notExecuted evaluates to 0 1 || notExecuted evaluates to 1  Conditions  if if else if else if switch  Loops  while do while for   Resources  logical: \u0026amp;\u0026amp; || !  Ironhack Learning Platform  LU - Conditionals and Loops  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/",
+	"title": "Module 3",
+	"tags": [],
+	"description": "",
+	"content": " Module 3 "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/5-mongo-crud/",
+	"title": "MongoDB CRUD operations",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes mongo shell    Database Command Explanation     show dbs List all the databases inside our mongo server   use \u0026lt;dbName\u0026gt; This will switch to the database dbName or create it if it doesn\u0026rsquo;t exist   db Show the name of the current database   show collections List all the collections inside the current database    importing data from json $ mongoimport \\ --db users \\ --collection contacts \\ --type csv \\ --headerline \\ --file contacts.csv  CRUD Operations  Create  db.collection.insertOne(doc) db.collection.insertMany([docs])  Read  db.users.find(query, projection)  Update  db.collection.updateOne() db.collection.updateMany()  Delete  db.collection.deleteOne() db.collection.deleteMany()   Operators  Logical: $and, $or, $ne, $nor, $in, $nin, Link Comparision Operators: $eq, $neq, $gt, $gte, $lt, $lte Link Array Operators: $all, $elemMatch Link Projections Link Skip Link Limit Link  Practice   File   restaurants.json.zip  (1635 ko)    $ mongoimport --db restaurants --collection restaurants --file restaurants.json  This is an example document from the restaurants collection.\n{ \u0026quot;address\u0026quot;: { \u0026quot;building\u0026quot;: \u0026quot;1007\u0026quot;, \u0026quot;coord\u0026quot;: [ -73.856077, 40.848447 ], \u0026quot;street\u0026quot;: \u0026quot;Morris Park Ave\u0026quot;, \u0026quot;zipcode\u0026quot;: \u0026quot;10462\u0026quot; }, \u0026quot;borough\u0026quot;: \u0026quot;Bronx\u0026quot;, \u0026quot;cuisine\u0026quot;: \u0026quot;Bakery\u0026quot;, \u0026quot;grades\u0026quot;: [ { \u0026quot;date\u0026quot;: { \u0026quot;$date\u0026quot;: 1393804800000 }, \u0026quot;grade\u0026quot;: \u0026quot;A\u0026quot;, \u0026quot;score\u0026quot;: 2 }, { \u0026quot;date\u0026quot;: { \u0026quot;$date\u0026quot;: 1378857600000 }, \u0026quot;grade\u0026quot;: \u0026quot;A\u0026quot;, \u0026quot;score\u0026quot;: 6 }, { \u0026quot;date\u0026quot;: { \u0026quot;$date\u0026quot;: 1358985600000 }, \u0026quot;grade\u0026quot;: \u0026quot;A\u0026quot;, \u0026quot;score\u0026quot;: 10 }, { \u0026quot;date\u0026quot;: { \u0026quot;$date\u0026quot;: 1322006400000 }, \u0026quot;grade\u0026quot;: \u0026quot;A\u0026quot;, \u0026quot;score\u0026quot;: 9 }, { \u0026quot;date\u0026quot;: { \u0026quot;$date\u0026quot;: 1299715200000 }, \u0026quot;grade\u0026quot;: \u0026quot;B\u0026quot;, \u0026quot;score\u0026quot;: 14 } ], \u0026quot;name\u0026quot;: \u0026quot;Morris Park Bake Shop\u0026quot;, \u0026quot;restaurant_id\u0026quot;: \u0026quot;30075445\u0026quot; }  Practice the following queries:\nFind the restaurant with id 30112340.\nFind May May Kitchen.\nFind the restaurants where their cuisine is Tapas.\nFind the restaurants in postal code 11208.\nFind all restaurants that have a score greater or equal than 70.\nFind all restaurants in Brooklyn that have a score greater than 80\nAll restaurants with Chilean or Czech cuisine.\nAll restaurants with grade A in second position of the array.\nAll restaurants with grades A or B.\nAll restaurants that have a review made in 2014-09-16.\nAll restaurant their cuisine is Tapas ordered by name in ascending (normal) order.\nHow many restaurants have been graded after 2015-01-01.\nFind the restaurants that has a review graded A and score greater then 20\nFind the restaurants that doesn’t have reviews\nTools  Mongo Compass Better not to use!  Resources  https://docs.mongodb.com/manual/reference/method/  Ironhack Learning Unit  MongoDB CRUD  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-advance-querying-mongo/",
+	"title": "LAB Advance querying mongo",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-advance-querying-mongo  Purpose:  Writing queries to mongo. We can use Mongo Compass but we encourage to use Mongo CLI  What they do in the exercise:  Iteration 1: Prepare the exercise. Iteration 2: Advance Queries to MongoDB  Good practices:  The use of Mongo CLI.  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-hello-ironhack/",
+	"title": "Lab Hello Ironhack",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-hello-ironhack  Purpose:  First approach with react library.  What they do in the exercise:  Iteration 1: Prepare the exercise. Iteration 2: Advance Queries to MongoDB  Good practices:  The use of Mongo CLI.  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-profile-app/",
+	"title": "Lab Profile App",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-profile-app  Purpose:    What they do in the exercise:  Iteration 1:  Good practices: -\nIssues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-state-lifecycle/",
+	"title": "React State Lifecycle",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Resources  https://reactjs.org/docs/react-component.html#state https://medium.freecodecamp.org/handling-state-in-react-four-immutable-approaches-to-consider-d1f5c00249d5  Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/concepts/",
+	"title": "Concepts",
+	"tags": [],
+	"description": "",
+	"content": " git test  git is not github commands docs it\u0026rsquo;s a version control system to  backup share track revisions   git concepts  status staging (add) commit remote (pull, push) branch merge  tools  linting beautifying  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-basic-algorithms/",
+	"title": "Javascript Basic Algorithms",
+	"tags": [],
+	"description": "",
+	"content": " Javascript Basic Algorithms Link:  https://github.com/ironhack-labs/lab-javascript-basic-algorithms\nPurpose: Practise with the Javascript fundamentals: variables, conditionals and loops. Play with string properties\nWhat they do in the exercise: I1: Create and call variables\n I2: Conditionals\n I3: Loops\n BONUS: Play with strings and concepts learnt\nGood practices: Pay attention to the syntax, naming and indentation.\n Start investigating some methods like .toUpperCase()\n  Issues:  They have to work in repl.it and submit in Github Gist. They have the result for all the exercice in starter-code folder There are no iterations\nSuggestion:  Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/5-css-intro/",
+	"title": "CSS Intro",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  reset rule selectors simple selectors declaration: property, value shorthand property specifity pseudo-selector user agent styles box model float, clear and overflow css positions width, padding, margin when not floated or position:absolute or position:fixed every block element is naturally 100% wide 100% of what!?  Resources  cssreference cssreset Best Practices MDN CSS guide MDN CSS reference W3C CSS Validator  Ironhack Learning Platform   Related files   reset.css  (4 ko)    "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-list-keys/",
+	"title": "React List and Keys",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/6-express-introduction/",
+	"title": "Express Introduction",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes  Static Files\n Installations\n nodemon eslint express-generator debugger  Code explanation\n HTTP Verbs\n Get Post   Resources  Expressjs Official Docs  Ironhack Learning Unit  Express Basic site @todo notes and links  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/6-css-positioning/",
+	"title": "CSS Positioning",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  position:\n static relative absolute fixed  used with top/left displaces the element (but the original space is still occupied)\n establishes an anchor for absoulte descendent\n element complete leaves the flow\n and looses its natural block ability of being width 100%\n used with top/left, always relative to first absolute OR relative ancestor\n  Resources  demo  Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/7-express-dynamic-views/",
+	"title": "Express Dynamic Views",
+	"tags": [],
+	"description": "",
+	"content": " Lecture notes  Explain concept dinamic views Engine Templating  handlebars ejs  Working with templates (helpers)  if each   setting up ejs $ npm install --save ejs  app.js\nconst app = express(); ... app.set('view engine', 'ejs'); app.set('views', path.join(__dirname, '/views')); ...  don\u0026rsquo;t forget to create folders views and file index.ejs inside\nHow to use it\napp.get('/', (req, res, next) =\u0026gt; { res.render('index'); })  Resources  handlebars JS EJS  Ironhack Learning Unit  Express Dynamic Views  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-basic-site/",
+	"title": "LAB Express Basic site",
+	"tags": [],
+	"description": "",
+	"content": " Express Basic site Link:  https://github.com/ironhack-labs/lab-express-basic-site  Purpose:  They have to create a basic site with express. They must choose a topic for that website (could be a celebrity, Tv Show, Futbol Player, etc\u0026hellip;)  What they do in the exercise:  They have to create a 3 pages (at least) website: HOME, ABOUT \u0026amp; PHOTO GALLERY. Start becoming familiar with Node/Express   Good practices:  Pay attention into the project Folder structure, maintain it clean and follow the SOC (Separation Of Concerns )principle \u0026amp; Encapsulation principle. Take advantage of comments to virtually spliting a fille into diferrent block (Important for App.js) so they will become more familiar with the express way.  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-conditional-render/",
+	"title": "React Conditional Rendering",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/7-css-responsive/",
+	"title": "CSS Responsive",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  .container class mobile first tablet next desktop next media query syntax  @media (min-width: 768px) { ... more rules ...}  advanced\n responsive images responsive typography responsive tables  how the paradigm shifted from desktop first to mobile first\n right after it changed from graceful degradation to progressive enhancement  small/big apartment metaphor\n content is like water mantra\n explain the use of max-width\n  Resources  css-tricks 9 basic principles of responsive web design search responsive on css-tricks responsive design 9 basic principles responsive web design https://zellwk.com/blog/how-to-write-mobile-first-css/  Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/8-express-layouts-partials/",
+	"title": "Express Layouts Partials",
+	"tags": [],
+	"description": "",
+	"content": " Lecture notes  What is a Layout? What is a Partial? Partial Set-up Passing Parameters  setting up layouts * *app.js**\nconst expressLayouts = require('express-ejs-layouts'); ... app.set('view engine', 'ejs'); app.set('layout extractScripts', true) // see Documentation app.set('layout extractStyles', true) // see Documentation app.set('layout extractMetas', true) // see Documentation app.set('layout', 'layouts/main'); // custom layout app.use(expressLayouts); ...  create the layout view main.ejs in views/layouts/ folder\ncreate the following structure\nviews ├── ... ├── partials │ ├── navbar.ejs │ └── footer.ejs └── layouts ├── main.ejs └── secondLayout.ejs  Resources Ironhack Learning Unit  Layout \u0026amp; Partials  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-ironbeers/",
+	"title": "LAB Ironbeers",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-ironbeers  Purpose:  Create a basic web app, where you can Check the beers or get a random beer. Use PunkAPI Database  What they do in the exercise:  In this exercide they have to create their first Web App (Pages: Home, Beers, Random Beer) Using Partials Use of handlebars temlating engine.  Good practices: Issues: Suggestion:  With this amount of routes is not neccesary to split them into a different file, that means that our app.js will have a lot of information. A good practice in this case is to comment app.js to virtually \u0026ldquo;split\u0026rdquo; the file into small pieces  Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-bulma-components/",
+	"title": "Lab Bulma Components",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-bulma-components  Purpose:    What they do in the exercise:  Iteration 1:  Good practices:  The use of Mongo CLI.  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-controlled-uncontrolled-components/",
+	"title": "React Controlled Uncontrolled Components",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/8-css-flexbox/",
+	"title": "CSS Flexbox",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  set display:flex on parent parent manages direct children properties of the flex parent  justify-content - across the main axis align-items - across the cross axis flex-direction - row/column/column-reverse/row-reverse flex-wrap - wrap/nowrap  properties of the flex children  width: 50% - percentage of the flex parent width: 200px - static, not managed by the flex parent flex: 1 - 1 out X - where X is total of all the children flex: \u0026lt;can grow\u0026gt; \u0026lt;can shrink\u0026gt; \u0026lt;base width\u0026gt; - advanced (see layout example 1)    Flexbox Grid  Strategy 1:\n Demo on codepen set the children`s flex grow to 1 set the children`s flex basis to a number below the column % (e.g. 45% for 2 cols, 30% for 3 cols) set the children`s horizontal margin to Ypx set the parent`s horizontal margin to -Ypx Downside: orphan items will still grow to available space  Strategy 2:\n Demo on codepen set the children`s width to the exact % (e.g. 50% for 2 cols, 33.33333% for 3 cols) set the children`s horizontal padding to Ypx set the parent`s horizontal margin to -Ypx Downside: because we are using padding on the flex children, we need to move our card class to another child div   Resources  tutorial DOCS flexbox CSS Tricks Guide flexbox froggy flexbox MDN  Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone-responsive/",
+	"title": "LAB Slack clone responsive",
+	"tags": [],
+	"description": "",
+	"content": " Slack Clone "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-forms/",
+	"title": "React Forms",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/9-promises/",
+	"title": "Promises",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes  What is a Promise? syntax\n instead of do((err, result) =\u0026gt; {}); do().then(result =\u0026gt; { ... handle result ... }).catch(err =\u0026gt; { ... handle error ... })  promise as a variable\n const promiseToDoSomething = doSomething() can be passed around can be stored, useful for accessing unresolved/cached results with only one (async) syntax  Create Promises\n Promise.All\nPromise.all(promises).then(results =\u0026gt; { /* results is array with resolves values of all promises, in same order */ }  Promise.race\nPromise.race(promises).then(result =\u0026gt; { /* result is the resolve value of the first promise to resolve */ }   { ...do things... })` - `promiseToDoSomething.then(result = { ...do more things... })` - chaining results - return value of `.then()` callback is given as argument to the chained `.then()` callback - `do1().then(resultOfDo1 = do2(resultOfDo1)).then(resultOfDo2 = { ... })` -- { return doSomethingElse(result); }) .then(resultOfSomethingElse = { }) .catch(err = { /* err is error of doSomething() OR doSomethingElse() */ }); ``` -- { // call resolve(value) when you have the result // call reject(error) or throw new Error('error') }); }; ``` -- Resources  LU - ES6 Promises MDN Promises guide MDN Promises reference  Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/9-js-functions-scope/",
+	"title": "JS Functions Scope",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  function statement anonymous function functions are first-class objects function as vairables callbacks  concept function  black box metaphor (algebra function) name is verbSomething convention is camelCase concept abstraction\n declaration\nfunction addNumbers(p1, p2) { return p1 + p2; }  function call\n  function addNumbers(p1, p2) { console.log(p1 + p2); } addNumbers(2, 4); addNumbers(1, 2) addNumbers(1, 2, 3) addNumbers('foo') function doFoo(a, b) { console.log(a, b) } doFoo(1); doFoo(1, 2, 3);   concept return value  var x = doFoo(); var y = addNumbers(1, 2); console.log(x); console.log(y);  Quick Demo  concept scope  var num = 5; function addFive(p1) { var x = 1; return p1 + x + 4 } addFive(); console.log(p1);   concept hoisting javascript sum(2, 4) function sum(a, b) { return a + b }  concept return statement\n return nothing? return undefined return statements in control structures multiple return statement  concept call stack\n breakpoint show call stack   function bar(times) { console.log('I am bar, I was called', times, 'times'); } function foo(count) { debugger; console.log('I am foo'); for (var ix = 1; ix \u0026lt;= count; ix++) { bar(ix); console.log('I called bar', ix, 'times'); } } foo(3);   concept closure  function addNums(a, b) { return a + b; } function makeFunctionThatAddsY(y) { return function (x) { return addNums(x, y); } } var addFive = makeFunctionThatAddsY(5); addFive(100);   concept callback  function doSomething() { console.log('1 sec later'); } console.log('before'); window.setTimeout(doSomething, 1000) console.log('after');   concept anonymous function javascript window.setTimeout(function () { console.log('1 sec later'); }, 1000);   Resources  show in cheat-sheet  Ironhack Learning Platform  LU - JS Functions  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/10-mongoose-introduction/",
+	"title": "Mongoose Introduction",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes  What is mongoosejs Design Pattern Model-View-Controller aka MVC Mongoose Setup  Basic introduction   Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-iron-contact/",
+	"title": "Lab Iron Contacts",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-react-ironcontacts  Purpose:    What they do in the exercise:  Iteration 1:  Good practices:  The use of Mongo CLI.  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-lifting-state-up/",
+	"title": "React Lifting State Up",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/10-js-arrays/",
+	"title": "JS Arrays",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  holds a list of values var arr = [\u0026lsquo;1\u0026rsquo;, \u0026lsquo;2\u0026rsquo;, \u0026lsquo;3\u0026rsquo;]; var arr = new Array(); arr.length arr[index] arr[index] = \u0026lsquo;foo\u0026rsquo; arr.pop() arr.push(\u0026lsquo;4\u0026rsquo;, \u0026lsquo;5\u0026rsquo;) arr.unshift(\u0026lsquo;foo\u0026rsquo;) arr.shift() arr.join(\u0026lsquo;,\u0026rsquo;);  var arr = [1332, 1232, 4332, 9873] for ( var ix = 0; ix \u0026lt; arr.length; ix++) { console.log(ix, arr[ix] / 100); }   callback  console.log('before'); var arr = [1, 2, 3, 4, 5]; arr.forEach(function (item, index) { console.log('index', index, 'item', item, 'square', item * item); }) console.log('after');  Resources Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-css-card/",
+	"title": "LAB Card",
+	"tags": [],
+	"description": "",
+	"content": " Lab Card "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/11-mongoose-schemas-models/",
+	"title": "Mongoose Schemas Models",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes  Schemas Link  Types Link Validations Link  Model Link  Methods (CRUD) Reference  Documents Link  Subdocument Link Methods Reference   Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongoose-recipes/",
+	"title": "LAB Mongoose Recipes",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-mongoose-recipes  Purpose:  Apply your first schema and understand the role they play when storing data Understand and build CRUD operations using the Mongoose syntax  What they do in the exercise:  I1: Create a recipe schema I2: Create a recipe I3: Insert Many recipes I4: Update a recipe I5: Remove a recipe I6: Close database  Good practices:  Make sure that the file is correctly organized with the require statements above and exports at the end Get used to the promises syntax when retriving stuff with Mongoose  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-iron-nutrition/",
+	"title": "Lab Iron Nutrition",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-react-ironnutrition  Purpose:    What they do in the exercise:  Iteration 1:  Good practices:  The use of Mongo CLI.  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-router-intro/",
+	"title": "React Router",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-functions-and-arrays/",
+	"title": "Functions and Arrays",
+	"tags": [],
+	"description": "",
+	"content": " JS | Functions \u0026amp; Arrays Link:  https://github.com/ironhack-labs/lab-javascript-functions-and-arrays\nPurpose: Get used to functions syntax\n Start to idealize the function as pseudo-code and write down on paper the steps. Break it down\n Practise with functions arguments and return, and with the scope\n Play with arrays and their basic methods: push, pop, unshift, shift, splice, forEach\nWhat they do in the exercise: first contact with Jasmine testing\n function that returns the largest number between 2\n function that returns the longest word of an array\n function that returns the sum of the numbers of an array\n function that returns the average of the numbers of an array\n function that returns the average length of the words of an array\n function that removes the duplicated words of an array\n find elements in an array\nGood practices: Care about indentation\n Name functions with camelCase\n Be careful with the scope\n Start investigating some methods like indexOf()\n  Issues:  the provided variables maybe confuse the students into calling the functions when they don\u0026rsquo;t need to due to the tests since they have the Jasmine, they don\u0026rsquo;t use the browser with the developer tools don\u0026rsquo;t talk about reduce method inside a iteration starting code names can confuse students there are no iterations the bonus part has test bonus test has an not good test since are matrix with 1 and 2\nSuggestion: delete JasmineTest for debugger purpose\n introduce reduce as a extra tool on introduction section\n inconsistent test on the functions. Some return undefined, others one 0\n have only one array of words or no one\n bonus part without test since seems like the student doesn\u0026rsquo;t complete the exercise\n added eslint on the starter-code without any explanation\n  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/11-js-objects/",
+	"title": "JS Objects",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives s  holds key value pairs var obj = { name: \u0026lsquo;foo\u0026rsquo; } obj.name = \u0026lsquo;foo\u0026rsquo; obj[\u0026lsquo;name-with-weird-characters\u0026rsquo;] = \u0026lsquo;foo\u0026rsquo; obj[key] = \u0026lsquo;foo\u0026rsquo; delete obj.name delete obj[\u0026lsquo;name-with-weird-characters\u0026rsquo;] delete obj[key] for (var key in obj) { \u0026hellip; } Object static methods  Object.keys(obj); Object.values(obj);   Resources Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-slack-clone-css/",
+	"title": "LAB Slack CSS",
+	"tags": [],
+	"description": "",
+	"content": " Slack Clone "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/12-mongoose-relationships/",
+	"title": "Mongoose Relationships",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes Relations 1:1 user\nconst mongoose = require(\u0026quot;mongoose\u0026quot;); const Schema = mongoose.Schema; const userSchema = new Schema({ username: { type: String, required: true }, password: { type: String, required: true }, }, { timestamps: true }); const User = mongoose.model('User', userSchema); module.exports = User;  event\nconst mongoose = require('mongoose'); const Schema = mongoose.Schema; const ObjectId = Schema.Types.ObjectId; const homeSchema = new Schema({ name: String, owner: { type: ObjectId, ref: 'User' } }); const Home = mongoose.model('Home', homeSchema); module.exports = Home;  1:N or N:M user\nconst mongoose = require(\u0026quot;mongoose\u0026quot;); const Schema = mongoose.Schema; const userSchema = new Schema({ username: { type: String, required: true }, password: { type: String, required: true }, }, { timestamps: true }); const User = mongoose.model('User', userSchema); module.exports = User;  event\nconst mongoose = require('mongoose'); const Schema = mongoose.Schema; const ObjectId = Schema.Types.ObjectId; const eventSchema = new Schema({ name: String, date: Date, attendees: [{ type: ObjectId, ref: 'User' }] }); const Event = mongoose.model('Event', eventSchema); module.exports = Event;  subschema review\nconst mongoose = require('mongoose'); const Schema = mongoose.Schema; const reviewSchema = new Schema({ content: String, stars: Number, author: String }); const Review = mongoose.model('Review', reviewSchema); module.exports = Review;  product\nconst mongoose = require('mongoose'); const Review = require('./review'); const Schema = mongoose.Schema; const productSchema = new Schema({ name : String, price : Number, imageUrl : String, description: String, reviews : [Review.schema] }); const Product = mongoose.model('Product', productSchema); module.exports = Product;  with-location const mongoose = require('mongoose'); const Schema = mongoose.Schema; const restaurantSchema = new Schema({ name: String, description: String, location: { type: { type: String }, coordinates: [Number] } }); restaurantSchema.index({ location: '2dsphere' }); const Restaurant = mongoose.model(\u0026quot;Restaurant\u0026quot;, restaurantSchema); module.exports = Restaurant;  Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/express-api/",
+	"title": "Express Api",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/12-js-data-structures/",
+	"title": "JS Data Structures",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  data structure\n examples\n https://www.nytimes.com/ (mobile) list of articles with title, img (url and label), abstract, date https://glovoapp.com/en/macchina-pasta-bar-2/ (mobile) array of categories (sections) with different produts inside https://api.glovoapp.com/v3/stores/11281/addresses/18796/collections/27278   var cohorts = [{ city: 'bcn', course: 'webdev', date: new Date('2018-06-11'), name: '2018 Aug', students: [{name: 'Julien', country: 'es'}, {name: 'Julio', country: 'us'}] }, { city: 'bcn', course: 'webdev', date: new Date('2018-08-20'), name: '2018 Aug', students: [{name: 'John', country: 'en'}, {name: 'Paquito', country: 'es'}] }];   cohorts[0].students[0].name for (var ix = 0; ix \u0026lt; cohorts length\u0026gt;) for (var ox = 0; ox \u0026lt; cohort[ix].sudents.length\u0026gt;) if (country === \u0026lsquo;en\u0026rsquo;) { console.log(name); }\nResources  Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/13-express-get-post/",
+	"title": "Express Get - Post Methods",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes  HTTP Verbs\n Get Post  Route Params\n Query Strings\n Request Body\n  Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-spotify/",
+	"title": "LAB Express Spotify",
+	"tags": [],
+	"description": "",
+	"content": " Express Spotify Link:  https://github.com/ironhack-labs/lab-express-spotify  Purpose:  Understand how to build and set up GET and POST route in Express Understand and use both query strings and route params  What they do in the exercise:  Connect with an external api using an NPM package (Spotify) I1: Setup of the API I2: Setup Express I3: Search for artist I4: View Albums I5: View Tracks  Good practices:  Use proper indentation when writting up routes as the code will be complex using the api Do not worry about the styling  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-frontend-backend-communication/",
+	"title": "React Frontend Backend Communication",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/13-js-oop/",
+	"title": "JS Object Oriented Programming",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  Combination Abstraction Encapsulation Constructor functions methods introduction to this  When invoking a method on an object, this becomes the object itself.  inheritance concept Prototypal inheritance\n chain of prototypes  classes in ES6\n The basic idea of OOP is that we use objects to model real world things that we want to represent inside our programs, and/or provide a simple way to access functionality that would otherwise be hard or impossible to make use of.\n Objects can contain related data and code, which represent information about the thing you are trying to model, and functionality or behavior that you want it to have. Object data (and often, functions too) can be stored neatly (the official word is encapsulated) inside an object package\n  Resources Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-clue/",
+	"title": "Javascript Clue",
+	"tags": [],
+	"description": "",
+	"content": " Javascript Clue Link:  https://github.com/ironhack-labs/lab-javascript-clue\nPurpose: Play with arrays and objects\n Oportunity or practice with shortcuts on VSCode\nWhat they do in the exercise: I1: store the given data into objects and put them into diferent arrays depending on each type\n I2: pick one object of each array randomly\n I3: display the result\nGood practices: keep the structure organised\n don\u0026rsquo;t put comma after the last property of the object\n indentation\n spacing\n naming\n  Issues:  Super fast exercise\nSuggestion: add another iteration: search by field, order by name.\nTypos: starter code has drOrchid with frst_name and lst_name and ocupation with one c\n jastime test i3\n method Iteration 2\n  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/14-express-generator/",
+	"title": "Express Generator",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes  Express Generator Middleware Pattern  Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-authentication/",
+	"title": "React Authentication",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Resources Tools Ironhack Learning Unit Futher Reading "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/14-js-array-methods/",
+	"title": "Js Array Methods",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  array methods arr.join() arr.pop() arr.push(\u0026lsquo;4\u0026rsquo;, \u0026lsquo;5\u0026rsquo;) arr.unshift(\u0026lsquo;foo\u0026rsquo;) arr.shift() arr.forEach( callback ) arr.find( callback ) arr.map( callback ) arr.reduce( callback ) arr.filter( callback ) arr.sort( callback ) arr.reverse() arr.splice(1, 2) arr.splice(1, 0, \u0026lsquo;foo\u0026rsquo;) arr.slice(1, 2)  Part 1  array methods\n  arr.find( callback ) arr.map( callback ) arr.reduce( callback ) arr.filter( callback )  Part 2  array methods\n  arr.sort( callback ) arr.reverse() arr.splice(1, 2) arr.slice(1, 2)  @Todo, notes\n Make the examples close to reality. (E.g. people, scores, etc)\n find\n filter\n map\n reduce\n age/name\n start with one a/b pass one by one (the teacher asks)\n let them rearrange themselves for a while\n interrupt when it\u0026rsquo;s almost done\n finish with an a/b pass to correct/confirm\n  Array Methods  Map Reduce Filter Sort Reverse forEach\n concept of mutation\n how to read documentation MDN\n  Resources Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-vikings/",
+	"title": "Vikings",
+	"tags": [],
+	"description": "",
+	"content": " Javascript Vikings @TODO Link:  https://github.com/ironhack-labs/lab-javascript-vikings\nPurpose: Practise with object oriented (constructors, inheritance and methods).\nWhat they do in the exercise: I1: create Soldier constructor.\n I2: create Viking constructor implementing Soldier constructor.\n I3: create Saxon constructor implementing Soldier constructor.\n I4: create War constructor, where you can add vikings and saxons, make them attack and see the status.\nGood practices: Keep the structure: first constructor, then prototype methods.\nIssues: It has no iterations.\n It shouldn\u0026rsquo;t be Bonus\nSuggestion:  Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/15-express-mongoose-crud/",
+	"title": "Express Mongoose Crud",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes  Put all things toguether CRUD  Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-cinema/",
+	"title": "LAB Express Cinema",
+	"tags": [],
+	"description": "",
+	"content": " Express Cinema Link:  https://github.com/ironhack-labs/lab-express-cinema  Purpose:  Understand how to build routes in express Understand how to seed a database Understand how to fetch the information of a single move to redirect to a page detail with query params  What they do in the exercise:  I1: Generate the project I2: Seed the database I3: Build the home page I4: List the movies I5: Display movie info  Good practices: Issues:  Mentions Ironhack generator which is no longer used There are 2 Iterations 3  Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/react-deploy/",
+	"title": "React Deploy",
+	"tags": [],
+	"description": "",
+	"content": " Learning Notes Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/15-dom-intro/",
+	"title": "Dom Intro",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives dom  window.document window.onload = function () { \u0026hellip; } document.body node = document.getElementById(\u0026lsquo;site-header\u0026rsquo;) node = document.getElementsByClassName(\u0026lsquo;feature\u0026rsquo;) node = document.querySelector(\u0026lsquo;.features .feature\u0026rsquo;) nodeList = document.querySelectorAll(\u0026lsquo;.features .feature\u0026rsquo;) node.setAttribute(\u0026lsquo;src\u0026rsquo;, \u0026lsquo;https://fakeimage.com/image.jpg') node.removeAttribute(\u0026lsquo;srcset\u0026rsquo;); node.classList.add(\u0026lsquo;active\u0026rsquo;) node.classList.remove(\u0026lsquo;active\u0026rsquo;) node.classList.toggle(\u0026lsquo;active\u0026rsquo;) node.appendChild(child) node.children[0]\u0026hellip; node.remove() node = document.createElement(\u0026lsquo;div\u0026rsquo;) node.innerHTML = '\u0026lt;p\u0026gt;some text\u0026lt;/p\u0026gt;' node.innerText = \u0026lsquo;some text\u0026rsquo;  events  node.addEventListener(\u0026lsquo;click\u0026rsquo;, handleClick); node.removeEventListener(\u0026lsquo;click\u0026rsquo;, handleClick); function handleClick(event) { \u0026hellip; } event.stopPropagation(); event.preventDefault(); event.target event.currentTarget  var img = document.querySelector('.o-hero img'); img.setAttribute('src', 'https://pbs.twimg.com/profile_images/844137908252610566/OsT9RU83_400x400.jpg'); img.removeAttribute('srcset');   node.setAttribute(\u0026lsquo;src\u0026rsquo;, \u0026lsquo;https://fakeimage.com/image.jpg')\n node.removeAttribute(\u0026lsquo;srcset\u0026rsquo;);\n node.classList.add(\u0026lsquo;active\u0026rsquo;) node.classList.remove(\u0026lsquo;active\u0026rsquo;)\n node.classList.toggle(\u0026lsquo;active\u0026rsquo;)\n node.appendChild(child)\n node.children[0]\u0026hellip;\n node.remove()\n ole=search input\n  input change\nevent handler\nshow box with results\nempty results\nresults = students.filter\nadd dom with students\nor \u0026ldquo;no students match foo\u0026rdquo;node = document.createElement(\u0026lsquo;div\u0026rsquo;)\n node.innerHTML = '\u0026lt;p\u0026gt;some text\u0026lt;/p\u0026gt;'\n node.innerText = \u0026lsquo;some text\u0026rsquo;\n refresh what is the DOM, explain the why and the possibilities\n explain what is window and document\n open a random page like github and select elements demoing querySelector \u0026amp; querySelectorAll\n explain the older selection APIs like getElementById \u0026amp; getElementsByClassName\n show how you can find the parents \u0026amp; siblings of a selected element\n on the main page of the mob website\n show how to add a new section creating a section element create an h2 add text to the h2 append the h2 to the section append the section to the website before the footer  make sure you show that as long as you have the variable with the element, you have control, even if the element is removed from the DOM, it can be added again\n Selecting elements from JS\n return element return collections  elements methods (modify elements)\n create elements\n remove elements\n adding to DOM\n events\n node.addEventListener(\u0026lsquo;click\u0026rsquo;, handleClick);\n node.removeEventListener(\u0026lsquo;click\u0026rsquo;, handleClick);\n function handleClick(event) { \u0026hellip; }\n event.stopPropagation();\n event.preventDefault();\n half quick/demo\n show in slack.com\n  var button = document.querySelector('a.v--secondary'); button.addEventListener('click', function (ev) { ev.preventDefault(); button.parentElement.parentElement.classList.add('is-hidden'); });   event.target event.currentTarget  var ps = document.querySelectorAll('p'); for (var ix = 0; ix \u0026lt; ps.length; ix++) { ps[ix].addEventListener('click', function (ev) { ev.preventDefault(); ev.currentTarget.style.color = 'red'; }); }   on the main page of the mob website show how to select both h2 titles loop through them and add an event listener to each one of them with an anonymous function inside of the function, show them how to select the ul\u0026rsquo;s of both sections by going up to the parent and then selecting the ul inside of it toggle the class hidden to the ul that you want to show and hide  'use strict'; function main() { var nodes = document.querySelectorAll('section h2'); for (var ix = 0; ix \u0026lt; nodes.length; ix++) { nodes[ix].addEventListener('click', function (event) { var h2 = event.currentTarget; var section = h2.parentNode; section.classList.toggle('expanded'); }); }; } window.addEventListener('load', main);   ev.stopPropagation() ev.preventDefault() explain how event propagation works in the board, drawing a small tree of elements and ask if an event will \u0026lsquo;move up\u0026rsquo; the DOM tree. explain what happens when two different events happen, one in body and one in main  which one goes first explain with a narrative, introduce the word propagate and event propagation  on the mob website, add an event on body and another on the input of the student search, code the stopPropagation()  Code Along  var students in a file everyone can load with script src form role=search input input change event handler\n show box with results empty results results = students.filter add dom with students or \u0026ldquo;no students match foo\u0026ldquo;\n add the ironhack remote to everyone\n git remote -v to check if the remote is added already\n git status to check if there are changes (if yes, add, commit, push and PR)\n git remote add ironhack https://github.com/ironhack/\u0026lt;remote-url\u0026gt; to add the ironhack remote\n git pull ironhack master to pull the changes from ironhack\n  explain (draw) on the board what is going to happen\n add an input to a new sub header that will search and filter the array it will display the list on an absolute positioned list  add the array with students.js in the main folder\n explain the steps until they are able to console.log the input value and give them 5 minutes to achieve it\n allow everyone to reach that and explain the next step on the board.\n store the input value on a variable filter the results of the array console.log the result  append each one of the results as an a tag to the DOM, make sure the link works\n re-factor the code and explain the importance of it\n build the list with an ul. appending the a to the li, the li to the ul and finally the ul to the search results\n style the results div with absolute positioning so that it appears right below the search box\n challenges for students to practice\n hide the search results when  click on body (requires to stop propagation when click on input) press esc  show the results again when  input focus    Practice @Todo, find further practice\n DOM student pages - show/hide experiment sections DOM student pages - add list of students to DOM from array  Resources Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-all-times-movies/",
+	"title": "Javascript All Time Movies",
+	"tags": [],
+	"description": "",
+	"content": " @TODO\nLink:  https://github.com/ironhack-labs/lab-javascript-all-times-movies\nPurpose: Practise arrays advanced methods: map, reduce, filter, sort\nWhat they do in the exercise: I1: change duration of all movies (map)\n I2: get all rates average (reduce)\n I3: average rate of just drama movies (filter + reduce)\n I4: order movies by duration (sort)\n I5: get drama when SS is the director\n I6: sort all movies alphabetically and return a list of first 20\n I7: check which year has best average rate\nGood practices: check the MDN documentation to see the syntax of the methods\n arguments should be self-explaining Just because we are in the first week is better than defining them as elem or item\n  Issues:  I1 is time consuming for the purpose of the exercise Splice is repeated in the learning unit:  http://learn.ironhack.com/#/learning_unit/3037 http://learn.ironhack.com/#/learning_unit/3021  missing reverse and splice reverse should be in the arrays unit: Week1 Day2 iteration 2 test with numbers and the data (rate) is a string\nSuggestion: Make the exercise I2 \u0026gt; I3 \u0026gt; I5 \u0026gt; I6 \u0026gt; I1 \u0026gt; I4 \u0026gt; Bonus\nTypos: index.html has wrong script link\n  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/16-authorization/",
+	"title": "Authorization",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes User Model\n// models/user.js const mongoose = require(\u0026quot;mongoose\u0026quot;); const Schema = mongoose.Schema; const userSchema = new Schema({ username: String, password: String }, { timestamps: true }); const User = mongoose.model(\u0026quot;User\u0026quot;, userSchema); module.exports = User;  signup form view\n\u0026lt;!-- views/auth/signup.ejs --\u0026gt; \u0026lt;form id=\u0026quot;form\u0026quot; action=\u0026quot;/signup\u0026quot; method=\u0026quot;POST\u0026quot;\u0026gt; \u0026lt;label for=\u0026quot;username\u0026quot;\u0026gt;Username\u0026lt;/label\u0026gt;\u0026lt;br\u0026gt; \u0026lt;input type=\u0026quot;text\u0026quot; name=\u0026quot;username\u0026quot; placeholder=\u0026quot;Your username\u0026quot;\u0026gt; \u0026lt;label for=\u0026quot;password\u0026quot;\u0026gt;Password\u0026lt;/label\u0026gt;\u0026lt;br\u0026gt; \u0026lt;input type=\u0026quot;password\u0026quot; name=\u0026quot;password\u0026quot; placeholder=\u0026quot;********\u0026quot;\u0026gt; \u0026lt;% if (errorMessage) { %\u0026gt; \u0026lt;div class=\u0026quot;error-message\u0026quot;\u0026gt; \u0026lt;%= errorMessage %\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;% } %\u0026gt; \u0026lt;button type=\u0026quot;submit\u0026quot;\u0026gt;Create account\u0026lt;/button\u0026gt; \u0026lt;/form\u0026gt;  Signup Controller\n// routes/auth.js const express = require(\u0026quot;express\u0026quot;); const router = express.Router(); const User = require(\u0026quot;../models/user\u0026quot;); // BCrypt to encrypt passwords const bcrypt = require(\u0026quot;bcrypt\u0026quot;); const bcryptSalt = 10; router.get(\u0026quot;/signup\u0026quot;, (req, res, next) =\u0026gt; { res.render(\u0026quot;auth/signup\u0026quot;); }); router.post(\u0026quot;/signup\u0026quot;, (req, res, next) =\u0026gt; { const username = req.body.username; const password = req.body.password; const salt = bcrypt.genSaltSync(bcryptSalt); const hashPass = bcrypt.hashSync(password, salt); if (username === \u0026quot;\u0026quot; || password === \u0026quot;\u0026quot;) { res.render(\u0026quot;auth/signup\u0026quot;, { errorMessage: \u0026quot;Indicate a username and a password to sign up\u0026quot; }); return; } User.create({ username, password: hashPass }) .then(() =\u0026gt; { res.redirect(\u0026quot;/\u0026quot;); }) .catch(error =\u0026gt; { next(error); }) }); module.exports = router;  Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongoose-movies/",
+	"title": "LAB Mongoose Movies",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-mongoose-movies  Purpose:  Build a CRUD app Get comfortable building the routes with the different verbs Practice preparing the data to be displayed in the templates Very extensive exercice  What they do in the exercise:  I1: Add the celebrity model I2: Listing Celebrities I3: Celebrities Details Page I4: Adding new celebrities I5: Deleting celebrities I6(Bonus): Editing Celebrities I7: Add movie model I8: Listing movies I9: Movie Detail page I10: Adding new movies I11: Deleting movies I12(Bonus): Editing Movies  Good practices:  Keep your app.js tidy Make sure the routes for celebrities and movies have a file each one  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-dom-ironhack-cart/",
+	"title": "DOM Ironhack Cart",
+	"tags": [],
+	"description": "",
+	"content": " @TODO\nLink:  https://github.com/ironhack-labs/lab-dom-ironhack-cart  Purpose:  Learn how to select DOM elements and manipulate them\nWhat they do in the exercise: I1: create a product in the cart and create a button that calculates total prize\n I2: create another product\n I3: calculate the total prize of the cart\n I4: deleting the products\n I5: create a field to add new products\nGood practices: names have to be self-explaining\n a name shouldn\u0026rsquo;t be a single letter\n  Issues:  as creating new products is a feature it should be done before; so that we avoid creating products by copypasting code in I2 we keep the same logics as when we do the CRUD in the projects If the exercise gives the student this snippet plus all the function names, it becomes a fill the gap:\nwindow.onload = function(){ var calculatePriceButton = document.getElementById('calc-prices-button'); var createItemButton = document.getElementById('new-item-create'); var deleteButtons = document.getElementsByClassName('btn-delete'); calculatePriceButton.onclick = getTotalPrice; createItemButton.onclick = createNewItem; for(var i = 0; i\u0026lt;deleteButtons.length ; i++){ deleteButtons[i].onclick = deleteItem; } };  in function deleteItem(e){}, e is not a self-explaining name.\nSuggestion:  Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/17-authentication/",
+	"title": "Authentication",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes setting up Session $ npm install --save express-session connect-mongo  app.js\nconst session = require('express-session'); const MongoStore = require('connect-mongo')(session); ... app.use(session({ store: new MongoStore({ mongooseConnection: mongoose.connection, ttl: 24 * 60 * 60 // 1 day }), secret: 'some-string', resave: true, saveUninitialized: true, cookie: { maxAge: 24 * 60 * 60 * 1000 } })); ...  currentUser middleware\n// Makes the currentUser available in every page // note1: currentUser needs to match whatever you use in login/signup/logout routes // note2: if using passport, req.user instead app.use((req, res, next) =\u0026gt; { app.locals.currentUser = req.session.currentUser; next(); });  Login view\n\u0026lt;form action=\u0026quot;/login\u0026quot; method=\u0026quot;POST\u0026quot; id=\u0026quot;form\u0026quot;\u0026gt; \u0026lt;h2\u0026gt;Login\u0026lt;/h2\u0026gt; \u0026lt;label for=\u0026quot;username\u0026quot;\u0026gt;Username\u0026lt;/label\u0026gt; \u0026lt;input type=\u0026quot;text\u0026quot; name=\u0026quot;username\u0026quot; placeholder=\u0026quot;obiwan\u0026quot;\u0026gt; \u0026lt;label for=\u0026quot;password\u0026quot;\u0026gt;Password\u0026lt;/label\u0026gt; \u0026lt;input type=\u0026quot;password\u0026quot; name=\u0026quot;password\u0026quot; placeholder=\u0026quot;thatsnomoon\u0026quot;\u0026gt; \u0026lt;% if (errorMessage) { %\u0026gt; \u0026lt;div class=\u0026quot;error-message\u0026quot;\u0026gt;\u0026lt;%= errorMessage %\u0026gt;\u0026lt;/div\u0026gt; \u0026lt;% } %\u0026gt; \u0026lt;button\u0026gt;Sign in\u0026lt;/button\u0026gt; \u0026lt;p class=\u0026quot;account-message\u0026quot;\u0026gt; Don't have an account? \u0026lt;a href=\u0026quot;/signup\u0026quot;\u0026gt;Sign up\u0026lt;/a\u0026gt; \u0026lt;/p\u0026gt; \u0026lt;/form\u0026gt;  Login Controller\n// routes/auth.js router.get(\u0026quot;/login\u0026quot;, (req, res, next) =\u0026gt; { res.render(\u0026quot;auth/login\u0026quot;); }); router.post(\u0026quot;/login\u0026quot;, (req, res, next) =\u0026gt; { const username = req.body.username; const password = req.body.password; if (username === \u0026quot;\u0026quot; || password === \u0026quot;\u0026quot;) { res.render(\u0026quot;auth/login\u0026quot;, { errorMessage: \u0026quot;Indicate a username and a password to sign up\u0026quot; }); return; } User.findOne({ \u0026quot;username\u0026quot;: username }) .then(user =\u0026gt; { if (!user) { res.render(\u0026quot;auth/login\u0026quot;, { errorMessage: \u0026quot;The username doesn't exist\u0026quot; }); return; } if (bcrypt.compareSync(password, user.password)) { // Save the login in the session! req.session.currentUser = user; res.redirect(\u0026quot;/\u0026quot;); } else { res.render(\u0026quot;auth/login\u0026quot;, { errorMessage: \u0026quot;Incorrect password\u0026quot; }); } }) .catch(error =\u0026gt; { next(error) }) }); router.get(\u0026quot;/logout\u0026quot;, (req, res, next) =\u0026gt; { req.session.destroy((err) =\u0026gt; { // cannot access session here res.redirect(\u0026quot;/login\u0026quot;); }); });  protected route middleware\n(req, res, next) =\u0026gt; { if (req.session.currentUser) { next(); } else { res.redirect(\u0026quot;/login\u0026quot;); } });  Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-express-basic-auth/",
+	"title": "LAB Express Basic Auth",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-express-basic-auth  Purpose:  Interiorize the concepts and differences between Authentication and Authorization Understand how to configure the session in express Implement Login and signup Use bcrypt to encrypt the passwords Add protected routes Bonus iterations do not add much value at this time  What they do in the exercise:  I1: Sign up I2: Log in I3: Protected Routes Bonus I: Front-end validations Bonus II: Password Strenght Measurement  Good practices: Issues:  Mentions the Ironhack Generator which is no longer used  Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/17-js-async/",
+	"title": "JS Async",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives Async  setInterval setTimeout callback concept\n clearInterval(intervalId)\n Show the 4 native functions, and explain that setInterval and setTimeout return a number (an id)\n setTimeout(function () {}, 1000) setInterval(function () {}, 1000) clearInterval(intervalID)  do small 30 second counter using the setInterval and clearInterval\n give an example of when you should use a clearTimeout\n  Practice  challenges\n counter for 30s on the top corner (setTimeout) need to click a hidden work/object on the page to cancel the timer (clearInterval)  JS Timer @Todo, notes and link\n Practice: JS timer (1h30)\n  Resources Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/18-api/",
+	"title": "API",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-chronometer/",
+	"title": "Chronometer",
+	"tags": [],
+	"description": "",
+	"content": " Chronometer Link:  https://github.com/ironhack-labs/lab-javascript-chronometer\nPurpose: Understand asynchronus functions and callbacks.\nWhat they do in the exercise: Iteration 1 create a interval\n DOM manipulation from interation 2 to the end.\nGood practices: use var var self = this for no lose the context\n naming\n indentation\n  Issues:  use globals variables setInterval only is used once without complexity. All the set methods from the chronometer aren\u0026rsquo;t setters. For what they should use Chronometer.setTime()? Iteration 2 \u0026ldquo;Print our chronometer\u0026rdquo; don\u0026rsquo;t tell how to Print  TA solution: on chronometer.setTime() will return an object with min and sec. On main.js will create another setInterval where manipulate the DOM each second.  Iteration 3: Already has ol in the HTML Iteration 4: confuse since \u0026ldquo;we have to clear all the data on the clock.\u0026rdquo; ** Bonus: You already has the HTML is CSS done. Solution code use global functions inside chronometer methods. It will be better if they work with console but since they have JasmineTest they will not use it.\nSuggestion: Since we are showing what is a callback, we can create a callback method inside chronometer for every time change currentTime.\nTypos: setTime() -\u0026gt; \u0026ldquo;whit\u0026rdquo;\n Jasmine html have Vikings instead of Chronometer.\n  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/18-js-advanced-javascript/",
+	"title": "JS Advanced Javascript",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  Scope Hoisting Shadowing Closure Context  Resources  https://blog.bitsrc.io/a-beginners-guide-to-closures-in-javascript-97d372284dda  Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/19-ajax/",
+	"title": "AJAX",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-ajax-crud-characters/",
+	"title": "LAB AJAX Crud characters",
+	"tags": [],
+	"description": "",
+	"content": " Link: https://github.com/ironhack-labs/lab-ajax-crud-characters\nPurpose:  Create your first ever API that has complete CRUD functionality Understand why we return JSON and not render/redirect/send Get some practice using the Axios Library  What they do in the exercise:  I1: Create fake api in a db.json I2: Create the file that calls the api I3: Create the index.js file that calls the routes of the API and the implement the functionality  Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-financial-data-graphing/",
+	"title": "LAB Financial data graphing",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-financial-data-graphing  Purpose:  Practice fetching data from an API Learn how to modify the data and pass it to chartJS to build a graph Learn how to work with both an external API and an library at the same time  What they do in the exercise:  I1: Get Data I2: Create Chart I3: Dates Filter I4(Bonus): Currency I5(Bonus): Max/Min Values  Good practices:  Make sure you load the javascript code on the front end that fetches the data and generates the graphs  Issues:  Templates on the boilerplate are in ejs format I5 asks to use Math Min/Max with apply instead of the newer spread operator(\u0026hellip;)  Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/lab-javascript-advanced-algorithms/",
+	"title": "JS | Advanced Algorithms",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-javascript-advanced-algorithms\nPurpose: how context works\n how scope works\nWhat they do in the exercise:  Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/19-js-error/",
+	"title": "JS Error and Debuging",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  try and catch  Resources Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/20-deploy/",
+	"title": "Deploy",
+	"tags": [],
+	"description": "",
+	"content": " Lecture Notes Resources Ironhack Learning Unit "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-thinking-in-react/",
+	"title": "Lab Thinking in React",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-thinking-in-react  Purpose:    What they do in the exercise:  Iteration 1:  Good practices: -\nIssues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/20-js-canvas/",
+	"title": "Canvas",
+	"tags": [],
+	"description": "",
+	"content": " Learning Objectives  Canvas  Resources Ironhack Learning Platform "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-ironbeers/",
+	"title": "Lab IronBeers",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-react-ironbeers  Purpose:    What they do in the exercise:  Iteration 1:  Good practices: -\nIssues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-wiki-countries/",
+	"title": "Lab Wiki Countries",
+	"tags": [],
+	"description": "",
+	"content": " Link:  https://github.com/ironhack-labs/lab-wiki-countries  Purpose:    What they do in the exercise:  Iteration 1:  Good practices: -\nIssues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/project/",
+	"title": "Project Game",
+	"tags": [],
+	"description": "",
+	"content": "   Attachments   README.md  (0 ko)    Purpose/scope Reference project build  make sure to demo both Canvas and DOM games (Quiz, logic, etc)  Ideate (and validate ideas/scope) Planning  wireframes states and transitions data structures tasks (or simple US) show github readme template and encourage them to do the same  Execution  insist remind students everyday that they could/should review and/or change their previous slidescolumns  Control board  keep daily track use red to signal blocks / warnings (e.g. winning condition not explicit) standup in front of board columns:  who / project name dom / canvas challenges (physics, angles, animations, \u0026hellip;) planing (states explain win/loose condition,data structures wireframes) board github repo README.md (sign-off) index.html, main.css, main.js game.js, etc commits (count and update commits daily) deploy presentation   "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/flash/",
+	"title": "Flash Notifications",
+	"tags": [],
+	"description": "",
+	"content": " link connect-flash\n$ npm install --save connect-flash  connect-flash use session in order to work.\napp.js\nconst flash = require('connect-flash'); ... // session configuration middleware app.use(flash()); ...  Examples in routes\nrouter.get('/flash', function(req, res){ // Set a flash message by passing the key, followed by the value, to req.flash(). req.flash('info', 'Flash is back!') res.redirect('/'); }); router.get('/', function(req, res){ // Get an array of flash messages by passing the key to req.flash() res.render('index', { messages: req.flash('info') }); });  Best Practice Inside helpers create file middlewares.js .\nmiddleware.js\nmodule.exports = (req, res, next) =\u0026gt; { // We extract the messages separately cause we call req.flash() we'll clean the object flash. res.locals.errorMessages = req.flash('error'); res.locals.infoMessages = req.flash('info'); res.locals.dangerMessages = req.flash('danger'); res.locals.successMessages = req.flash('success'); res.locals.warningMessages = req.flash('warning'); next(); };  Create a partial view for notifications\nnotification.ejs\n\u0026lt;% infoMessages \u0026amp;\u0026amp; infoMessages.forEach((message) =\u0026gt; { %\u0026gt; \u0026lt;div class=\u0026quot;alert alert-info\u0026quot;\u0026gt; \u0026lt;%- message %\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;% }) dangerMessages \u0026amp;\u0026amp; dangerMessages.forEach((message) =\u0026gt; { %\u0026gt; \u0026lt;div class=\u0026quot;alert alert-danger\u0026quot;\u0026gt; \u0026lt;%- message %\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;% }) errorMessages \u0026amp;\u0026amp; errorMessages.forEach((message) =\u0026gt; { %\u0026gt; \u0026lt;div class=\u0026quot;alert alert-danger\u0026quot;\u0026gt; \u0026lt;%- message %\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;% }) successMessages \u0026amp;\u0026amp; successMessages.forEach((message) =\u0026gt; { %\u0026gt; \u0026lt;div class=\u0026quot;alert alert-success\u0026quot;\u0026gt; \u0026lt;%- message %\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;% }) warningMessages \u0026amp;\u0026amp; warningMessages.forEach((message) =\u0026gt; { %\u0026gt; \u0026lt;div class=\u0026quot;alert alert-warning\u0026quot;\u0026gt; \u0026lt;%- message %\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;% }) %\u0026gt;  call the partial \u0026lt;%- include('../partials/notifications') %\u0026gt; .\n"
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/project/",
+	"title": "Project Readme",
+	"tags": [],
+	"description": "",
+	"content": "# Project Name ## Description Describe your project in one/two lines. ## User Stories - **404** - As a user I want to see a nice 404 page when I go to a page that doesn’t exist so that I know it was my fault - **500** - As a user I want to see a nice error page when the super team screws it up so that I know that is not my fault - **homepage** - As a user I want to be able to access the homepage so that I see what the app is about and login and signup - **sign up** - As a user I want to sign up on the webpage so that I can see all the events that I could attend - **login** - As a user I want to be able to log in on the webpage so that I can get back to my account - **logout** - As a user I want to be able to log out from the webpage so that I can make sure no one will access my account - **events list** - As a user I want to see all the events available so that I can choose which ones I want to attend - **events create** - As a user I want to create an event so that I can invite others to attend - **events detail** - As a user I want to see the event details and attendee list of one event so that I can decide if I want to attend - **event attend** - As a user I want to be able to attend to event so that the organizers can count me in ## Backlog List of other features outside of the MVPs scope User profile: - see my profile - upload my profile picture - see other users profile - list of events created by the user - list events the user is attending Geo Location: - add geolocation to events when creating - show event in a map in event detail page - show all events in a map in the event list page Homepage - ... ## ROUTES: - GET / - renders the homepage - GET /auth/signup - redirects to / if user logged in - renders the signup form (with flash msg) - POST /auth/signup - redirects to / if user logged in - body: - username - email - password - GET /auth/login - redirects to / if user logged in - renders the login form (with flash msg) - POST /auth/login - redirects to / if user logged in - body: - username - password - POST /auth/logout - body: (empty) - GET /events - renders the event list + the create form - POST /events/create - redirects to / if user is anonymous - body: - name - date - location - description - GET /events/:id - renders the event detail page - includes the list of attendees - attend button if user not attending yet - POST /events/:id/attend - redirects to / if user is anonymous - body: (empty - the user is already stored in the session) ## Models User model ` ``` username: String password: String ` ``` Event model ` ``` owner: ObjectId\u0026lt;User\u0026gt; name: String description: String date: Date location: String attendees: [ObjectId\u0026lt;User\u0026gt;] ` ``` ## Links ### Trello [Link to your trello board](https://trello.com) or picture of your physical board ### Git The url to your repository and to your deployed project [Repository Link](http://github.com) [Deploy Link](http://heroku.com) ### Slides The url to your presentation slides [Slides Link](http://slides.com)  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/resources/",
+	"title": "Resources",
+	"tags": [],
+	"description": "",
+	"content": " Tools  VSCode Chrome Dev Tools  Terminal  iTerm and Terminator Bash  Git  Git Reference Git Cheatsheet GitHub  Accessibility  [Acessibility Checklist][https://a11yproject.com/checklist] Screen Reader Tota11y No Coffee Vision filter  Documentation HTML  MDN HTML guide MDN HTML reference W3C HTML Validator  CSS  MDN CSS guide MDN CSS reference W3C CSS Validator Can I Use  SASS  SASS  Javascript  MDN Javascript guide MDN Javascript reference  Accessibility  [The a11y project][https://a11yproject.com/] [WRC ARIA LAndmarks][https://www.w3.org/TR/wai-aria-practices-1.1/examples/landmarks/index.html] [MDN WAI-ARIA Basics][https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics] [The W3C WAI Tutorials][https://www.w3.org/WAI/tutorials/]  Dom  MDN DOM guide MDN DOM reference  Canvas  MDN Canvas guide MDN Canvas reference  Testing  Frontend Checklist  Building  Intro to webpack  Deploying  Github Pages  And many more docs\u0026hellip;  DEV DOCS  Libraries  Bootstrap - toolkit for developing with HTML, CSS, and JS to quickly prototype your ideas or build your entire app jQuery - fast, small, and feature-rich JavaScript library with manipulation, event handling, and animation features MomentJS - library to parse, validate, manipulate, and display dates and times in JavaScript ScrollMagic - library that tracks user\u0026rsquo;s current scroll position GSAP - the GreenSock Animation Platform animates anything JavaScript can touch  Online tools JS Tools  Plunkr JSBin Repl.it  Design  Google Fonts Colorzilla Colors Colors SVG Icons Icons Font awesome - font icons Thenounproject - comunity with Catalogs of Symbols. Photos Photos Photos Photos  Prototyping  Origami Balsamiq Invision Pop UXPin MockPlus  Lorem Ipsum  Lorem Ipsum Bacon Ipsum Cat Ipsum Zombie Ipsum  Lorem Images  Lorem Pixel Lorem Flikr Placeholder PlaceImg \u0026hellip;and more  CSS tools  UIgradients - background Linear Gradient Generator. You can generate the css for gradient with a usefull preview Colorzilla Gradient Generator - background Linear Gradient Generator. You can generate the css for gradient with a usefull preview Clippy - clip-path generator - you can generate the css for clip-path polygon with a usefull preview The Ultimate CSS Generator - a very complete CSS generator when you can generate code for animations, box-shadows, filters, etc.  Tutorials  Web Design Modern Javascript Tutorial CSS Tricks Github HelloWorld  Libraries  Bootstrap jQuery MomentJS ToneJS Miligram  People  Brendan Eich Douglas Crockford John Resig Jeffrey Zeldman Martin Fowler Jason Santa Maria Eric Meyer Remy Sharp [Andy Clarke](http://www.stuffandnonsense.co.uk](http://www.forabeautifulweb.com) Jeremy Keith Christian Heilmann Mike Monteiro Jason Santa Maria Nicole Sullivan Robert C. Martin Tim Pope Peter Paul Koch [David Shea](http://www.csszengarden.com](http://mezzoblue.com) Rebecca Murphey Jason Kotke Lea Verou Susan Robertson Tom Preston Werner Laura Kalbag Rachel Andrew Addy Osmani Sarah Dresner Jakob Nielsen Sarah Parmenter Scott Hanselman Sara Soueidan Chris Lea Lara Hogan Mike Bostock Tim Bray Luke Wroblewski Mark Otto Chris Wanstrath Shane Hudson Sindre Sothus Briant Ford Jessica Lord James Halliday Eric Elliot Andrea Giammarchi  Websites  Smashing Magazine A List Apart Age Of Product Mountain Goat Apiumhub  Podcasts  Agile for Humans Scrum Master Toobox  Specifications  Javascript HTML5 CSS  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/",
+	"title": "LABS",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/labs/",
+	"title": "LABS",
+	"tags": [],
+	"description": "",
+	"content": " Week 1 | Day 1  PP: Javascript Basic Algorithms DE: CSS Recipe Clone  Week 1 | Day 2  PP: Javascript Functions and Arrays DE: CSS instagram clone  Week 1 | Day 3  PP: JavaScript clue DE: CSS spotify clone  Week 1 | Day 4  PP: JavaScript all times movies DE: CSS flexbox slack  Week 1 | Day 5  PP: JavaScript vikings DE: DOM Ironhack Cart  Week 2 | Day 1  PP: Chronometer DE: Bootstrap cloning revera  Week 2 | Day 2  PP: jQuery pizza builder DE: JavaScript Memory Game  Week 2 | Day 3  PP: JavaScript koans DE: Javascript advanced algorithms  Week 2 | Day 4  PP: Canvas hangman DE: Canvas Race Car  Week 2 | Day 5  PP/DE: Canvas flappybirds  "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module3/lab/",
+	"title": "LABS",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/adaptive/",
+	"title": "Adaptive",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module1/project.files/readme/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " Project\u0026rsquo;s name Description Brief description of the project\nMVP (DOM - CANVAS) MVP definition, deliverables.\nBacklog Data structure Classes and methods definition.\nStates y States Transitions Definition of the different states and their transition (transition functions)\n splashScreen gameScreen gameoverScreen winScreen  Task Task definition in order of priority\nLinks Trello Link url\nGit URls for the project repo and deploy Link Repo Link Deploy\nSlides URls for the project presentation (slides) Link Slides.com\n"
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-authentication-with-passport/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " Authentication with Passport Link:  https://github.com/ironhack-labs/lab-authentication-with-passport  Purpose:  Implement authentication with passport Protect route using passport  What they do in the exercise:  I1: Build Sign-up Feature I2: Build Login Feature I3: Add a private page  Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-coffee-and-books/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " Coffee and Books Link:  https://github.com/ironhack-labs/lab-coffee-and-books  Purpose:  Understand how to use GeoJSON to store the location Implement the Google Maps API Add markers to the map   What they do in the exercise:  Create a model Create routes to show the listed elements Implement Google maps api  Good practices: Issues:  Mentions the ironhack generator which is no longer used No iterations  Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-file-upload/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " File upload Link:  https://github.com/ironhack-labs/lab-file-upload  Purpose:  Practice file upload Continue practicing routes, protect routes Deployment is done during the project week so Iteration 3 is skipable  What they do in the exercise:  I1: User Profile Pictures I2: Posts I3: Comments I4: Deploy  Good practices:  Use cloudinary for the picture upload  Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-mongo-compass-crud/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " Mongo Compass CRUD Link:  https://github.com/ironhack-labs/lab-mongo-compass-crud  Purpose:  First touch with MongoDB Start writing queries to mongo  What they do in the exercise:  They are provided with a mock database They have to write queries to Mongo in order to retrieve the information required  Good practices: Issues: Suggestion:  Write mongoDb queries on the command line, try not to use Compass (graphic interface for managing MongoDb)   Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-nodemailer/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " Nodemailler Link:  https://github.com/ironhack-labs/lab-nodemailer  Purpose:  Practing sending emails from your express app  What they do in the exercise:  I1: Create the User Model I2: Signup Process I3: Confirmation Route I4: Profile View Bonus: Styling Email  Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/module2/labs/lab-passport-roles/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " Passport Roles Link:  https://github.com/ironhack-labs/lab-passport-roles  Purpose:  Practice bulding auth with passport Create user roles with passport and use it to protect routes  What they do in the exercise:  I1: Create a user schema with different roles I2: Add edit profile feature and see profile I3: Add feature to allow TA role to add courses I4: Allow other users to reach the platform with Facebook login  Good practices: Issues: Suggestion: Typos: "
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ironhackbcn.github.io/web-cheatsheet/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
