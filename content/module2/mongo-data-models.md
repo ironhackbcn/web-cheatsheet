@@ -1,11 +1,7 @@
 ---
 title: "MongoDB Data Models"
 date: 2018-12-28T16:20:29+01:00
-draft: false
 weight: 4
-pre: "<b>4. </b>"
-week: 4 
-day: 2
 ---
 
 ## Lecture Notes
@@ -19,7 +15,6 @@ day: 2
   - 1:N 1:few 
   - 1:N 1:many
   - N:M
-
 
 ## Resources
 

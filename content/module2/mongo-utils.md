@@ -1,11 +1,8 @@
 ---
-title: "MongoDB CRUD operations"
+title: "MongoDB Utils"
 date: 2018-12-28T16:18:07+01:00
 draft: false
 weight: 5
-pre: "<b>5. </b>"
-week: 4
-day: 2
 ---
 
 ## Lecture Notes

@@ -3,9 +3,6 @@ title: "Node"
 date: 2018-11-12T16:06:07+01:00
 draft: false
 weight: 2
-week: 4
-day: 1
-pre: "<b>2. </b>"
 ---
 
 ## Lecture Notes
@@ -53,44 +50,6 @@ pre: "<b>2. </b>"
 - other Node.js use cases, not only http servers
   - node-sass, webpack, gulp, grunt
   - babel
-
-## eslint
-
-in folder project
-
-`$ eslint --init`
-
-- use popular style guide
-- standard
-- json
-
-if you use standard replace `.eslintrc.json` with
-
-```json
-{
-  "extends": "standard",
-  "env": {
-    "es6": true,
-    "node": true
-  },
-  "globals": {
-    "document": false,
-    "window": false,
-    "console": false
-  },
-  "rules": {
-    "indent": [
-      2,
-      2
-    ],
-    "semi": [
-      "error",
-      "always"
-    ]
-  }
-}
-```
-
 
 
 ## Resources
