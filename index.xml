@@ -1043,10 +1043,12 @@ What they do in the exercise:  Good practices: Issues: Suggestion: Typos: </desc
     <item>
       <title>Deploy</title>
       <link>https://ironhackbcn.github.io/web-cheatsheet/module2/20-deploy/</link>
-      <pubDate>Fri, 28 Dec 2018 16:48:45 +0100</pubDate>
+      <pubDate>Fri, 28 Dec 2018 15:48:45 +0000</pubDate>
       
       <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/20-deploy/</guid>
-      <description> Lecture Notes Resources Ironhack Learning Unit </description>
+      <description>Deployment  http://learn.ironhack.com/#/learning_unit/3170 create heroku account  it&amp;rsquo;s a cloud platform for hosting apps https://signup.heroku.com/  create application  provide a name (it will be the url https://app-name.herokuapp.com)  install heroku CLI
+ download here: https://devcenter.heroku.com/articles/heroku-cli  prepare app inside the project
+ $ heroku login $ heroku git:remote -a app-name make sure package.json is in the root of the project make sure package.json contains a start script add engines to package.</description>
     </item>
     
     <item>

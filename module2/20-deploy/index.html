@@ -13,17 +13,17 @@
 
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="/web-cheatsheet/css/nucleus.css?1550338725" rel="stylesheet">
-    <link href="/web-cheatsheet/css/fontawesome-all.min.css?1550338725" rel="stylesheet">
-    <link href="/web-cheatsheet/css/hybrid.css?1550338725" rel="stylesheet">
-    <link href="/web-cheatsheet/css/featherlight.min.css?1550338725" rel="stylesheet">
-    <link href="/web-cheatsheet/css/perfect-scrollbar.min.css?1550338725" rel="stylesheet">
-    <link href="/web-cheatsheet/css/auto-complete.css?1550338725" rel="stylesheet">
-    <link href="/web-cheatsheet/css/theme.css?1550338725" rel="stylesheet">
-    <link href="/web-cheatsheet/css/hugo-theme.css?1550338725" rel="stylesheet">
+    <link href="/web-cheatsheet/css/nucleus.css?1550915433" rel="stylesheet">
+    <link href="/web-cheatsheet/css/fontawesome-all.min.css?1550915433" rel="stylesheet">
+    <link href="/web-cheatsheet/css/hybrid.css?1550915433" rel="stylesheet">
+    <link href="/web-cheatsheet/css/featherlight.min.css?1550915433" rel="stylesheet">
+    <link href="/web-cheatsheet/css/perfect-scrollbar.min.css?1550915433" rel="stylesheet">
+    <link href="/web-cheatsheet/css/auto-complete.css?1550915433" rel="stylesheet">
+    <link href="/web-cheatsheet/css/theme.css?1550915433" rel="stylesheet">
+    <link href="/web-cheatsheet/css/hugo-theme.css?1550915433" rel="stylesheet">
     
 
-    <script src="/web-cheatsheet/js/jquery-2.x.min.js?1550338725"></script>
+    <script src="/web-cheatsheet/js/jquery-2.x.min.js?1550915433"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/web-cheatsheet/js/lunr.min.js?1550338725"></script>
-<script type="text/javascript" src="/web-cheatsheet/js/auto-complete.js?1550338725"></script>
+<script type="text/javascript" src="/web-cheatsheet/js/lunr.min.js?1550915433"></script>
+<script type="text/javascript" src="/web-cheatsheet/js/auto-complete.js?1550915433"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ironhackbcn.github.io\/web-cheatsheet\/";
     
 </script>
-<script type="text/javascript" src="/web-cheatsheet/js/search.js?1550338725"></script>
+<script type="text/javascript" src="/web-cheatsheet/js/search.js?1550915433"></script>
 
     
   </div>
@@ -1505,12 +1505,7 @@
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li><a href="#lecture-notes">Lecture Notes</a></li>
-<li><a href="#resources">Resources</a></li>
-<li><a href="#ironhack-learning-unit">Ironhack Learning Unit</a></li>
-</ul></li>
+<li><a href="#deployment">Deployment</a></li>
 </ul>
 </nav>
     </div>
@@ -1532,11 +1527,112 @@
 
 
 
-<h2 id="lecture-notes">Lecture Notes</h2>
+<h1 id="deployment">Deployment</h1>
 
-<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="http://learn.ironhack.com/#/learning_unit/3170">http://learn.ironhack.com/#/learning_unit/3170</a></li>
+<li>create heroku account
 
-<h2 id="ironhack-learning-unit">Ironhack Learning Unit</h2>
+<ul>
+<li>it&rsquo;s a cloud platform for hosting apps</li>
+<li><a href="https://signup.heroku.com/">https://signup.heroku.com/</a></li>
+</ul></li>
+<li>create application
+
+<ul>
+<li>provide a name (it will be the url <a href="https://app-name.herokuapp.com">https://app-name.herokuapp.com</a>)</li>
+</ul></li>
+
+<li><p>install <a href="https://devcenter.heroku.com/articles/heroku-cli">heroku CLI</a></p>
+
+<ul>
+<li>download here: <a href="https://devcenter.heroku.com/articles/heroku-cli">https://devcenter.heroku.com/articles/heroku-cli</a></li>
+</ul></li>
+
+<li><p>prepare app inside the project</p>
+
+<ul>
+<li><code>$ heroku login</code></li>
+<li><code>$ heroku git:remote -a app-name</code></li>
+<li>make sure package.json is in the root of the project</li>
+<li>make sure package.json contains a start script</li>
+<li>add <a href="https://devcenter.heroku.com/articles/nodejs-support#specifying-a-node-js-version">engines</a> to package.json</li>
+</ul></li>
+</ul>
+
+<pre><code>&quot;scripts&quot;: {
+  &quot;start&quot;: &quot;node ./bin/www&quot;
+},
+&quot;engines&quot;: {
+  &quot;node&quot;: &quot;x.x.x&quot;,
+  &quot;npm&quot;: &quot;x.x.x&quot;
+}
+</code></pre>
+
+<ul>
+<li><p>create database via shell</p>
+
+<ul>
+<li><code>$ heroku addons:create mongolab:sandbox</code></li>
+<li><code>$ heroku addons:open mongolab</code></li>
+<li><code>$ heroku config:get MONGODB_URI</code></li>
+</ul></li>
+
+<li><p>OR create database in <a href="https://mlab.com/">MLAB</a></p>
+
+<ul>
+<li>sign up</li>
+<li>create new MongoDB Deployment</li>
+<li>cloud provider</li>
+<li>free account</li>
+<li>provide a name</li>
+<li>submit</li>
+<li>wait until the database is created</li>
+<li>add &ldquo;admin&rdquo; user database</li>
+<li>copy mongodb url to herokuapp settings config variables <code>MONGODB_URI</code>
+<br /></li>
+</ul></li>
+</ul>
+
+<pre><code>mongodb://myuser:mypassword@ds255309.mlab.com:11309/ironhack-database
+</code></pre>
+
+<ul>
+<li>configure app
+
+<ul>
+<li>REMOVE ALL API KEYS (e.g. facebook secret) FROM YOUR CODE</li>
+<li><code>$ npm install --save dotenv</code></li>
+<li>add <code>require('dotenv').config();</code> to app.js</li>
+<li>create <code>.env</code> file (adds fake environment variables to <code>process.env</code>)</li>
+<li>add <code>.env</code> to <code>.gitignore</code></li>
+<li>replace hardcoded mongodb URI with process env variable in app.js</li>
+</ul></li>
+</ul>
+
+<p><strong>.env</strong></p>
+
+<pre><code># in .env file
+MONGODB_URI=mongodb://localhost/databaseName
+FACEBOOK_API_KEY=qwerqweoiov32414oih12p3ou12po12po3ihp1234
+</code></pre>
+
+<p><strong>app.js</strong></p>
+
+<pre><code class="language-javascript">// in app.js
+mongoose.connect(process.env.MONGODB_URI, ...);
+</code></pre>
+
+<ul>
+<li>deploy
+
+<ul>
+<li><code>$ git add</code> &amp;&amp; <code>$ git commit</code></li>
+<li><code>$ git push heroku master</code></li>
+<li><code>$ heroku logs</code></li>
+<li><code>$ heroku logs -t</code></li>
+</ul></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -2712,20 +2808,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/web-cheatsheet/js/clipboard.min.js?1550338725"></script>
-    <script src="/web-cheatsheet/js/perfect-scrollbar.min.js?1550338725"></script>
-    <script src="/web-cheatsheet/js/perfect-scrollbar.jquery.min.js?1550338725"></script>
-    <script src="/web-cheatsheet/js/jquery.sticky.js?1550338725"></script>
-    <script src="/web-cheatsheet/js/featherlight.min.js?1550338725"></script>
-    <script src="/web-cheatsheet/js/html5shiv-printshiv.min.js?1550338725"></script>
-    <script src="/web-cheatsheet/js/highlight.pack.js?1550338725"></script>
+    <script src="/web-cheatsheet/js/clipboard.min.js?1550915433"></script>
+    <script src="/web-cheatsheet/js/perfect-scrollbar.min.js?1550915433"></script>
+    <script src="/web-cheatsheet/js/perfect-scrollbar.jquery.min.js?1550915433"></script>
+    <script src="/web-cheatsheet/js/jquery.sticky.js?1550915433"></script>
+    <script src="/web-cheatsheet/js/featherlight.min.js?1550915433"></script>
+    <script src="/web-cheatsheet/js/html5shiv-printshiv.min.js?1550915433"></script>
+    <script src="/web-cheatsheet/js/highlight.pack.js?1550915433"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/web-cheatsheet/js/modernizr.custom.71422.js?1550338725"></script>
-    <script src="/web-cheatsheet/js/learn.js?1550338725"></script>
-    <script src="/web-cheatsheet/js/hugo-learn.js?1550338725"></script>
+    <script src="/web-cheatsheet/js/modernizr.custom.71422.js?1550915433"></script>
+    <script src="/web-cheatsheet/js/learn.js?1550915433"></script>
+    <script src="/web-cheatsheet/js/hugo-learn.js?1550915433"></script>
 
-    <link href="/web-cheatsheet/mermaid/mermaid.css?1550338725" type="text/css" rel="stylesheet" />
-    <script src="/web-cheatsheet/mermaid/mermaid.js?1550338725"></script>
+    <link href="/web-cheatsheet/mermaid/mermaid.css?1550915433" type="text/css" rel="stylesheet" />
+    <script src="/web-cheatsheet/mermaid/mermaid.js?1550915433"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
