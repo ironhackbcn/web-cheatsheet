@@ -9,21 +9,21 @@
 
     <link rel="shortcut icon" href="/web-cheatsheet/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/web-cheatsheet/images/favicon.png" type="image/x-icon" />
-    <title>HTML Intro :: </title>
+    <title>ESLint :: </title>
 
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="/web-cheatsheet/css/nucleus.css?1550921788" rel="stylesheet">
-    <link href="/web-cheatsheet/css/fontawesome-all.min.css?1550921788" rel="stylesheet">
-    <link href="/web-cheatsheet/css/hybrid.css?1550921788" rel="stylesheet">
-    <link href="/web-cheatsheet/css/featherlight.min.css?1550921788" rel="stylesheet">
-    <link href="/web-cheatsheet/css/perfect-scrollbar.min.css?1550921788" rel="stylesheet">
-    <link href="/web-cheatsheet/css/auto-complete.css?1550921788" rel="stylesheet">
-    <link href="/web-cheatsheet/css/theme.css?1550921788" rel="stylesheet">
-    <link href="/web-cheatsheet/css/hugo-theme.css?1550921788" rel="stylesheet">
+    <link href="/web-cheatsheet/css/nucleus.css?1550921789" rel="stylesheet">
+    <link href="/web-cheatsheet/css/fontawesome-all.min.css?1550921789" rel="stylesheet">
+    <link href="/web-cheatsheet/css/hybrid.css?1550921789" rel="stylesheet">
+    <link href="/web-cheatsheet/css/featherlight.min.css?1550921789" rel="stylesheet">
+    <link href="/web-cheatsheet/css/perfect-scrollbar.min.css?1550921789" rel="stylesheet">
+    <link href="/web-cheatsheet/css/auto-complete.css?1550921789" rel="stylesheet">
+    <link href="/web-cheatsheet/css/theme.css?1550921789" rel="stylesheet">
+    <link href="/web-cheatsheet/css/hugo-theme.css?1550921789" rel="stylesheet">
     
 
-    <script src="/web-cheatsheet/js/jquery-2.x.min.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/jquery-2.x.min.js?1550921789"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/web-cheatsheet/module1/2-html-intro/">
+  <body class="" data-url="/web-cheatsheet/module2/eslint/">
     <nav id="sidebar" class="">
 
 
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/web-cheatsheet/js/lunr.min.js?1550921788"></script>
-<script type="text/javascript" src="/web-cheatsheet/js/auto-complete.js?1550921788"></script>
+<script type="text/javascript" src="/web-cheatsheet/js/lunr.min.js?1550921789"></script>
+<script type="text/javascript" src="/web-cheatsheet/js/auto-complete.js?1550921789"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ironhackbcn.github.io\/web-cheatsheet\/";
     
 </script>
-<script type="text/javascript" src="/web-cheatsheet/js/search.js?1550921788"></script>
+<script type="text/javascript" src="/web-cheatsheet/js/search.js?1550921789"></script>
 
     
   </div>
@@ -149,7 +149,7 @@
   
     
     <li data-nav-id="/web-cheatsheet/module1/" title="Module 1" class="dd-item 
-        parent
+        
         
         
         ">
@@ -218,7 +218,7 @@
  
   
     
-      <li data-nav-id="/web-cheatsheet/module1/2-html-intro/" title="HTML Intro" class="dd-item active">
+      <li data-nav-id="/web-cheatsheet/module1/2-html-intro/" title="HTML Intro" class="dd-item ">
         <a href="/web-cheatsheet/module1/2-html-intro/">
         <b>2. </b>HTML Intro
         
@@ -671,7 +671,7 @@
   
     
     <li data-nav-id="/web-cheatsheet/module2/" title="Module 2" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1077,7 +1077,7 @@
  
   
     
-      <li data-nav-id="/web-cheatsheet/module2/eslint/" title="ESLint" class="dd-item ">
+      <li data-nav-id="/web-cheatsheet/module2/eslint/" title="ESLint" class="dd-item active">
         <a href="/web-cheatsheet/module2/eslint/">
         ESLint
         
@@ -1509,7 +1509,7 @@
             
           
           
-            <a href='/web-cheatsheet/'>index</a> > <a href='/web-cheatsheet/module1/'>Module 1</a> > HTML Intro
+            <a href='/web-cheatsheet/'>index</a> > <a href='/web-cheatsheet/module2/'>Module 2</a> > ESLint
           
          
           
@@ -1526,9 +1526,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#learning-objectives">Learning Objectives</a></li>
-<li><a href="#resources">Resources</a></li>
-<li><a href="#ironhack-learning-platform">Ironhack Learning Platform</a></li>
+<li><a href="#instalation">instalation</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1543,7 +1541,7 @@
         
         <div id="body-inner">
           
-            <h1>HTML Intro</h1>
+            <h1>ESLint</h1>
           
 
         
@@ -1551,43 +1549,50 @@
 
 
 
-<h2 id="learning-objectives">Learning Objectives</h2>
+<h2 id="instalation">instalation</h2>
+
+<pre><code class="language-bash">$ npm install -g eslint
+</code></pre>
+
+<p>in folder project</p>
+
+<pre><code class="language-bash">$ eslint --init
+</code></pre>
+
+<p>you will see differents questions select the following answers
+- use popular style guide
+- standard
+- json</p>
+
+<p>if you use standard replace <code>.eslintrc.json</code> with</p>
+
+<pre><code class="language-json">{
+  &quot;extends&quot;: &quot;standard&quot;,
+  &quot;env&quot;: {
+    &quot;es6&quot;: true,
+    &quot;node&quot;: true
+  },
+  &quot;globals&quot;: {
+    &quot;document&quot;: false,
+    &quot;window&quot;: false,
+    &quot;console&quot;: false
+  },
+  &quot;rules&quot;: {
+    &quot;indent&quot;: [
+      2,
+      2
+    ],
+    &quot;semi&quot;: [
+      &quot;error&quot;,
+      &quot;always&quot;
+    ]
+  }
+}
+</code></pre>
 
 <ul>
-<li>What is HTML?</li>
-<li>DOM tree</li>
-<li>DOM nodes: root, ancestor, descendent, parent, child, sibling, elements</li>
-<li>html, head &amp; body</li>
-<li>attributes and values</li>
-<li>self-closing tags</li>
-<li>semantic tags</li>
-<li>block vs inline elements</li>
-<li>How to structure web</li>
+<li><a href="https://eslint.org/">https://eslint.org/</a></li>
 </ul>
-
-<h2 id="resources">Resources</h2>
-
-<ul>
-<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">element types</a></p></li>
-
-<li><p><a href="https://developer.mozilla.org/en-US/docs/Learn">MDN HTML guide</a></p></li>
-
-<li><p><a href="https://developer.mozilla.org/kab/docs/Web/HTML">MDN HTML reference</a></p></li>
-
-<li><p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#Enter_HTML5_structural_elements#Planning_a_simple_website">Planning_a_simple_website</a></p></li>
-
-<li><p><a href="https://www.themelocation.com/best-html5-practices/">html 5 best practices</a></p></li>
-
-<li><p><a href="https://developers.google.com/web/tools/chrome-devtools/">Chrome Dev Tools</a></p></li>
-
-<li><p><a href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn">Screen Reader</a></p></li>
-
-<li><p><a href="https://validator.w3.org/#validate_by_input">HTML Validator</a></p></li>
-</ul>
-
-<h2 id="ironhack-learning-platform">Ironhack Learning Platform</h2>
-
-<p><a href="http://learn.ironhack.com/#/learning_unit/6612">Introduction to HTML</a></p>
 
 
 <footer class=" footline" >
@@ -1677,7 +1682,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1692,9 +1696,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1728,7 +1729,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1744,9 +1744,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2108,6 +2105,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2122,6 +2120,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2443,6 +2444,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2458,6 +2460,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2766,10 +2771,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/web-cheatsheet/module1/1-introduction/" title="Introduction &amp; Welcome"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/web-cheatsheet/module2/20-deploy/" title="Deploy"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/web-cheatsheet/module1/3-js-intro/" title="JS Intro" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/web-cheatsheet/module2/flash/" title="Flash Notifications" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2779,20 +2784,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/web-cheatsheet/js/clipboard.min.js?1550921788"></script>
-    <script src="/web-cheatsheet/js/perfect-scrollbar.min.js?1550921788"></script>
-    <script src="/web-cheatsheet/js/perfect-scrollbar.jquery.min.js?1550921788"></script>
-    <script src="/web-cheatsheet/js/jquery.sticky.js?1550921788"></script>
-    <script src="/web-cheatsheet/js/featherlight.min.js?1550921788"></script>
-    <script src="/web-cheatsheet/js/html5shiv-printshiv.min.js?1550921788"></script>
-    <script src="/web-cheatsheet/js/highlight.pack.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/clipboard.min.js?1550921789"></script>
+    <script src="/web-cheatsheet/js/perfect-scrollbar.min.js?1550921789"></script>
+    <script src="/web-cheatsheet/js/perfect-scrollbar.jquery.min.js?1550921789"></script>
+    <script src="/web-cheatsheet/js/jquery.sticky.js?1550921789"></script>
+    <script src="/web-cheatsheet/js/featherlight.min.js?1550921789"></script>
+    <script src="/web-cheatsheet/js/html5shiv-printshiv.min.js?1550921789"></script>
+    <script src="/web-cheatsheet/js/highlight.pack.js?1550921789"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/web-cheatsheet/js/modernizr.custom.71422.js?1550921788"></script>
-    <script src="/web-cheatsheet/js/learn.js?1550921788"></script>
-    <script src="/web-cheatsheet/js/hugo-learn.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/modernizr.custom.71422.js?1550921789"></script>
+    <script src="/web-cheatsheet/js/learn.js?1550921789"></script>
+    <script src="/web-cheatsheet/js/hugo-learn.js?1550921789"></script>
 
-    <link href="/web-cheatsheet/mermaid/mermaid.css?1550921788" type="text/css" rel="stylesheet" />
-    <script src="/web-cheatsheet/mermaid/mermaid.js?1550921788"></script>
+    <link href="/web-cheatsheet/mermaid/mermaid.css?1550921789" type="text/css" rel="stylesheet" />
+    <script src="/web-cheatsheet/mermaid/mermaid.js?1550921789"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

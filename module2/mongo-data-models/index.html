@@ -9,21 +9,21 @@
 
     <link rel="shortcut icon" href="/web-cheatsheet/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/web-cheatsheet/images/favicon.png" type="image/x-icon" />
-    <title>MongoDB CRUD operations :: </title>
+    <title>MongoDB Data Models :: </title>
 
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="/web-cheatsheet/css/nucleus.css?1550917443" rel="stylesheet">
-    <link href="/web-cheatsheet/css/fontawesome-all.min.css?1550917443" rel="stylesheet">
-    <link href="/web-cheatsheet/css/hybrid.css?1550917443" rel="stylesheet">
-    <link href="/web-cheatsheet/css/featherlight.min.css?1550917443" rel="stylesheet">
-    <link href="/web-cheatsheet/css/perfect-scrollbar.min.css?1550917443" rel="stylesheet">
-    <link href="/web-cheatsheet/css/auto-complete.css?1550917443" rel="stylesheet">
-    <link href="/web-cheatsheet/css/theme.css?1550917443" rel="stylesheet">
-    <link href="/web-cheatsheet/css/hugo-theme.css?1550917443" rel="stylesheet">
+    <link href="/web-cheatsheet/css/nucleus.css?1550921788" rel="stylesheet">
+    <link href="/web-cheatsheet/css/fontawesome-all.min.css?1550921788" rel="stylesheet">
+    <link href="/web-cheatsheet/css/hybrid.css?1550921788" rel="stylesheet">
+    <link href="/web-cheatsheet/css/featherlight.min.css?1550921788" rel="stylesheet">
+    <link href="/web-cheatsheet/css/perfect-scrollbar.min.css?1550921788" rel="stylesheet">
+    <link href="/web-cheatsheet/css/auto-complete.css?1550921788" rel="stylesheet">
+    <link href="/web-cheatsheet/css/theme.css?1550921788" rel="stylesheet">
+    <link href="/web-cheatsheet/css/hugo-theme.css?1550921788" rel="stylesheet">
     
 
-    <script src="/web-cheatsheet/js/jquery-2.x.min.js?1550917443"></script>
+    <script src="/web-cheatsheet/js/jquery-2.x.min.js?1550921788"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/web-cheatsheet/module2/5-mongo-crud/">
+  <body class="" data-url="/web-cheatsheet/module2/mongo-data-models/">
     <nav id="sidebar" class="">
 
 
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/web-cheatsheet/js/lunr.min.js?1550917443"></script>
-<script type="text/javascript" src="/web-cheatsheet/js/auto-complete.js?1550917443"></script>
+<script type="text/javascript" src="/web-cheatsheet/js/lunr.min.js?1550921788"></script>
+<script type="text/javascript" src="/web-cheatsheet/js/auto-complete.js?1550921788"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ironhackbcn.github.io\/web-cheatsheet\/";
     
 </script>
-<script type="text/javascript" src="/web-cheatsheet/js/search.js?1550917443"></script>
+<script type="text/javascript" src="/web-cheatsheet/js/search.js?1550921788"></script>
 
     
   </div>
@@ -697,9 +697,9 @@
  
   
     
-      <li data-nav-id="/web-cheatsheet/module2/1-es6/" title="ES 6" class="dd-item ">
-        <a href="/web-cheatsheet/module2/1-es6/">
-        <b>1. </b>ES 6
+      <li data-nav-id="/web-cheatsheet/module2/es6/" title="ES 6" class="dd-item ">
+        <a href="/web-cheatsheet/module2/es6/">
+        ES 6
         
         </a>
     </li>
@@ -716,9 +716,9 @@
  
   
     
-      <li data-nav-id="/web-cheatsheet/module2/2-node/" title="Node" class="dd-item ">
-        <a href="/web-cheatsheet/module2/2-node/">
-        <b>2. </b>Node
+      <li data-nav-id="/web-cheatsheet/module2/node/" title="Node" class="dd-item ">
+        <a href="/web-cheatsheet/module2/node/">
+        Node
         
         </a>
     </li>
@@ -735,9 +735,9 @@
  
   
     
-      <li data-nav-id="/web-cheatsheet/module2/3-mongo-introduction/" title="MongoDB Introduction" class="dd-item ">
-        <a href="/web-cheatsheet/module2/3-mongo-introduction/">
-        <b>3. </b>MongoDB Introduction
+      <li data-nav-id="/web-cheatsheet/module2/mongo-installation/" title="MongoDB Installation" class="dd-item ">
+        <a href="/web-cheatsheet/module2/mongo-installation/">
+        MongoDB Installation
         
         </a>
     </li>
@@ -754,9 +754,9 @@
  
   
     
-      <li data-nav-id="/web-cheatsheet/module2/4-mongo-data-models/" title="MongoDB Data Models" class="dd-item ">
-        <a href="/web-cheatsheet/module2/4-mongo-data-models/">
-        <b>4. </b>MongoDB Data Models
+      <li data-nav-id="/web-cheatsheet/module2/mongo-data-models/" title="MongoDB Data Models" class="dd-item active">
+        <a href="/web-cheatsheet/module2/mongo-data-models/">
+        MongoDB Data Models
         
         </a>
     </li>
@@ -773,9 +773,9 @@
  
   
     
-      <li data-nav-id="/web-cheatsheet/module2/5-mongo-crud/" title="MongoDB CRUD operations" class="dd-item active">
-        <a href="/web-cheatsheet/module2/5-mongo-crud/">
-        <b>5. </b>MongoDB CRUD operations
+      <li data-nav-id="/web-cheatsheet/module2/mongo-utils/" title="MongoDB Utils" class="dd-item ">
+        <a href="/web-cheatsheet/module2/mongo-utils/">
+        MongoDB Utils
         
         </a>
     </li>
@@ -1061,6 +1061,25 @@
       <li data-nav-id="/web-cheatsheet/module2/20-deploy/" title="Deploy" class="dd-item ">
         <a href="/web-cheatsheet/module2/20-deploy/">
         <b>20. </b>Deploy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/web-cheatsheet/module2/eslint/" title="ESLint" class="dd-item ">
+        <a href="/web-cheatsheet/module2/eslint/">
+        ESLint
         
         </a>
     </li>
@@ -1490,7 +1509,7 @@
             
           
           
-            <a href='/web-cheatsheet/'>index</a> > <a href='/web-cheatsheet/module2/'>Module 2</a> > MongoDB CRUD operations
+            <a href='/web-cheatsheet/'>index</a> > <a href='/web-cheatsheet/module2/'>Module 2</a> > MongoDB Data Models
           
          
           
@@ -1507,15 +1526,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#lecture-notes">Lecture Notes</a>
-<ul>
-<li><a href="#mongo-shell">mongo shell</a></li>
-<li><a href="#importing-data-from-json">importing data from json</a></li>
-<li><a href="#crud-operations">CRUD Operations</a></li>
-<li><a href="#operators">Operators</a></li>
-</ul></li>
-<li><a href="#practice">Practice</a></li>
-<li><a href="#tools">Tools</a></li>
+<li><a href="#lecture-notes">Lecture Notes</a></li>
 <li><a href="#resources">Resources</a></li>
 <li><a href="#ironhack-learning-unit">Ironhack Learning Unit</a></li>
 </ul></li>
@@ -1532,7 +1543,7 @@
         
         <div id="body-inner">
           
-            <h1>MongoDB CRUD operations</h1>
+            <h1>MongoDB Data Models</h1>
           
 
         
@@ -1542,190 +1553,39 @@
 
 <h2 id="lecture-notes">Lecture Notes</h2>
 
-<h3 id="mongo-shell">mongo shell</h3>
-
-<table>
-<thead>
-<tr>
-<th>Database Command</th>
-<th>Explanation</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>show dbs</code></td>
-<td>List all the databases inside our mongo server</td>
-</tr>
-
-<tr>
-<td><code>use &lt;dbName&gt;</code></td>
-<td>This will switch to the database <code>dbName</code> or create it if it doesn&rsquo;t exist</td>
-</tr>
-
-<tr>
-<td><code>db</code></td>
-<td>Show the name of the current database</td>
-</tr>
-
-<tr>
-<td><code>show collections</code></td>
-<td>List all the collections inside the current database</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="importing-data-from-json">importing data from json</h3>
-
-<pre><code>$ mongoimport \
-    --db users \
-    --collection contacts \
-    --type csv \
-    --headerline \
-    --file contacts.csv
-</code></pre>
-
-<h3 id="crud-operations">CRUD Operations</h3>
+<ul>
+<li>Documents Structure</li>
+<li>Kind Relations Documents
 
 <ul>
-<li>Create
-
-<ul>
-<li><code>db.collection.insertOne(doc)</code></li>
-<li><code>db.collection.insertMany([docs])</code></li>
+<li>Embedded Documents</li>
+<li>Refering Documents</li>
 </ul></li>
-<li>Read
+<li>Relations
 
 <ul>
-<li><code>db.users.find(query, projection)</code></li>
+<li>1:1</li>
+<li>1:N 1:few</li>
+<li>1:N 1:many</li>
+<li>N:M</li>
 </ul></li>
-<li>Update
-
-<ul>
-<li><code>db.collection.updateOne()</code></li>
-<li><code>db.collection.updateMany()</code></li>
-</ul></li>
-<li>Delete
-
-<ul>
-<li><code>db.collection.deleteOne()</code></li>
-<li><code>db.collection.deleteMany()</code></li>
-</ul></li>
-</ul>
-
-<h3 id="operators">Operators</h3>
-
-<ul>
-<li>Logical: <code>$and</code>, <code>$or</code>, <code>$ne</code>, <code>$nor</code>, <code>$in</code>, <code>$nin</code>, <a href="https://docs.mongodb.com/manual/reference/operator/query-logical/">Link</a></li>
-<li>Comparision Operators: <code>$eq</code>, <code>$neq</code>, <code>$gt</code>, <code>$gte</code>, <code>$lt</code>, <code>$lte</code> <a href="https://docs.mongodb.com/manual/reference/operator/query-comparison/">Link</a></li>
-<li>Array Operators: <code>$all</code>, <code>$elemMatch</code> <a href="https://docs.mongodb.com/manual/reference/operator/query-array/">Link</a></li>
-<li>Projections <a href="https://docs.mongodb.com/manual/reference/operator/projection/">Link</a></li>
-<li>Skip <a href="https://docs.mongodb.com/manual/reference/method/cursor.skip/">Link</a></li>
-<li>Limit <a href="https://docs.mongodb.com/manual/reference/method/cursor.limit/">Link</a></li>
-</ul>
-
-<h2 id="practice">Practice</h2>
-
-<section class="attachments ">
-	<label>
-		<i class="fas fa-paperclip" aria-hidden="true"></i>
-		File
-	</label>
-	
-		
-	
-	<div class="attachments-files">
-	
-		
-		
-			
-				<li>
-					<a href="/web-cheatsheet/module2/5-mongo-crud.files/restaurants.json.zip" >
-						restaurants.json.zip
-					</a>
-					(1635 ko)
-				</li>
-			
-		
-	
-	<div>
-	
-</section>
-
-
-
-<pre><code class="language-bash">$ mongoimport --db restaurants --collection restaurants --file restaurants.json
-</code></pre>
-
-<p>This is an example document from the restaurants collection.</p>
-
-<pre><code class="language-json">{
-  &quot;address&quot;: {
-     &quot;building&quot;: &quot;1007&quot;,
-     &quot;coord&quot;: [ -73.856077, 40.848447 ],
-     &quot;street&quot;: &quot;Morris Park Ave&quot;,
-     &quot;zipcode&quot;: &quot;10462&quot;
-  },
-  &quot;borough&quot;: &quot;Bronx&quot;,
-  &quot;cuisine&quot;: &quot;Bakery&quot;,
-  &quot;grades&quot;: [
-     { &quot;date&quot;: { &quot;$date&quot;: 1393804800000 }, &quot;grade&quot;: &quot;A&quot;, &quot;score&quot;: 2 },
-     { &quot;date&quot;: { &quot;$date&quot;: 1378857600000 }, &quot;grade&quot;: &quot;A&quot;, &quot;score&quot;: 6 },
-     { &quot;date&quot;: { &quot;$date&quot;: 1358985600000 }, &quot;grade&quot;: &quot;A&quot;, &quot;score&quot;: 10 },
-     { &quot;date&quot;: { &quot;$date&quot;: 1322006400000 }, &quot;grade&quot;: &quot;A&quot;, &quot;score&quot;: 9 },
-     { &quot;date&quot;: { &quot;$date&quot;: 1299715200000 }, &quot;grade&quot;: &quot;B&quot;, &quot;score&quot;: 14 }
-  ],
-  &quot;name&quot;: &quot;Morris Park Bake Shop&quot;,
-  &quot;restaurant_id&quot;: &quot;30075445&quot;
-}
-</code></pre>
-
-<p>Practice the following queries:</p>
-
-<p>Find the restaurant with id <code>30112340</code>.</p>
-
-<p>Find <code>May May Kitchen</code>.</p>
-
-<p>Find the restaurants where their cuisine is <code>Tapas</code>.</p>
-
-<p>Find the restaurants in postal code <code>11208</code>.</p>
-
-<p>Find all restaurants that have a score greater or equal than <code>70</code>.</p>
-
-<p>Find all restaurants in <code>Brooklyn</code> that have a score greater than <code>80</code></p>
-
-<p>All restaurants with <code>Chilean</code> or <code>Czech</code> cuisine.</p>
-
-<p>All restaurants with <code>grade A</code> in second position of the array.</p>
-
-<p>All restaurants with <code>grades A</code> or <code>B</code>.</p>
-
-<p>All restaurants that have a review made in <code>2014-09-16</code>.</p>
-
-<p>All restaurant their cuisine is <code>Tapas</code> ordered by name in <code>ascending</code> (normal) order.</p>
-
-<p>How many restaurants have been graded after <code>2015-01-01</code>.</p>
-
-<p>Find the restaurants that has a review graded <code>A</code> and <code>score</code> greater then <code>20</code></p>
-
-<p>Find the restaurants that doesn’t have reviews</p>
-
-<h2 id="tools">Tools</h2>
-
-<ul>
-<li><a href="https://www.mongodb.com/products/compass">Mongo Compass</a> Better not to use!</li>
 </ul>
 
 <h2 id="resources">Resources</h2>
 
 <ul>
-<li><a href="https://docs.mongodb.com/manual/reference/method/">https://docs.mongodb.com/manual/reference/method/</a></li>
+<li><a href="https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1">6-rules-of-thumb-for-mongodb-schema-design-part-1</a></li>
+<li><a href="https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-2">6-rules-of-thumb-for-mongodb-schema-design-part-2</a></li>
+<li><a href="https://www.mongodb.com/blog/post/thinking-documents-part-1">thinking-documents-part-1</a></li>
+<li><a href="https://www.mongodb.com/blog/post/thinking-documents-part-2">thinking-documents-part-2</a></li>
+<li><a href="https://www.infoq.com/articles/data-model-mongodb">Data modelling e-commerce</a></li>
 </ul>
 
 <h2 id="ironhack-learning-unit">Ironhack Learning Unit</h2>
 
 <ul>
-<li><a href="http://learn.ironhack.com/#/learning_unit/6471">MongoDB CRUD</a></li>
+<li><a href="http://learn.ironhack.com/#/learning_unit/6473">MongoDB Data Models</a></li>
+<li><a href="http://learn.ironhack.com/#/learning_unit/6476">MongoDB Indexes and Aggregation Framework</a></li>
 </ul>
 
 
@@ -2306,22 +2166,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -2341,6 +2185,38 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2889,10 +2765,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/web-cheatsheet/module2/4-mongo-data-models/" title="MongoDB Data Models"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/web-cheatsheet/module2/mongo-installation/" title="MongoDB Installation"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/web-cheatsheet/module2/6-express-introduction/" title="Express Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/web-cheatsheet/module2/mongo-utils/" title="MongoDB Utils" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2902,20 +2778,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/web-cheatsheet/js/clipboard.min.js?1550917443"></script>
-    <script src="/web-cheatsheet/js/perfect-scrollbar.min.js?1550917443"></script>
-    <script src="/web-cheatsheet/js/perfect-scrollbar.jquery.min.js?1550917443"></script>
-    <script src="/web-cheatsheet/js/jquery.sticky.js?1550917443"></script>
-    <script src="/web-cheatsheet/js/featherlight.min.js?1550917443"></script>
-    <script src="/web-cheatsheet/js/html5shiv-printshiv.min.js?1550917443"></script>
-    <script src="/web-cheatsheet/js/highlight.pack.js?1550917443"></script>
+    <script src="/web-cheatsheet/js/clipboard.min.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/perfect-scrollbar.min.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/perfect-scrollbar.jquery.min.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/jquery.sticky.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/featherlight.min.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/html5shiv-printshiv.min.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/highlight.pack.js?1550921788"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/web-cheatsheet/js/modernizr.custom.71422.js?1550917443"></script>
-    <script src="/web-cheatsheet/js/learn.js?1550917443"></script>
-    <script src="/web-cheatsheet/js/hugo-learn.js?1550917443"></script>
+    <script src="/web-cheatsheet/js/modernizr.custom.71422.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/learn.js?1550921788"></script>
+    <script src="/web-cheatsheet/js/hugo-learn.js?1550921788"></script>
 
-    <link href="/web-cheatsheet/mermaid/mermaid.css?1550917443" type="text/css" rel="stylesheet" />
-    <script src="/web-cheatsheet/mermaid/mermaid.js?1550917443"></script>
+    <link href="/web-cheatsheet/mermaid/mermaid.css?1550921788" type="text/css" rel="stylesheet" />
+    <script src="/web-cheatsheet/mermaid/mermaid.js?1550921788"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

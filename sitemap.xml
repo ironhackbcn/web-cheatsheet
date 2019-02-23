@@ -12,7 +12,7 @@
   </url>
   
   <url>
-    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/1-es6/</loc>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/es6/</loc>
     <lastmod>2018-11-12T14:57:52+00:00</lastmod>
   </url>
   
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/2-node/</loc>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/node/</loc>
     <lastmod>2018-11-12T16:06:07+01:00</lastmod>
   </url>
   
@@ -141,7 +141,7 @@
   </url>
   
   <url>
-    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/3-mongo-introduction/</loc>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/mongo-installation/</loc>
     <lastmod>2018-11-12T16:08:18+01:00</lastmod>
   </url>
   
@@ -156,7 +156,7 @@
   </url>
   
   <url>
-    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/4-mongo-data-models/</loc>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/mongo-data-models/</loc>
     <lastmod>2018-12-28T16:20:29+01:00</lastmod>
   </url>
   
@@ -176,7 +176,7 @@
   </url>
   
   <url>
-    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/5-mongo-crud/</loc>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/mongo-utils/</loc>
     <lastmod>2018-12-28T16:18:07+01:00</lastmod>
   </url>
   
@@ -518,6 +518,11 @@
   <url>
     <loc>https://ironhackbcn.github.io/web-cheatsheet/module3/lab/lab-thinking-in-react/</loc>
     <lastmod>2018-12-27T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ironhackbcn.github.io/web-cheatsheet/module2/eslint/</loc>
+    <lastmod>2018-11-12T16:06:07+01:00</lastmod>
   </url>
   
   <url>

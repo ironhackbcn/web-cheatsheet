@@ -13,50 +13,52 @@
     
     <item>
       <title>ES 6</title>
-      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/1-es6/</link>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/es6/</link>
       <pubDate>Mon, 12 Nov 2018 14:57:52 +0000</pubDate>
       
-      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/1-es6/</guid>
-      <description>Lecture Notes let const vs var  Temporal Dead Zone
-Arrow functions  const doSomething = (param1, param2) =&amp;gt; { return param1 + param2; }; const arr = [1, 2, 3, 4]; const newArr = arr.map((item) =&amp;gt; item + 1);  ⚠️ -&amp;gt; 🤯
-const makeAddNumFunction = (num1) =&amp;gt; (num2) =&amp;gt; addNumbers(num1, num2) const add2 = makeAddNumFunction(2)  Classes and inheritance class Foo { constructor(param1) { this.prop1 = param1; } method1() { console.</description>
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/es6/</guid>
+      <description>let - const - var  Temporal Dead Zone  Arrow functions const addRandom = (num) =&amp;gt; { const random = Math.random(); return num + random; } const doSomething = (param1, param2) =&amp;gt; { return param1 + param2; }; const arr = [1, 2, 3, 4]; const newArr = arr.map((item) =&amp;gt; item + 1);  syntax
+const arrow = () =&amp;gt; { // ... return &#39;return&#39;; } const arrow = (parameter) =&amp;gt; { // .</description>
     </item>
     
     <item>
       <title>Node</title>
-      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/2-node/</link>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/node/</link>
       <pubDate>Mon, 12 Nov 2018 16:06:07 +0100</pubDate>
       
-      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/2-node/</guid>
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/node/</guid>
       <description>Lecture Notes  What is Node.js?
  IT&amp;rsquo;S NOT A FRAMEWORK! runtime environment for running javascript in the backend (v8 engine) app can be an http server (runs &amp;ldquo;forever&amp;rdquo;) runs javascript, same as browser (but no window, no DOM) node callbacks convention (err, result) =&amp;gt; { &amp;hellip; } has some built-in modules like fs, process, path and http  Modules
  every js file is a module every file has it&amp;rsquo;s own scope (no global scope) npm packages are also modules for our files: in folder/mymodule.</description>
     </item>
     
     <item>
-      <title>MongoDB Introduction</title>
-      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/3-mongo-introduction/</link>
+      <title>MongoDB Installation</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/mongo-installation/</link>
       <pubDate>Mon, 12 Nov 2018 16:08:18 +0100</pubDate>
       
-      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/3-mongo-introduction/</guid>
-      <description>Lecture Notes  database rdbms vs object     id (Employee Code) name Language     3212 John Spanish   4324 Willy English   6542 James French     collections documents relations data modeling/domains crud query atomic operations(update operators)  databases - collections - documents - what is schemaless, mongo does not care how the data looks like - we will add schemas on the nodejs, it will run on our express app - the difference with sql and how it stores data in tables - examples being: mysql, postgres, mssql - when adding an incomplete row to sql it will not accept it - adding a new row can be done but is cumbersome - very restrictive, e.</description>
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/mongo-installation/</guid>
+      <description> MongoDB Download Web
+ Installation Mac
+ Installation Linux Ubuntu
+  </description>
     </item>
     
     <item>
       <title>MongoDB Data Models</title>
-      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/4-mongo-data-models/</link>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/mongo-data-models/</link>
       <pubDate>Fri, 28 Dec 2018 16:20:29 +0100</pubDate>
       
-      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/4-mongo-data-models/</guid>
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/mongo-data-models/</guid>
       <description> Lecture Notes  Documents Structure Kind Relations Documents  Embedded Documents Refering Documents  Relations  1:1 1:N 1:few 1:N 1:many N:M   Resources  6-rules-of-thumb-for-mongodb-schema-design-part-1 6-rules-of-thumb-for-mongodb-schema-design-part-2 thinking-documents-part-1 thinking-documents-part-2 Data modelling e-commerce  Ironhack Learning Unit  MongoDB Data Models MongoDB Indexes and Aggregation Framework  </description>
     </item>
     
     <item>
-      <title>MongoDB CRUD operations</title>
-      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/5-mongo-crud/</link>
+      <title>MongoDB Utils</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/mongo-utils/</link>
       <pubDate>Fri, 28 Dec 2018 16:18:07 +0100</pubDate>
       
-      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/5-mongo-crud/</guid>
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/mongo-utils/</guid>
       <description>Lecture Notes mongo shell    Database Command Explanation     show dbs List all the databases inside our mongo server   use &amp;lt;dbName&amp;gt; This will switch to the database dbName or create it if it doesn&amp;rsquo;t exist   db Show the name of the current database   show collections List all the collections inside the current database    importing data from json $ mongoimport \ --db users \ --collection contacts \ --type csv \ --headerline \ --file contacts.</description>
     </item>
     
@@ -219,6 +221,18 @@ const session = require(&#39;express-session&#39;); const MongoStore = require(&
       <description>create heroku account  it&amp;rsquo;s a cloud platform for hosting apps https://signup.heroku.com/  create application  provide a name (it will be the url https://app-name.herokuapp.com)  install heroku CLI
  download here: https://devcenter.heroku.com/articles/heroku-cli  prepare app inside the project
  $ heroku login $ heroku git:remote -a app-name make sure package.json is in the root of the project make sure package.json contains a start script add engines to package.json   &amp;quot;scripts&amp;quot;: { &amp;quot;start&amp;quot;: &amp;quot;node .</description>
+    </item>
+    
+    <item>
+      <title>ESLint</title>
+      <link>https://ironhackbcn.github.io/web-cheatsheet/module2/eslint/</link>
+      <pubDate>Mon, 12 Nov 2018 16:06:07 +0100</pubDate>
+      
+      <guid>https://ironhackbcn.github.io/web-cheatsheet/module2/eslint/</guid>
+      <description>instalation $ npm install -g eslint  in folder project
+$ eslint --init  you will see differents questions select the following answers - use popular style guide - standard - json
+if you use standard replace .eslintrc.json with
+{ &amp;quot;extends&amp;quot;: &amp;quot;standard&amp;quot;, &amp;quot;env&amp;quot;: { &amp;quot;es6&amp;quot;: true, &amp;quot;node&amp;quot;: true }, &amp;quot;globals&amp;quot;: { &amp;quot;document&amp;quot;: false, &amp;quot;window&amp;quot;: false, &amp;quot;console&amp;quot;: false }, &amp;quot;rules&amp;quot;: { &amp;quot;indent&amp;quot;: [ 2, 2 ], &amp;quot;semi&amp;quot;: [ &amp;quot;error&amp;quot;, &amp;quot;always&amp;quot; ] } }   https://eslint.</description>
     </item>
     
     <item>
