@@ -2,13 +2,14 @@
 title: ES 6
 date: 2018-11-12 14:57:52 +0000
 weight: 1
----
 
+---
 ## let - const - var
-  - Temporal Dead Zone
+
+* Temporal Dead Zone
 
 ## Arrow functions
-  
+
 ```javascript
 const addRandom = (num) => {
   const random = Math.random();
@@ -23,7 +24,8 @@ const arr = [1, 2, 3, 4];
 const newArr = arr.map((item) => item + 1);
 ```
 
-__syntax__
+**syntax**
+
 ```javascript
 const arrow = () => {
   // ...
@@ -45,8 +47,9 @@ const arrow = () => 'return';
 ```
 
 ## Classes
-- `class` and `constructor()`
-- inheritance with `class Foo extends Bar` and `super()`
+
+* `class` and `constructor()`
+* inheritance with `class Foo extends Bar` and `super()`
 
 ```javascript
 class Foo {
@@ -90,8 +93,9 @@ const text = `hello ${name}`;
 ```
 
 ## Spread operator
-  - array
-  - object
+
+* array
+* object
 
 ```javascript
 const parts = ['shoulders', 'knees'];
@@ -118,30 +122,31 @@ console.log(increment(2, 2)); // 4
 console.log(increment(2)); // 3
 ```
 
-
 ## Best Practices
-- Always const, then let, never var
-- Normally arrow functions
-- Use template literals
+
+* Always const, then let, never var
+* Normally arrow functions
+* Use template literals
 
 ## Resources
 
-- [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla)
-- [Compatibility table ECMAScript](http://kangax.github.io/compat-table/es2016plus/)
-- [MDN let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-- [MDN const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
-- [MDN temporal dead zone](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Temporal_Dead_Zone)
-- [MDN Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-- [MDN Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-- [MDN Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-- [MDN template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-- [new-es2018-features-every-javascript-developer-should-know](https://css-tricks.com/new-es2018-features-every-javascript-developer-should-know/)
-- [destructuring-nested-objects](https://medium.com/@pyrolistical/destructuring-nested-objects-9dabdd01a3b8)
+* [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla)
+* [Compatibility table ECMAScript](http://kangax.github.io/compat-table/es2016plus/)
+* [MDN let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+* [MDN const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+* [MDN temporal dead zone](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Temporal_Dead_Zone)
+* [MDN Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+* [MDN Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+* [MDN Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+* [MDN template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+* [new-es2018-features-every-javascript-developer-should-know](https://css-tricks.com/new-es2018-features-every-javascript-developer-should-know/)
+* [destructuring-nested-objects](https://medium.com/@pyrolistical/destructuring-nested-objects-9dabdd01a3b8)
 
 ## Practice
 
-- [http://es6katas.org/](http://es6katas.org/) (some are hard)
+* [http://es6katas.org/](http://es6katas.org/) (some are hard)
 
 ## Ironhack Learning Platform
-- [LU - ES6 | Basics](http://learn.ironhack.com/#/learning_unit/3976)
-- [LU - ES6 | Advanced](http://learn.ironhack.com/#/learning_unit/3977)
+
+* [LU - ES6 | Basics](http://learn.ironhack.com/#/learning_unit/3976)
+* [LU - ES6 | Advanced](http://learn.ironhack.com/#/learning_unit/3977)
