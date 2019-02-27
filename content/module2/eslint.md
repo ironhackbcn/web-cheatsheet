@@ -28,15 +28,18 @@ if you use standard replace `.eslintrc.json` with
 
 ```json
 {
-  "extends": "standard",
   "env": {
+    "commonjs": true,
     "es6": true,
     "node": true
   },
+  "extends": "standard",
   "globals": {
-    "document": false,
-    "window": false,
-    "console": false
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
   },
   "rules": {
     "indent": [
