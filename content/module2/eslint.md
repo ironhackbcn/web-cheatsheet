@@ -16,6 +16,10 @@ in folder project
 $ eslint --init
 ```
 you will see differents questions select the following answers
+- To check syntax, find problems, and enforce code style
+- CommonJS (require/exports)
+- None of these
+- Node (Observe that these are checkboxes. Check with space bar.)
 - use popular style guide
 - standard
 - json
